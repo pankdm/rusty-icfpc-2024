@@ -1,17 +1,14 @@
 use once_cell::sync::Lazy;
 use regex::Regex;
 
-use reqwest::Client;
-use reqwest::Error;
-use std::borrow::BorrowMut;
 use std::cell::RefCell;
 use std::collections::HashMap;
-use std::{fmt, rc::Rc};
 use std::fs;
 use std::io::{self, Write};
+use std::{fmt, rc::Rc};
 
 #[derive(Clone, PartialEq, Eq, Debug)]
-enum Token {
+pub enum Token {
     Boolean(bool),
     Integer(i64),
     String(String),
@@ -22,14 +19,14 @@ enum Token {
     Var(i64),
 }
 
-type ExprPtr = Rc<RefCell<Expr>>;
+pub type ExprPtr = Rc<RefCell<Expr>>;
 
-fn as_ptr(e: Expr) -> ExprPtr {
+pub fn as_ptr(e: Expr) -> ExprPtr {
     return Rc::new(RefCell::new(e));
 }
 
 #[derive(Clone, PartialEq, Eq, Debug)]
-enum Expr {
+pub enum Expr {
     Boolean(bool),
     Integer(i64),
     String(String),
@@ -40,13 +37,13 @@ enum Expr {
     Var(i64),
 }
 
-fn short_str(expr: &Expr) -> String {
+pub fn short_str(expr: &Expr) -> String {
     if is_basic(expr) {
         return format!("{:?}", expr);
     }
     match expr {
         Expr::Unary(op, _) => format!("Unary({})", op),
-        Expr::If(_, _ , _) => format!("If"),
+        Expr::If(_, _, _) => format!("If"),
         Expr::Var(x) => format!("Var(x{})", x),
         Expr::Lambda(x, _) => format!("Lambda(x{})", x),
         Expr::Binary(op, _, _) => format!("Binary({})", op),
@@ -54,14 +51,14 @@ fn short_str(expr: &Expr) -> String {
     }
 }
 
-fn unwrap_bool(e: &Expr) -> bool {
+pub fn unwrap_bool(e: &Expr) -> bool {
     if let Expr::Boolean(x) = e {
         return *x;
     }
     panic!("Expected Expr::Boolean from expression, got {:?}", e);
 }
 
-fn unwrap_i64(e: &Expr) -> i64 {
+pub fn unwrap_i64(e: &Expr) -> i64 {
     if let Expr::Integer(x) = e {
         return *x;
     }
@@ -69,7 +66,7 @@ fn unwrap_i64(e: &Expr) -> i64 {
     panic!("Expected Expr::Integer from expression, got {:?}", e);
 }
 
-fn unwrap_string(e: &Expr) -> String {
+pub fn unwrap_string(e: &Expr) -> String {
     if let Expr::String(x) = e {
         return x.clone();
     }
@@ -92,7 +89,7 @@ fn is_basic(e: &Expr) -> bool {
 }
 
 fn apply(expr_ptr: ExprPtr, target_x: i64, value: ExprPtr) -> ExprPtr {
-    println!("Apply Impl, f={}, x{}, v={}", short_str(&expr_ptr.borrow()), target_x, short_str(&value.borrow()));
+    // println!("Apply Impl, f={}, x{}, v={}", short_str(&expr_ptr.borrow()), target_x, short_str(&value.borrow()));
     {
         let mut expr = expr_ptr.as_ref().borrow_mut();
         if is_basic(&*expr) {
@@ -112,7 +109,7 @@ fn apply(expr_ptr: ExprPtr, target_x: i64, value: ExprPtr) -> ExprPtr {
 
             // *a = new_a;
             // *b = new_b;
-            return as_ptr(Expr::Binary(op, new_a, new_b))
+            return as_ptr(Expr::Binary(op, new_a, new_b));
             // println!("updated: {:?}", expr);
         } else if let Expr::If(ref mut a, ref mut b, ref mut c) = expr.clone() {
             let new_a = apply(a.clone(), target_x, value.clone());
@@ -139,7 +136,7 @@ fn apply(expr_ptr: ExprPtr, target_x: i64, value: ExprPtr) -> ExprPtr {
     expr_ptr
 }
 
-fn eval(expr_ptr: ExprPtr) -> ExprPtr {
+pub fn eval(expr_ptr: ExprPtr) -> ExprPtr {
     let ref e = *expr_ptr.borrow();
     if is_basic(e) {
         return expr_ptr.clone();
@@ -178,9 +175,9 @@ fn eval(expr_ptr: ExprPtr) -> ExprPtr {
                     if let Expr::Lambda(x_value, expr_c) = a {
                         // When the first argument of the binary application operator $ evaluates to a lambda abstraction,
                         // the second argument of the application is assigned to that variable.
-                        println!("Apply, f={}, x{}, v={}", short_str(&expr_c.borrow()), x_value, short_str(&expr_b.borrow()));
+                        // println!("Apply, f={}, x{}, v={}", short_str(&expr_c.borrow()), x_value, short_str(&expr_b.borrow()));
                         let res = apply(expr_c.clone(), *x_value, expr_b.clone());
-                        println!("Got: {:?}", res);
+                        // println!("Got: {:?}", res);
                         return res;
                     } else {
                         // Otherwise nothing happens and we proceed to next
@@ -188,56 +185,50 @@ fn eval(expr_ptr: ExprPtr) -> ExprPtr {
                 }
                 let a_ptr = eval(expr_a.clone());
                 let b_ptr = eval(expr_b.clone());
-                
+
                 let a_ptr_copy = a_ptr.clone();
                 let b_ptr_copy = b_ptr.clone();
 
                 let ref a = *a_ptr.borrow();
                 let ref b = *b_ptr.borrow();
                 if is_basic(a) && is_basic(b) {
-                match op {
-                    '+' => Expr::Integer(unwrap_i64(&a) + unwrap_i64(&b)),
-                    '-' => Expr::Integer(unwrap_i64(&a) - unwrap_i64(&b)),
-                    '*' => Expr::Integer(unwrap_i64(&a) * unwrap_i64(&b)),
-                    '/' => Expr::Integer(unwrap_i64(&a) / unwrap_i64(&b)),
-                    '%' => Expr::Integer(unwrap_i64(&a) % unwrap_i64(&b)),
+                    match op {
+                        '+' => Expr::Integer(unwrap_i64(&a) + unwrap_i64(&b)),
+                        '-' => Expr::Integer(unwrap_i64(&a) - unwrap_i64(&b)),
+                        '*' => Expr::Integer(unwrap_i64(&a) * unwrap_i64(&b)),
+                        '/' => Expr::Integer(unwrap_i64(&a) / unwrap_i64(&b)),
+                        '%' => Expr::Integer(unwrap_i64(&a) % unwrap_i64(&b)),
 
-                    '<' => Expr::Boolean(unwrap_i64(&a) < unwrap_i64(&b)),
-                    '>' => Expr::Boolean(unwrap_i64(&a) > unwrap_i64(&b)),
-                    '=' => {
-                        match (a, b) {
-                            (Expr::Integer(va), Expr::Integer(vb)) => {
-                                Expr::Boolean(va == vb)
-                            },
-                            (Expr::String(va), Expr::String(vb)) => {
-                                Expr::Boolean(va == vb)
-                            },
-                            (Expr::Boolean(va), Expr::Boolean(vb)) => {
-                                Expr::Boolean(va == vb)
-                            },
-                            _ => {panic!("Unsupported comparison a={:?} vs b={:?}", a, b)},
+                        '<' => Expr::Boolean(unwrap_i64(&a) < unwrap_i64(&b)),
+                        '>' => Expr::Boolean(unwrap_i64(&a) > unwrap_i64(&b)),
+                        '=' => match (a, b) {
+                            (Expr::Integer(va), Expr::Integer(vb)) => Expr::Boolean(va == vb),
+                            (Expr::String(va), Expr::String(vb)) => Expr::Boolean(va == vb),
+                            (Expr::Boolean(va), Expr::Boolean(vb)) => Expr::Boolean(va == vb),
+                            _ => {
+                                panic!("Unsupported comparison a={:?} vs b={:?}", a, b)
+                            }
+                        },
+
+                        '|' => Expr::Boolean(unwrap_bool(&a) || unwrap_bool(&b)),
+                        '&' => Expr::Boolean(unwrap_bool(&a) && unwrap_bool(&b)),
+
+                        '.' => Expr::String(unwrap_string(&a) + &unwrap_string(&b)),
+                        'T' => {
+                            let x = unwrap_i64(&a);
+                            let s = unwrap_string(&b);
+                            let chars = to_chars(s);
+                            Expr::String(to_string(&chars[..x as usize]))
                         }
+                        'D' => {
+                            let x = unwrap_i64(&a);
+                            let s = unwrap_string(&b);
+                            let chars = to_chars(s);
+                            Expr::String(to_string(&chars[x as usize..]))
+                        }
+                        '$' => Expr::Binary('$', a_ptr.clone(), b_ptr.clone()),
+                        _ => panic!("Unexpected op: {}", op),
                     }
-
-                    '|' => Expr::Boolean(unwrap_bool(&a) || unwrap_bool(&b)),
-                    '&' => Expr::Boolean(unwrap_bool(&a) && unwrap_bool(&b)),
-
-                    '.' => Expr::String(unwrap_string(&a) + &unwrap_string(&b)),
-                    'T' => {
-                        let x = unwrap_i64(&a);
-                        let s = unwrap_string(&b);
-                        let chars = to_chars(s);
-                        Expr::String(to_string(&chars[..x as usize]))
-                    }
-                    'D' => {
-                        let x = unwrap_i64(&a);
-                        let s = unwrap_string(&b);
-                        let chars = to_chars(s);
-                        Expr::String(to_string(&chars[x as usize..]))
-                    }
-                    '$' => Expr::Binary('$', a_ptr.clone(), b_ptr.clone()),
-                    _ => panic!("Unexpected op: {}", op),
-                }
                 } else {
                     Expr::Binary(*op, a_ptr_copy, b_ptr_copy)
                 }
@@ -248,7 +239,7 @@ fn eval(expr_ptr: ExprPtr) -> ExprPtr {
             let a_ptr = eval(expr_a.clone());
             let a_ptr_copy = a_ptr.clone();
             let ref a = *a_ptr.borrow();
-            
+
             if is_basic(a) {
                 let condition = unwrap_bool(&a);
                 if condition {
@@ -257,7 +248,7 @@ fn eval(expr_ptr: ExprPtr) -> ExprPtr {
                 } else {
                     let c = eval(expr_c.clone());
                     c
-                }    
+                }
             } else {
                 let res = Expr::If(a_ptr_copy, expr_b.clone(), expr_c.clone());
                 as_ptr(res)
@@ -269,7 +260,7 @@ fn eval(expr_ptr: ExprPtr) -> ExprPtr {
     }
 }
 
-fn base94_string_to_int(chars: &[char]) -> i64 {
+pub fn base94_string_to_int(chars: &[char]) -> i64 {
     let mult = 94;
     let mut res = 0;
     for c in chars.iter() {
@@ -280,7 +271,7 @@ fn base94_string_to_int(chars: &[char]) -> i64 {
     }
     res
 }
-fn int_to_base94_string(mut x: i64) -> String {
+pub fn int_to_base94_string(mut x: i64) -> String {
     let mut res = Vec::new();
     while x > 0 {
         let d = x % 94;
@@ -303,7 +294,7 @@ static TRANSLATION_TABLE_REVERSE: Lazy<HashMap<char, usize>> = Lazy::new(|| {
     res
 });
 
-fn decode_string(chars: &[char]) -> String {
+pub fn decode_string(chars: &[char]) -> String {
     let mut res = Vec::new();
     for c in chars.iter() {
         let code = *c as u8;
@@ -316,7 +307,7 @@ fn decode_string(chars: &[char]) -> String {
     res.iter().collect()
 }
 
-fn encode_string(s: String) -> Vec<char> {
+pub fn encode_string(s: String) -> Vec<char> {
     let mut res = Vec::new();
     for c in s.chars() {
         let idx = TRANSLATION_TABLE_REVERSE.get(&c).unwrap();
@@ -326,7 +317,7 @@ fn encode_string(s: String) -> Vec<char> {
     res
 }
 
-fn parse_token(s: String) -> Token {
+pub fn parse_token(s: String) -> Token {
     let chars: Vec<char> = s.chars().collect();
     let indicator = chars[0];
     match indicator {
@@ -368,7 +359,7 @@ fn parse_token(s: String) -> Token {
     }
 }
 
-fn tokenize(s: String) -> Vec<Token> {
+pub fn tokenize(s: String) -> Vec<Token> {
     let mut res = Vec::new();
     let parts = split_string(&s);
     // println!("splitted string: {:?}", &parts);
@@ -384,7 +375,7 @@ pub fn split_string(s: &String) -> Vec<String> {
     return parts;
 }
 
-fn create_ast(tokens: &[Token], idx: usize) -> (Expr, usize) {
+pub fn create_ast(tokens: &[Token], idx: usize) -> (Expr, usize) {
     if idx >= tokens.len() {
         panic!(
             "Create AST, out of bounds error: idx={}, len={}",
@@ -427,14 +418,14 @@ fn create_ast(tokens: &[Token], idx: usize) -> (Expr, usize) {
     }
 }
 
-fn parse_into_ast(s: String) -> ExprPtr {
+pub fn parse_into_ast(s: String) -> ExprPtr {
     let tokens = tokenize(s);
-    println!("{:?}", tokens);
+    // println!("{:?}", tokens);
     let (expr, _) = create_ast(&tokens, 0);
     as_ptr(expr)
 }
 
-fn print_ast(e_ptr: ExprPtr) {
+pub fn print_ast(e_ptr: ExprPtr) {
     let mut p = Printer::new();
     p.print_ast_impl(e_ptr, 0, p.counter);
 }
@@ -498,231 +489,123 @@ mod tests {
             Token::String("Hello World!".to_string())
         );
     }
+
+    #[test]
+    fn test_unary_operators() {
+        let test = |a, b| -> () {
+            assert_eq!(eval_example(a), b);
+        };
+        test("U- I$", Expr::Integer(-3));
+        test("U! T", Expr::Boolean(false));
+        test("U# S4%34", Expr::Integer(15818151));
+        test("U$ I4%34", Expr::String("test".to_string()));
+    }
+
+    #[test]
+    fn test_binary_operators() {
+        let test = |a, b| -> () {
+            assert_eq!(eval_example(a), b);
+        };
+        // + Integer addition B+ I# I$ -> 5
+        // - Integer subtraction B- I$ I# -> 1
+        // * Integer multiplication B* I$ I# -> 6
+        // / Integer division (truncated towards zero) B/ U- I( I# -> -3
+        // % Integer modulo B% U- I( I# -> -1
+        // < Integer comparison B< I$ I# -> false
+        // > Integer comparison B> I$ I# -> true
+        // = Equality comparison, works for int, bool and string B= I$ I# -> false
+        // | Boolean or B| T F -> true
+        // & Boolean and B& T F -> false
+        // . String concatenation B. S4% S34 -> "test"
+        // T Take first x chars of string y BT I$ S4%34 -> "tes"
+        // D Drop first x chars of string y BD I$ S4%34 -> "t"
+        test("B+ I# I$", Expr::Integer(5));
+        test("B- I$ I#", Expr::Integer(1));
+        test("B* I$ I#", Expr::Integer(6));
+        test("B/ U- I( I#", Expr::Integer(-3));
+        test("B% U- I( I#", Expr::Integer(-1));
+        test("B< I$ I#", Expr::Boolean(false));
+        test("B> I$ I#", Expr::Boolean(true));
+        test("B= I$ I#", Expr::Boolean(false));
+        test("B| T F", Expr::Boolean(true));
+        test("B& T F", Expr::Boolean(false));
+        test("B. S4% S34", Expr::String("test".to_string()));
+        test("BT I$ S4%34", Expr::String("tes".to_string()));
+        test("BD I$ S4%34", Expr::String("t".to_string()));
+    }
+
+    #[test]
+    fn test_if_operator() {
+        assert_eq!(
+            eval_example("? B> I# I$ S9%3 S./"),
+            Expr::String("no".to_string())
+        );
+    }
+
+    #[test]
+    fn test_lambda_operator() {
+        assert_eq!(
+            eval_example(r#"B$ B$ L# L$ v# B. SB%,,/ S}Q/2,$_ IK"#),
+            Expr::String("Hello World!".to_string())
+        );
+    }
+
+    #[test]
+    fn test_eval() {
+        let (res, steps) = eval_example_impl(
+            r#"B$ B$ L" B$ L# B$ v" B$ v# v# L# B$ v" B$ v# v# L" L# ? B= v# I! I" B$ L$ B+ B$ v" v$ B$ v" v$ B- v# I" I%"#,
+        );
+        assert_eq!(res, Expr::Integer(16));
+        assert_eq!(steps, 21);
+    }
+
+    #[test]
+    fn test_language_test() {
+        let example = fs::read_to_string("language_test.txt").unwrap();
+        let expected = "Self-check OK, send `solve language_test 4w3s0m3` to claim points for it";
+        assert_eq!(eval_example(&example), Expr::String(expected.to_string()));
+    }
 }
 
-pub async fn run_repl_loop() {
-    loop {
-        // Prompt the user for input
-        print!("\nEnter a string (or type 'exit' to quit):\n");
-        io::stdout().flush().expect("Failed to flush stdout");
+const OP_LIMIT: usize = 10_000_000;
+const DEBUG: bool = true;
 
-        // Read input from the user
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).expect("Failed to read line");
+pub fn eval_expr(mut expr_ptr: ExprPtr) -> (Expr, usize) {
+    for step in 0..OP_LIMIT {
+        if DEBUG {
+            println!("step = {}, AST:", step);
+            print_ast(expr_ptr.clone());
 
-        // Trim the input to remove trailing newline
-        let input = input.trim();
-
-        // Check for exit condition
-        if input.eq_ignore_ascii_case("exit") {
-            break;
+            let mut input = String::new();
+            io::stdin()
+                .read_line(&mut input)
+                .expect("Press enter to continue:");
         }
 
-        // Run the foo function over the input
-        let res = run_repl(input).await;
-        println!("\n[debug] Result = {:?}", res);
+        if is_basic(&*expr_ptr.clone().borrow()) {
+            let borrowed = expr_ptr.borrow();
+            return (borrowed.clone(), step);
+        }
+        let next_ptr = eval(expr_ptr);
+        expr_ptr = next_ptr;
     }
+    let borrowed = expr_ptr.borrow();
+    (borrowed.clone(), OP_LIMIT)
 }
 
-pub async fn run_repl(input: &str) -> Result<(), Error> {
-    // let send = "get language_test".to_string();
-    let send = input.to_string();
-    let encoded  = encode_string(send);
-    let encoded_prefix: String = encoded.iter().collect();
-    let encoded_string = "S".to_string() + &encoded_prefix;
-    println!("Hello, world!");
-    println!("{:?}", parse_token(encoded_string.clone()));
-
-    let client = Client::new();
-
-    let response = client
-        .post("http://localhost:8000/communicate")
-        .body(encoded_string)
-        .header(
-            "Authorization",
-            "Bearer 00000000-0000-0000-0000-000000000000",
-        )
-        .send()
-        .await?;
-
-    if response.status().is_success() {
-        let body = response.text().await?;
-        // let chars: Vec<char> = body.chars().collect();
-        println!("Response Text: '{}'", body);
-        let code = parse_into_ast(body);
-        let evaled = eval(code);
-        let expr = &*evaled.borrow();
-        println!("Decoded: \n\n{}", unwrap_string(expr));
-    } else {
-        println!("HTTP Request failed with status: {}", response.status());
-    }
-
-    Ok(())
+pub fn eval_example_impl(example: &str) -> (Expr, usize) {
+    let expr_ptr = parse_into_ast(example.to_string());
+    eval_expr(expr_ptr)
 }
 
-fn test_unary_operators() {
-    let examples = ["U- I$", "U! T", "U# S4%34", "U$ I4%34"];
-    for example in examples {
-        let expr = parse_into_ast(example.to_string());
-        println!("\nStr: '{}'", example);
-        println!("AST: {:?}", expr);
-        let result = eval(expr);
-        println!("Eval: {:?}", result);
-    }
+pub fn eval_example(example: &str) -> Expr {
+    let (res, _) = eval_example_impl(example);
+    res
 }
 
-fn test_binary_operators() {
-    // + Integer addition B+ I# I$ -> 5
-    // - Integer subtraction B- I$ I# -> 1
-    // * Integer multiplication B* I$ I# -> 6
-    // / Integer division (truncated towards zero) B/ U- I( I# -> -3
-    // % Integer modulo B% U- I( I# -> -1
-    // < Integer comparison B< I$ I# -> false
-    // > Integer comparison B> I$ I# -> true
-    // = Equality comparison, works for int, bool and string B= I$ I# -> false
-    // | Boolean or B| T F -> true
-    // & Boolean and B& T F -> false
-    // . String concatenation B. S4% S34 -> "test"
-    // T Take first x chars of string y BT I$ S4%34 -> "tes"
-    // D Drop first x chars of string y BD I$ S4%34 -> "t"
-    let examples = [
-        "B+ I# I$",
-        "B- I$ I#",
-        "B* I$ I#",
-        "B/ U- I( I#",
-        "B% U- I( I#",
-        "B< I$ I#",
-        "B> I$ I#",
-        "B= I$ I#",
-        "B| T F",
-        "B& T F",
-        "B. S4% S34",
-        "BT I$ S4%34",
-        "BD I$ S4%34",
-        // r#"B$ L# B$ L" B+ v" v" B* I$ I# v8"#,
-    ];
-    for example in examples {
-        let expr = parse_into_ast(example.to_string());
-        println!("\nStr: '{}'", example);
-        println!("AST: {:?}", expr);
-        let result = eval(expr);
-        println!("Eval: {:?}", result);
-    }
-}
-
-fn test_if_operator() {
-    let example = "? B> I# I$ S9%3 S./";
-    let expr = parse_into_ast(example.to_string());
-    println!("\nStr: '{}'", example);
-    println!("AST: {:?}", expr);
-    let result = eval(expr);
-    println!("Eval: {:?}", result);
-}
-
-fn print_ast_from_str(s: &str) {
+pub fn print_ast_from_str(s: &str) {
     let expr = parse_into_ast(s.to_string());
     println!("Str: '{}'", s);
     println!("AST:");
     print_ast(expr);
 }
-
-fn test_lambda_operator() {
-    let steps = [
-        r#"B$ L# B$ L" B+ v" v" B* I$ I# v8"#,
-        r#"B$ L" B+ v" v" B* I$ I#"#,
-        "B+ B* I$ I# B* I$ I#",
-        "B+ I' B* I$ I#",
-        "B+ I' I'",
-        "I-",
-    ];
-    for (idx, step) in steps.iter().enumerate() {
-        println!("\nstep = {}", idx);
-        print_ast_from_str(step);
-    }
-}
-
-fn test_lambda_operator2() {
-    // let tokens = [
-    //     Token::Unary('-'),
-    //     Token::Var(1),
-    // ];
-    // let tokens = [
-    //     Token::Binary('$'),
-    //     Token::Lambda(2),
-    //     Token::Binary('$'),
-    //     Token::Lambda(1),
-    //     Token::Binary('+'),
-    //     Token::Var(1),
-    //     Token::Var(1),
-    //     Token::Binary('*'),
-    //     Token::Integer(3),
-    //     Token::Integer(2),
-    //     Token::Var(23),
-    // ];
-    let tokens = [
-        Token::Binary('$'),
-        Token::Lambda(2),
-        Token::Binary('$'),
-        Token::Integer(1),
-        Token::Binary('$'),
-        Token::Var(2),
-        Token::Var(2),
-        Token::Lambda(2),
-        Token::Binary('$'),
-        Token::Integer(1),
-        Token::Binary('$'),
-        Token::Var(2),
-        Token::Var(2),
-    ];
-    let (expr, _) = create_ast(&tokens, 0);
-    let mut expr_ptr = as_ptr(expr);
-    println!("AST:");
-    print_ast(expr_ptr.clone());
-
-    for step in 1..5 {
-        let next_ptr = eval(expr_ptr.clone());
-        println!();
-        println!("eval{} :", step);
-        print_ast(next_ptr.clone());
-        expr_ptr = next_ptr;
-    }
-}
-
-fn test_lambda_operator3() {
-    let examples = [
-        // r#"B$ L# B$ L" B+ v" v" B* I$ I# v8"#,
-        r#"B$ B$ L" B$ L# B$ v" B$ v# v# L# B$ v" B$ v# v# L" L# ? B= v# I! I" B$ L$ B+ B$ v" v$ B$ v" v$ B- v# I" I%"#,
-    ];
-    for (idx, example) in examples.iter().enumerate() {
-        println!("\nexample = {}", example);
-        print_ast_from_str(example);
-        let mut expr_ptr = parse_into_ast(example.to_string());
-        println!("AST:");
-        print_ast(expr_ptr.clone());
-
-        for step in 1..100 {
-            let next_ptr = eval(expr_ptr.clone());
-            println!();
-            println!("eval{} :", step);
-            print_ast(next_ptr.clone());
-            expr_ptr = next_ptr;
-        }
-    }
-}
-
-pub fn test_language_test() {
-    let example = fs::read_to_string("language_test.txt").unwrap();
-    println!("\nexample = {}", example);
-    print_ast_from_str(&example);
-    let mut expr_ptr = parse_into_ast(example.to_string());
-    println!("AST:");
-    print_ast(expr_ptr.clone());
-    for step in 1..10 {
-        let next_ptr = eval(expr_ptr.clone());
-        println!();
-        println!("eval{} :", step);
-        print_ast(next_ptr.clone());
-        expr_ptr = next_ptr;
-    }
-}
-
