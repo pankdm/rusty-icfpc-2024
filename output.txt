@@ -1,0 +1,564 @@
+
+example = ? B= B$ B$ B$ B$ L$ L$ L$ L# v$ I" I# I$ I% I$ ? B= B$ L$ v$ I+ I+ ? B= BD I$ S4%34 S4 ? B= BT I$ S4%34 S4%3 ? B= B. S4% S34 S4%34 ? U! B& T F ? B& T T ? U! B| F F ? B| F T ? B< U- I$ U- I# ? B> I$ I# ? B= U- I" B% U- I$ I# ? B= I" B% I( I$ ? B= U- I" B/ U- I$ I# ? B= I# B/ I( I$ ? B= I' B* I# I$ ? B= I$ B+ I" I# ? B= U$ I4%34 S4%34 ? B= U# S4%34 I4%34 ? U! F ? B= U- I$ B- I# I& ? B= I$ B- I& I# ? B= S4%34 S4%34 ? B= F F ? B= I$ I$ ? T B. B. SM%,&k#(%#+}IEj}3%.$}z3/,6%},!.'5!'%y4%34} U$ B+ I# B* I$> I1~s:U@ Sz}4/}#,!)-}0/).43}&/2})4 S)&})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}k})3}./4}#/22%#4 S5.!29}k})3}./4}#/22%#4 S5.!29}_})3}./4}#/22%#4 S5.!29}a})3}./4}#/22%#4 S5.!29}b})3}./4}#/22%#4 S").!29}i})3}./4}#/22%#4 S").!29}h})3}./4}#/22%#4 S").!29}m})3}./4}#/22%#4 S").!29}m})3}./4}#/22%#4 S").!29}c})3}./4}#/22%#4 S").!29}c})3}./4}#/22%#4 S").!29}r})3}./4}#/22%#4 S").!29}p})3}./4}#/22%#4 S").!29}{})3}./4}#/22%#4 S").!29}{})3}./4}#/22%#4 S").!29}d})3}./4}#/22%#4 S").!29}d})3}./4}#/22%#4 S").!29}l})3}./4}#/22%#4 S").!29}N})3}./4}#/22%#4 S").!29}>})3}./4}#/22%#4 S!00,)#!4)/.})3}./4}#/22%#4 S!00,)#!4)/.})3}./4}#/22%#4
+[If, Binary('='), Binary('$'), Binary('$'), Binary('$'), Binary('$'), Lambda(3), Lambda(3), Lambda(3), Lambda(2), Var(3), Integer(1), Integer(2), Integer(3), Integer(4), Integer(3), If, Binary('='), Binary('$'), Lambda(3), Var(3), Integer(10), Integer(10), If, Binary('='), Binary('D'), Integer(3), String("test"), String("t"), If, Binary('='), Binary('T'), Integer(3), String("test"), String("tes"), If, Binary('='), Binary('.'), String("te"), String("st"), String("test"), If, Unary('!'), Binary('&'), Boolean(true), Boolean(false), If, Binary('&'), Boolean(true), Boolean(true), If, Unary('!'), Binary('|'), Boolean(false), Boolean(false), If, Binary('|'), Boolean(false), Boolean(true), If, Binary('<'), Unary('-'), Integer(3), Unary('-'), Integer(2), If, Binary('>'), Integer(3), Integer(2), If, Binary('='), Unary('-'), Integer(1), Binary('%'), Unary('-'), Integer(3), Integer(2), If, Binary('='), Integer(1), Binary('%'), Integer(7), Integer(3), If, Binary('='), Unary('-'), Integer(1), Binary('/'), Unary('-'), Integer(3), Integer(2), If, Binary('='), Integer(2), Binary('/'), Integer(7), Integer(3), If, Binary('='), Integer(6), Binary('*'), Integer(2), Integer(3), If, Binary('='), Integer(3), Binary('+'), Integer(1), Integer(2), If, Binary('='), Unary('$'), Integer(15818151), String("test"), If, Binary('='), Unary('#'), String("test"), Integer(15818151), If, Unary('!'), Boolean(false), If, Binary('='), Unary('-'), Integer(3), Binary('-'), Integer(2), Integer(5), If, Binary('='), Integer(3), Binary('-'), Integer(5), Integer(2), If, Binary('='), String("test"), String("test"), If, Binary('='), Boolean(false), Boolean(false), If, Binary('='), Integer(3), Integer(3), If, Boolean(true), Binary('.'), Binary('.'), String("Self-check OK, send `solve language_test "), Unary('$'), Binary('+'), Integer(2), Binary('*'), Integer(311), Integer(124753942619), String("` to claim points for it"), String("if is not correct"), String("binary = is not correct"), String("binary = is not correct"), String("binary = is not correct"), String("binary - is not correct"), String("unary - is not correct"), String("unary ! is not correct"), String("unary # is not correct"), String("unary $ is not correct"), String("binary + is not correct"), String("binary * is not correct"), String("binary / is not correct"), String("binary / is not correct"), String("binary % is not correct"), String("binary % is not correct"), String("binary > is not correct"), String("binary < is not correct"), String("binary | is not correct"), String("binary | is not correct"), String("binary & is not correct"), String("binary & is not correct"), String("binary . is not correct"), String("binary T is not correct"), String("binary D is not correct"), String("application is not correct"), String("application is not correct")]
+Str: '? B= B$ B$ B$ B$ L$ L$ L$ L# v$ I" I# I$ I% I$ ? B= B$ L$ v$ I+ I+ ? B= BD I$ S4%34 S4 ? B= BT I$ S4%34 S4%3 ? B= B. S4% S34 S4%34 ? U! B& T F ? B& T T ? U! B| F F ? B| F T ? B< U- I$ U- I# ? B> I$ I# ? B= U- I" B% U- I$ I# ? B= I" B% I( I$ ? B= U- I" B/ U- I$ I# ? B= I# B/ I( I$ ? B= I' B* I# I$ ? B= I$ B+ I" I# ? B= U$ I4%34 S4%34 ? B= U# S4%34 I4%34 ? U! F ? B= U- I$ B- I# I& ? B= I$ B- I& I# ? B= S4%34 S4%34 ? B= F F ? B= I$ I$ ? T B. B. SM%,&k#(%#+}IEj}3%.$}z3/,6%},!.'5!'%y4%34} U$ B+ I# B* I$> I1~s:U@ Sz}4/}#,!)-}0/).43}&/2})4 S)&})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}q})3}./4}#/22%#4 S").!29}k})3}./4}#/22%#4 S5.!29}k})3}./4}#/22%#4 S5.!29}_})3}./4}#/22%#4 S5.!29}a})3}./4}#/22%#4 S5.!29}b})3}./4}#/22%#4 S").!29}i})3}./4}#/22%#4 S").!29}h})3}./4}#/22%#4 S").!29}m})3}./4}#/22%#4 S").!29}m})3}./4}#/22%#4 S").!29}c})3}./4}#/22%#4 S").!29}c})3}./4}#/22%#4 S").!29}r})3}./4}#/22%#4 S").!29}p})3}./4}#/22%#4 S").!29}{})3}./4}#/22%#4 S").!29}{})3}./4}#/22%#4 S").!29}d})3}./4}#/22%#4 S").!29}d})3}./4}#/22%#4 S").!29}l})3}./4}#/22%#4 S").!29}N})3}./4}#/22%#4 S").!29}>})3}./4}#/22%#4 S!00,)#!4)/.})3}./4}#/22%#4 S!00,)#!4)/.})3}./4}#/22%#4'
+AST:
+ [0] If
+     [4] Binary = 
+         [8] Binary $ 
+             [12] Binary $ 
+                 [16] Binary $ 
+                     [20] Binary $ 
+                         [24] Lambda x3
+                             [28] Lambda x3
+                                 [32] Lambda x3
+                                     [36] Lambda x2
+                                         [40] x3
+                         [24] Integer(1)
+                     [20] Integer(2)
+                 [16] Integer(3)
+             [12] Integer(4)
+         [8] Integer(3)
+     [4] If
+         [8] Binary = 
+             [12] Binary $ 
+                 [16] Lambda x3
+                     [20] x3
+                 [16] Integer(10)
+             [12] Integer(10)
+         [8] If
+             [12] Binary = 
+                 [16] Binary D 
+                     [20] Integer(3)
+                     [20] String("test")
+                 [16] String("t")
+             [12] If
+                 [16] Binary = 
+                     [20] Binary T 
+                         [24] Integer(3)
+                         [24] String("test")
+                     [20] String("tes")
+                 [16] If
+                     [20] Binary = 
+                         [24] Binary . 
+                             [28] String("te")
+                             [28] String("st")
+                         [24] String("test")
+                     [20] If
+                         [24] Unary !
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(false)
+                         [24] If
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(true)
+                             [28] If
+                                 [32] Unary !
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(false)
+                                 [32] If
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(true)
+                                     [36] If
+                                         [40] Binary < 
+                                             [44] Unary -
+                                                 [48] Integer(3)
+                                             [44] Unary -
+                                                 [48] Integer(2)
+                                         [40] If
+                                             [44] Binary > 
+                                                 [48] Integer(3)
+                                                 [48] Integer(2)
+                                             [44] If
+                                                 [48] Binary = 
+                                                     [52] Unary -
+                                                         [56] Integer(1)
+                                                     [52] Binary % 
+                                                         [56] Unary -
+                                                             [60] Integer(3)
+                                                         [56] Integer(2)
+                                                 [48] If
+                                                     [52] Binary = 
+                                                         [56] Integer(1)
+                                                         [56] Binary % 
+                                                             [60] Integer(7)
+                                                             [60] Integer(3)
+                                                     [52] If
+                                                         [56] Binary = 
+                                                             [60] Unary -
+                                                                 [64] Integer(1)
+                                                             [60] Binary / 
+                                                                 [64] Unary -
+                                                                     [68] Integer(3)
+                                                                 [64] Integer(2)
+                                                         [56] If
+                                                             [60] Binary = 
+                                                                 [64] Integer(2)
+                                                                 [64] Binary / 
+                                                                     [68] Integer(7)
+                                                                     [68] Integer(3)
+                                                             [60] If
+                                                                 [64] Binary = 
+                                                                     [68] Integer(6)
+                                                                     [68] Binary * 
+                                                                         [72] Integer(2)
+                                                                         [72] Integer(3)
+                                                                 [64] If
+                                                                     [68] Binary = 
+                                                                         [72] Integer(3)
+                                                                         [72] Binary + 
+                                                                             [76] Integer(1)
+                                                                             [76] Integer(2)
+                                                                     [68] If
+                                                                         [72] Binary = 
+                                                                             [76] Unary $
+                                                                                 [80] Integer(15818151)
+                                                                             [76] String("test")
+                                                                         [72] If
+                                                                             [76] Binary = 
+                                                                                 [80] Unary #
+                                                                                     [84] String("test")
+                                                                                 [80] Integer(15818151)
+                                                                             [76] If
+                                                                                 [80] Unary !
+                                                                                     [84] Boolean(false)
+                                                                                 [80] If
+                                                                                     [84] Binary = 
+                                                                                         [88] Unary -
+                                                                                             [92] Integer(3)
+                                                                                         [88] Binary - 
+                                                                                             [92] Integer(2)
+                                                                                             [92] Integer(5)
+                                                                                     [84] If
+                                                                                         [88] Binary = 
+                                                                                             [92] Integer(3)
+                                                                                             [92] Binary - 
+                                                                                                 [96] Integer(5)
+                                                                                                 [96] Integer(2)
+                                                                                         [88] If
+                                                                                             [92] Binary = 
+                                                                                                 [96] String("test")
+                                                                                                 [96] String("test")
+                                                                                             [92] If
+                                                                                                 [96] Binary = 
+                                                                                                     [100] Boolean(false)
+                                                                                                     [100] Boolean(false)
+                                                                                                 [96] If
+                                                                                                     [100] Binary = 
+                                                                                                         [104] Integer(3)
+                                                                                                         [104] Integer(3)
+                                                                                                     [100] If
+                                                                                                         [104] Boolean(true)
+                                                                                                         [104] Binary . 
+                                                                                                             [108] Binary . 
+                                                                                                                 [112] String("Self-check OK, send `solve language_test ")
+                                                                                                                 [112] Unary $
+                                                                                                                     [116] Binary + 
+                                                                                                                         [120] Integer(2)
+                                                                                                                         [120] Binary * 
+                                                                                                                             [124] Integer(311)
+                                                                                                                             [124] Integer(124753942619)
+                                                                                                             [108] String("` to claim points for it")
+                                                                                                         [104] String("if is not correct")
+                                                                                                     [100] String("binary = is not correct")
+                                                                                                 [96] String("binary = is not correct")
+                                                                                             [92] String("binary = is not correct")
+                                                                                         [88] String("binary - is not correct")
+                                                                                     [84] String("unary - is not correct")
+                                                                                 [80] String("unary ! is not correct")
+                                                                             [76] String("unary # is not correct")
+                                                                         [72] String("unary $ is not correct")
+                                                                     [68] String("binary + is not correct")
+                                                                 [64] String("binary * is not correct")
+                                                             [60] String("binary / is not correct")
+                                                         [56] String("binary / is not correct")
+                                                     [52] String("binary % is not correct")
+                                                 [48] String("binary % is not correct")
+                                             [44] String("binary > is not correct")
+                                         [40] String("binary < is not correct")
+                                     [36] String("binary | is not correct")
+                                 [32] String("binary | is not correct")
+                             [28] String("binary & is not correct")
+                         [24] String("binary & is not correct")
+                     [20] String("binary . is not correct")
+                 [16] String("binary T is not correct")
+             [12] String("binary D is not correct")
+         [8] String("application is not correct")
+     [4] String("application is not correct")
+[If, Binary('='), Binary('$'), Binary('$'), Binary('$'), Binary('$'), Lambda(3), Lambda(3), Lambda(3), Lambda(2), Var(3), Integer(1), Integer(2), Integer(3), Integer(4), Integer(3), If, Binary('='), Binary('$'), Lambda(3), Var(3), Integer(10), Integer(10), If, Binary('='), Binary('D'), Integer(3), String("test"), String("t"), If, Binary('='), Binary('T'), Integer(3), String("test"), String("tes"), If, Binary('='), Binary('.'), String("te"), String("st"), String("test"), If, Unary('!'), Binary('&'), Boolean(true), Boolean(false), If, Binary('&'), Boolean(true), Boolean(true), If, Unary('!'), Binary('|'), Boolean(false), Boolean(false), If, Binary('|'), Boolean(false), Boolean(true), If, Binary('<'), Unary('-'), Integer(3), Unary('-'), Integer(2), If, Binary('>'), Integer(3), Integer(2), If, Binary('='), Unary('-'), Integer(1), Binary('%'), Unary('-'), Integer(3), Integer(2), If, Binary('='), Integer(1), Binary('%'), Integer(7), Integer(3), If, Binary('='), Unary('-'), Integer(1), Binary('/'), Unary('-'), Integer(3), Integer(2), If, Binary('='), Integer(2), Binary('/'), Integer(7), Integer(3), If, Binary('='), Integer(6), Binary('*'), Integer(2), Integer(3), If, Binary('='), Integer(3), Binary('+'), Integer(1), Integer(2), If, Binary('='), Unary('$'), Integer(15818151), String("test"), If, Binary('='), Unary('#'), String("test"), Integer(15818151), If, Unary('!'), Boolean(false), If, Binary('='), Unary('-'), Integer(3), Binary('-'), Integer(2), Integer(5), If, Binary('='), Integer(3), Binary('-'), Integer(5), Integer(2), If, Binary('='), String("test"), String("test"), If, Binary('='), Boolean(false), Boolean(false), If, Binary('='), Integer(3), Integer(3), If, Boolean(true), Binary('.'), Binary('.'), String("Self-check OK, send `solve language_test "), Unary('$'), Binary('+'), Integer(2), Binary('*'), Integer(311), Integer(124753942619), String("` to claim points for it"), String("if is not correct"), String("binary = is not correct"), String("binary = is not correct"), String("binary = is not correct"), String("binary - is not correct"), String("unary - is not correct"), String("unary ! is not correct"), String("unary # is not correct"), String("unary $ is not correct"), String("binary + is not correct"), String("binary * is not correct"), String("binary / is not correct"), String("binary / is not correct"), String("binary % is not correct"), String("binary % is not correct"), String("binary > is not correct"), String("binary < is not correct"), String("binary | is not correct"), String("binary | is not correct"), String("binary & is not correct"), String("binary & is not correct"), String("binary . is not correct"), String("binary T is not correct"), String("binary D is not correct"), String("application is not correct"), String("application is not correct")]
+AST:
+ [0] If
+     [4] Binary = 
+         [8] Binary $ 
+             [12] Binary $ 
+                 [16] Binary $ 
+                     [20] Binary $ 
+                         [24] Lambda x3
+                             [28] Lambda x3
+                                 [32] Lambda x3
+                                     [36] Lambda x2
+                                         [40] x3
+                         [24] Integer(1)
+                     [20] Integer(2)
+                 [16] Integer(3)
+             [12] Integer(4)
+         [8] Integer(3)
+     [4] If
+         [8] Binary = 
+             [12] Binary $ 
+                 [16] Lambda x3
+                     [20] x3
+                 [16] Integer(10)
+             [12] Integer(10)
+         [8] If
+             [12] Binary = 
+                 [16] Binary D 
+                     [20] Integer(3)
+                     [20] String("test")
+                 [16] String("t")
+             [12] If
+                 [16] Binary = 
+                     [20] Binary T 
+                         [24] Integer(3)
+                         [24] String("test")
+                     [20] String("tes")
+                 [16] If
+                     [20] Binary = 
+                         [24] Binary . 
+                             [28] String("te")
+                             [28] String("st")
+                         [24] String("test")
+                     [20] If
+                         [24] Unary !
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(false)
+                         [24] If
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(true)
+                             [28] If
+                                 [32] Unary !
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(false)
+                                 [32] If
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(true)
+                                     [36] If
+                                         [40] Binary < 
+                                             [44] Unary -
+                                                 [48] Integer(3)
+                                             [44] Unary -
+                                                 [48] Integer(2)
+                                         [40] If
+                                             [44] Binary > 
+                                                 [48] Integer(3)
+                                                 [48] Integer(2)
+                                             [44] If
+                                                 [48] Binary = 
+                                                     [52] Unary -
+                                                         [56] Integer(1)
+                                                     [52] Binary % 
+                                                         [56] Unary -
+                                                             [60] Integer(3)
+                                                         [56] Integer(2)
+                                                 [48] If
+                                                     [52] Binary = 
+                                                         [56] Integer(1)
+                                                         [56] Binary % 
+                                                             [60] Integer(7)
+                                                             [60] Integer(3)
+                                                     [52] If
+                                                         [56] Binary = 
+                                                             [60] Unary -
+                                                                 [64] Integer(1)
+                                                             [60] Binary / 
+                                                                 [64] Unary -
+                                                                     [68] Integer(3)
+                                                                 [64] Integer(2)
+                                                         [56] If
+                                                             [60] Binary = 
+                                                                 [64] Integer(2)
+                                                                 [64] Binary / 
+                                                                     [68] Integer(7)
+                                                                     [68] Integer(3)
+                                                             [60] If
+                                                                 [64] Binary = 
+                                                                     [68] Integer(6)
+                                                                     [68] Binary * 
+                                                                         [72] Integer(2)
+                                                                         [72] Integer(3)
+                                                                 [64] If
+                                                                     [68] Binary = 
+                                                                         [72] Integer(3)
+                                                                         [72] Binary + 
+                                                                             [76] Integer(1)
+                                                                             [76] Integer(2)
+                                                                     [68] If
+                                                                         [72] Binary = 
+                                                                             [76] Unary $
+                                                                                 [80] Integer(15818151)
+                                                                             [76] String("test")
+                                                                         [72] If
+                                                                             [76] Binary = 
+                                                                                 [80] Unary #
+                                                                                     [84] String("test")
+                                                                                 [80] Integer(15818151)
+                                                                             [76] If
+                                                                                 [80] Unary !
+                                                                                     [84] Boolean(false)
+                                                                                 [80] If
+                                                                                     [84] Binary = 
+                                                                                         [88] Unary -
+                                                                                             [92] Integer(3)
+                                                                                         [88] Binary - 
+                                                                                             [92] Integer(2)
+                                                                                             [92] Integer(5)
+                                                                                     [84] If
+                                                                                         [88] Binary = 
+                                                                                             [92] Integer(3)
+                                                                                             [92] Binary - 
+                                                                                                 [96] Integer(5)
+                                                                                                 [96] Integer(2)
+                                                                                         [88] If
+                                                                                             [92] Binary = 
+                                                                                                 [96] String("test")
+                                                                                                 [96] String("test")
+                                                                                             [92] If
+                                                                                                 [96] Binary = 
+                                                                                                     [100] Boolean(false)
+                                                                                                     [100] Boolean(false)
+                                                                                                 [96] If
+                                                                                                     [100] Binary = 
+                                                                                                         [104] Integer(3)
+                                                                                                         [104] Integer(3)
+                                                                                                     [100] If
+                                                                                                         [104] Boolean(true)
+                                                                                                         [104] Binary . 
+                                                                                                             [108] Binary . 
+                                                                                                                 [112] String("Self-check OK, send `solve language_test ")
+                                                                                                                 [112] Unary $
+                                                                                                                     [116] Binary + 
+                                                                                                                         [120] Integer(2)
+                                                                                                                         [120] Binary * 
+                                                                                                                             [124] Integer(311)
+                                                                                                                             [124] Integer(124753942619)
+                                                                                                             [108] String("` to claim points for it")
+                                                                                                         [104] String("if is not correct")
+                                                                                                     [100] String("binary = is not correct")
+                                                                                                 [96] String("binary = is not correct")
+                                                                                             [92] String("binary = is not correct")
+                                                                                         [88] String("binary - is not correct")
+                                                                                     [84] String("unary - is not correct")
+                                                                                 [80] String("unary ! is not correct")
+                                                                             [76] String("unary # is not correct")
+                                                                         [72] String("unary $ is not correct")
+                                                                     [68] String("binary + is not correct")
+                                                                 [64] String("binary * is not correct")
+                                                             [60] String("binary / is not correct")
+                                                         [56] String("binary / is not correct")
+                                                     [52] String("binary % is not correct")
+                                                 [48] String("binary % is not correct")
+                                             [44] String("binary > is not correct")
+                                         [40] String("binary < is not correct")
+                                     [36] String("binary | is not correct")
+                                 [32] String("binary | is not correct")
+                             [28] String("binary & is not correct")
+                         [24] String("binary & is not correct")
+                     [20] String("binary . is not correct")
+                 [16] String("binary T is not correct")
+             [12] String("binary D is not correct")
+         [8] String("application is not correct")
+     [4] String("application is not correct")
+Apply, f=Lambda(x3), x3, v=Integer(1)
+Apply Impl, f=Lambda(x3), x3, v=Integer(1)
+Got: RefCell { value: Lambda(3, RefCell { value: Lambda(3, RefCell { value: Lambda(2, RefCell { value: Var(3) }) }) }) }
+
+eval1 :
+ [0] If
+     [4] Binary = 
+         [8] Binary $ 
+             [12] Binary $ 
+                 [16] Binary $ 
+                     [20] Lambda x3
+                         [24] Lambda x3
+                             [28] Lambda x2
+                                 [32] x3
+                     [20] Integer(2)
+                 [16] Integer(3)
+             [12] Integer(4)
+         [8] Integer(3)
+     [4] If
+         [8] Binary = 
+             [12] Binary $ 
+                 [16] Lambda x3
+                     [20] x3
+                 [16] Integer(10)
+             [12] Integer(10)
+         [8] If
+             [12] Binary = 
+                 [16] Binary D 
+                     [20] Integer(3)
+                     [20] String("test")
+                 [16] String("t")
+             [12] If
+                 [16] Binary = 
+                     [20] Binary T 
+                         [24] Integer(3)
+                         [24] String("test")
+                     [20] String("tes")
+                 [16] If
+                     [20] Binary = 
+                         [24] Binary . 
+                             [28] String("te")
+                             [28] String("st")
+                         [24] String("test")
+                     [20] If
+                         [24] Unary !
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(false)
+                         [24] If
+                             [28] Binary & 
+                                 [32] Boolean(true)
+                                 [32] Boolean(true)
+                             [28] If
+                                 [32] Unary !
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(false)
+                                 [32] If
+                                     [36] Binary | 
+                                         [40] Boolean(false)
+                                         [40] Boolean(true)
+                                     [36] If
+                                         [40] Binary < 
+                                             [44] Unary -
+                                                 [48] Integer(3)
+                                             [44] Unary -
+                                                 [48] Integer(2)
+                                         [40] If
+                                             [44] Binary > 
+                                                 [48] Integer(3)
+                                                 [48] Integer(2)
+                                             [44] If
+                                                 [48] Binary = 
+                                                     [52] Unary -
+                                                         [56] Integer(1)
+                                                     [52] Binary % 
+                                                         [56] Unary -
+                                                             [60] Integer(3)
+                                                         [56] Integer(2)
+                                                 [48] If
+                                                     [52] Binary = 
+                                                         [56] Integer(1)
+                                                         [56] Binary % 
+                                                             [60] Integer(7)
+                                                             [60] Integer(3)
+                                                     [52] If
+                                                         [56] Binary = 
+                                                             [60] Unary -
+                                                                 [64] Integer(1)
+                                                             [60] Binary / 
+                                                                 [64] Unary -
+                                                                     [68] Integer(3)
+                                                                 [64] Integer(2)
+                                                         [56] If
+                                                             [60] Binary = 
+                                                                 [64] Integer(2)
+                                                                 [64] Binary / 
+                                                                     [68] Integer(7)
+                                                                     [68] Integer(3)
+                                                             [60] If
+                                                                 [64] Binary = 
+                                                                     [68] Integer(6)
+                                                                     [68] Binary * 
+                                                                         [72] Integer(2)
+                                                                         [72] Integer(3)
+                                                                 [64] If
+                                                                     [68] Binary = 
+                                                                         [72] Integer(3)
+                                                                         [72] Binary + 
+                                                                             [76] Integer(1)
+                                                                             [76] Integer(2)
+                                                                     [68] If
+                                                                         [72] Binary = 
+                                                                             [76] Unary $
+                                                                                 [80] Integer(15818151)
+                                                                             [76] String("test")
+                                                                         [72] If
+                                                                             [76] Binary = 
+                                                                                 [80] Unary #
+                                                                                     [84] String("test")
+                                                                                 [80] Integer(15818151)
+                                                                             [76] If
+                                                                                 [80] Unary !
+                                                                                     [84] Boolean(false)
+                                                                                 [80] If
+                                                                                     [84] Binary = 
+                                                                                         [88] Unary -
+                                                                                             [92] Integer(3)
+                                                                                         [88] Binary - 
+                                                                                             [92] Integer(2)
+                                                                                             [92] Integer(5)
+                                                                                     [84] If
+                                                                                         [88] Binary = 
+                                                                                             [92] Integer(3)
+                                                                                             [92] Binary - 
+                                                                                                 [96] Integer(5)
+                                                                                                 [96] Integer(2)
+                                                                                         [88] If
+                                                                                             [92] Binary = 
+                                                                                                 [96] String("test")
+                                                                                                 [96] String("test")
+                                                                                             [92] If
+                                                                                                 [96] Binary = 
+                                                                                                     [100] Boolean(false)
+                                                                                                     [100] Boolean(false)
+                                                                                                 [96] If
+                                                                                                     [100] Binary = 
+                                                                                                         [104] Integer(3)
+                                                                                                         [104] Integer(3)
+                                                                                                     [100] If
+                                                                                                         [104] Boolean(true)
+                                                                                                         [104] Binary . 
+                                                                                                             [108] Binary . 
+                                                                                                                 [112] String("Self-check OK, send `solve language_test ")
+                                                                                                                 [112] Unary $
+                                                                                                                     [116] Binary + 
+                                                                                                                         [120] Integer(2)
+                                                                                                                         [120] Binary * 
+                                                                                                                             [124] Integer(311)
+                                                                                                                             [124] Integer(124753942619)
+                                                                                                             [108] String("` to claim points for it")
+                                                                                                         [104] String("if is not correct")
+                                                                                                     [100] String("binary = is not correct")
+                                                                                                 [96] String("binary = is not correct")
+                                                                                             [92] String("binary = is not correct")
+                                                                                         [88] String("binary - is not correct")
+                                                                                     [84] String("unary - is not correct")
+                                                                                 [80] String("unary ! is not correct")
+                                                                             [76] String("unary # is not correct")
+                                                                         [72] String("unary $ is not correct")
+                                                                     [68] String("binary + is not correct")
+                                                                 [64] String("binary * is not correct")
+                                                             [60] String("binary / is not correct")
+                                                         [56] String("binary / is not correct")
+                                                     [52] String("binary % is not correct")
+                                                 [48] String("binary % is not correct")
+                                             [44] String("binary > is not correct")
+                                         [40] String("binary < is not correct")
+                                     [36] String("binary | is not correct")
+                                 [32] String("binary | is not correct")
+                             [28] String("binary & is not correct")
+                         [24] String("binary & is not correct")
+                     [20] String("binary . is not correct")
+                 [16] String("binary T is not correct")
+             [12] String("binary D is not correct")
+         [8] String("application is not correct")
+     [4] String("application is not correct")
