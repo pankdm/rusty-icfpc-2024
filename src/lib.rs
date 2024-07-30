@@ -51,6 +51,13 @@ pub fn short_str(expr: &Expr) -> String {
     }
 }
 
+pub fn unwrap_binary(e: ExprPtr) -> (char, ExprPtr, ExprPtr) {
+    if let Expr::Binary(op, a, b) = &*e.clone().borrow() {
+        return (*op, a.clone(), b.clone());
+    }
+    panic!("Expected Expr::Binary, got {:?}", e);
+}
+
 pub fn unwrap_bool(e: &Expr) -> bool {
     if let Expr::Boolean(x) = e {
         return *x;

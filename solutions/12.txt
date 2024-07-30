@@ -1,0 +1,98 @@
+ [0] Binary $
+     [4] Binary $ 
+         [8] Lambda x1 # recursive call (1)
+             [12] Binary $
+                 [16] Lambda x2
+                     [20] Binary $
+                         [24] x1
+                         [24] Binary $
+                             [28] x2
+                             [28] x2
+                 [16] Lambda x2
+                     [20] Binary $
+                         [24] x1
+                         [24] Binary $
+                             [28] x2
+                             [28] x2
+         [8] Lambda x3 # outer-level (1) (f)
+             [12] Lambda x4 # arg=x4=x
+                 [16] Binary $ # min(A, x4)
+                     [20] Binary $ 
+                         [24] Lambda x1
+                             [28] Lambda x2
+                                 [32] If
+                                     [36] Binary <
+                                         [40] x1
+                                         [40] x2
+                                     [36] x1
+                                     [36] x2
+                         [24] x4
+                     [20] Binary + 
+                         [24] Integer(1) 
+                         [24] If
+                             [28] Binary >
+                                 [32] x4
+                                 [32] Integer(2)
+                             [28] Binary $ # if (x4 > 2):
+                                 [32] Binary $
+                                     [36] Binary $
+                                         [40] Lambda x1 # recurisve call (2)
+                                             [44] Binary $
+                                                 [48] Lambda x2
+                                                     [52] Binary $
+                                                         [56] x1
+                                                         [56] Binary $
+                                                             [60] x2
+                                                             [60] x2
+                                                 [48] Lambda x2
+                                                     [52] Binary $
+                                                         [56] x1
+                                                         [56] Binary $
+                                                             [60] x2
+                                                             [60] x2
+                                         [40] Lambda x5 # (2) outer-level (g)
+                                             [44] Lambda x6 # (2) arg x6 = y
+                                                 [48] Lambda x7
+                                                     [52] If # if (x = y) { x7 } else { }
+                                                         [56] Binary =
+                                                             [60] x6
+                                                             [60] x4
+                                                         [56] x7
+                                                         [56] Binary $
+                                                             [60] Binary $ # g(y + 1)
+                                                                 [64] x5 # (g)
+                                                                 [64] Binary +
+                                                                     [68] x6
+                                                                     [68] Integer(1)
+                                                             [60] If # if (f(y) > y - 1) {} else { x7 }
+                                                                 [64] Binary >
+                                                                     [68] Binary $ # f(y)
+                                                                         [72] x3 # (f)
+                                                                         [72] x6
+                                                                     [68] Binary - # y - 1
+                                                                         [72] x6
+                                                                         [72] Integer(1)
+                                                                 [64] If # if (x % y == 0) { x7 / f(y) * (f(y) - 1) } else {x7}
+                                                                     [68] Binary =
+                                                                         [72] Binary %
+                                                                             [76] x4
+                                                                             [76] x6
+                                                                         [72] Integer(0)
+                                                                     [68] Binary * 
+                                                                         [72] Binary / # x7 / f(y)
+                                                                             [76] x7
+                                                                             [76] Binary $ # f(y)
+                                                                                 [80] x3 # (f)
+                                                                                 [80] x6 # y
+                                                                         [72] Binary - # f(y) - 1
+                                                                             [76] Binary $
+                                                                                 [80] x3 # (f)
+                                                                                 [80] x6 # y
+                                                                             [76] Integer(1)
+                                                                     [68] x7 
+                                                                 [64] x7
+                                     [36] Integer(2) # (2) argument x6=y=2
+                                 [32] x4
+                             [28] x4 # else { x4 }
+     [4] Integer(1234567) # argument (1)
+

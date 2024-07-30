@@ -1,0 +1,114 @@
+ [0] Binary $
+     [4] Lambda x6 # (1) function is_prime
+         [8] Binary $
+             [12] Lambda x7 # (2) function
+                 [16] Binary $
+                     [20] Binary $
+                         [24] Lambda x1 # recursive call
+                             [28] Binary $
+                                 [32] Lambda x2
+                                     [36] Binary $
+                                         [40] x1
+                                         [40] Binary $
+                                             [44] x2
+                                             [44] x2
+                                 [32] Lambda x2
+                                     [36] Binary $
+                                         [40] x1
+                                         [40] Binary $
+                                             [44] x2
+                                             [44] x2
+                         [24] Lambda x3 # function f
+                             [28] Lambda x4 # x 
+                                 [32] If 
+                                     [36] Binary &
+                                         [40] Binary > # (x > 1000000)
+                                             [44] x4
+                                             [44] Integer(1000000)
+                                         [40] Binary & 
+                                             [44] Binary $ # is_prime(x)
+                                                 [48] x6 # 
+                                                 [48] x4
+                                             [44] Binary $ # is_power2(x + 1)
+                                                 [48] x7 
+                                                 [48] Binary +
+                                                     [52] x4
+                                                     [52] Integer(1)
+                                     [36] x4 # x
+                                     [36] Binary $ # else { f(x + 1) }
+                                         [40] x3 # 
+                                         [40] Binary +
+                                             [44] x4
+                                             [44] Integer(1)
+                     [20] Integer(2) # x = 2
+             [12] Binary $ # (2) function to put into x7
+                 [16] Lambda x1 # (3) recursive call
+                     [20] Binary $
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                 [16] Lambda x3 # (3) start call, function foo
+                     [20] Lambda x4 # argument x
+                         [24] If
+                             [28] Binary = # if (x == 1)
+                                 [32] x4
+                                 [32] Integer(1)
+                             [28] Boolean(true) # return true
+                             [28] If # else if
+                                 [32] Binary = # x % 2 == 1
+                                     [36] Binary %
+                                         [40] x4
+                                         [40] Integer(2)
+                                     [36] Integer(1)
+                                 [32] Boolean(false) # return false
+                                 [32] Binary $ # foo(x / 2)
+                                     [36] x3
+                                     [36] Binary /
+                                         [40] x4
+                                         [40] Integer(2)
+     [4] Lambda x5  # (1) function to put into x6 is_prime(x5)?
+         [8] Binary $
+             [12] Binary $
+                 [16] Lambda x1 # recursive call
+                     [20] Binary $
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                 [16] Lambda x3 # start call, function h
+                     [20] Lambda x4 # argument x
+                         [24] If 
+                             [28] Binary = # if (x == x5)
+                                 [32] x4
+                                 [32] x5
+                             [28] Boolean(true) # return true
+                             [28] If # else
+                                 [32] Binary = # if (x5 % x == 0) 
+                                     [36] Binary %
+                                         [40] x5
+                                         [40] x4
+                                     [36] Integer(0)
+                                 [32] Boolean(false) # return false
+                                 [32] Binary $ # else { h(x + 1) }
+                                     [36] x3
+                                     [36] Binary +
+                                         [40] x4
+                                         [40] Integer(1)
+             [12] Integer(2) # x = 2

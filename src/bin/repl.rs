@@ -73,6 +73,12 @@ async fn main() {
     // test_lambda_operator();
     // test_lambda_operator3();
     // let _ = run_repl().await;
-    let _ = run_repl_loop().await;
+    let args = std::env::args().collect::<Vec<String>>();
+    if args.len() == 0 {
+        let _ = run_repl_loop().await;
+    } else {
+        println!("args = {:?}", args);
+        let _ = run_repl(&args[1]).await;
+    }
     // test_language_test()
 }
