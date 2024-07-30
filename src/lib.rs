@@ -448,33 +448,35 @@ impl Printer {
 
     fn print_ast_impl(&mut self, e_ptr: ExprPtr, indent: usize, counter: i32) {
         let delta = 4 as usize;
+        // let delta = 0 as usize;
         let ref e = *e_ptr.borrow();
+        let shift = " ".repeat(0 * indent);
         match e {
             Expr::Unary(op, expr) => {
-                println!("{} [{}] Unary {}", " ".repeat(indent), indent, op);
+                println!("{} [{}] Unary {}", shift, indent, op);
                 self.print_ast_impl(expr.clone(), indent + delta, counter + 1);
             }
             Expr::Binary(op, expr_a, expr_b) => {
-                println!("{} [{}] Binary {} ", " ".repeat(indent), indent, op);
+                println!("{} [{}] Binary {} ", shift, indent, op);
                 self.print_ast_impl(expr_a.clone(), indent + delta, counter + 1);
                 self.print_ast_impl(expr_b.clone(), indent + delta, counter + 1);
             }
             Expr::Lambda(x, expr) => {
-                println!("{} [{}] Lambda x{}", " ".repeat(indent), indent, x);
+                println!("{} [{}] Lambda x{}", shift, indent, x);
                 self.print_ast_impl(expr.clone(), indent + delta, counter + 1);
             }
             Expr::Var(x) => {
-                println!("{} [{}] x{}", " ".repeat(indent), indent, x);
+                println!("{} [{}] x{}", shift, indent, x);
             }
             Expr::If(expr_a, expr_b, expr_c) => {
-                println!("{} [{}] If", " ".repeat(indent), indent);
+                println!("{} [{}] If", shift, indent);
                 self.print_ast_impl(expr_a.clone(), indent + delta, counter + 1);
                 self.print_ast_impl(expr_b.clone(), indent + delta, counter + 1);
                 self.print_ast_impl(expr_c.clone(), indent + delta, counter + 1);
             }
             _ => {
                 let str = format!("{:?}", e);
-                println!("{} [{}] {}", " ".repeat(indent), indent, str);
+                println!("{} [{}] {}", shift, indent, str);
             }
         }
     }

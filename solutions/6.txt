@@ -1,0 +1,235 @@
+step = 0, AST:
+ [0] Binary $
+     [4] Lambda x6
+         [8] Binary $
+             [12] Lambda x7
+                 [16] Binary $
+                     [20] Binary $
+                         [24] Lambda x1
+                             [28] Binary $
+                                 [32] Lambda x2
+                                     [36] Binary $
+                                         [40] x1
+                                         [40] Binary $
+                                             [44] x2
+                                             [44] x2
+                                 [32] Lambda x2
+                                     [36] Binary $
+                                         [40] x1
+                                         [40] Binary $
+                                             [44] x2
+                                             [44] x2
+                         [24] Lambda x3
+                             [28] Lambda x4
+                                 [32] If
+                                     [36] Binary &
+                                         [40] Binary >
+                                             [44] x4
+                                             [44] Integer(30)
+                                         [40] Binary $
+                                             [44] x6
+                                             [44] Binary $
+                                                 [48] x7
+                                                 [48] x4
+                                     [36] x4
+                                     [36] Binary $
+                                         [40] x3
+                                         [40] Binary +
+                                             [44] x4
+                                             [44] Integer(1)
+                     [20] Integer(2)
+             [12] Binary $
+                 [16] Lambda x1
+                     [20] Binary $
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                 [16] Lambda x3
+                     [20] Lambda x4
+                         [24] If
+                             [28] Binary <
+                                 [32] x4
+                                 [32] Integer(2)
+                             [28] Integer(1)
+                             [28] Binary +
+                                 [32] Binary $
+                                     [36] x3
+                                     [36] Binary -
+                                         [40] x4
+                                         [40] Integer(1)
+                                 [32] Binary $
+                                     [36] x3
+                                     [36] Binary -
+                                         [40] x4
+                                         [40] Integer(2)
+     [4] Lambda x5
+         [8] Binary $
+             [12] Binary $
+                 [16] Lambda x1
+                     [20] Binary $
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                         [24] Lambda x2
+                             [28] Binary $
+                                 [32] x1
+                                 [32] Binary $
+                                     [36] x2
+                                     [36] x2
+                 [16] Lambda x3
+                     [20] Lambda x4
+                         [24] If
+                             [28] Binary =
+                                 [32] x4
+                                 [32] x5
+                             [28] Boolean(true)
+                             [28] If
+                                 [32] Binary =
+                                     [36] Binary %
+                                         [40] x5
+                                         [40] x4
+                                     [36] Integer(0)
+                                 [32] Boolean(false)
+                                 [32] Binary $
+                                     [36] x3
+                                     [36] Binary +
+                                         [40] x4
+                                         [40] Integer(1)
+             [12] Integer(2)
+
+
+
+>>> f0:
+ [0] Binary $
+     [4] Lambda x6
+         [8] Binary $
+             [12] String("f1")
+             [12] Binary $
+                 [16] String("recursive call (f2)")
+                 [16] String("f6")
+     [4] Lambda x5 # is_prime(x5)
+         [8] Binary $
+             [12] Binary $
+                 [16] String("recursive call (f2)")
+                 [16] String("f8")
+             [12] Integer(2)
+
+
+>>> f0'
+[8] Binary $
+    [12] [0] Lambda x7
+            [4] Binary $
+                [8] Binary $
+                    [12] String("recursive call (f2)")
+                    [12] String("f4")
+                [8] Integer(2)
+    [12] Binary $
+        [16] String("recursive call (f2)")
+        [16] String("f6")
+
+>>> f1:
+ [0] Lambda x7
+     [4] Binary $
+         [8] Binary $
+             [12] String("recursive call (f2)")
+             [12] String("f4")
+         [8] Integer(2)
+
+>>> f2: # resursive call
+ [0] Lambda x1
+     [4] Binary $
+         [8] String("f3")
+         [8] String("f3")
+
+# >>> f3:
+#  [0] Lambda x2
+#      [4] Binary $
+#          [8] x1
+#          [8] Binary $
+#              [12] x2
+#              [12] x2
+
+>>> f4:
+ [0] Lambda x3
+     [4] Lambda x4
+         [8] If
+             [12] Binary &
+                 [16] Binary >
+                     [20] x4
+                     [20] Integer(30)
+                 [16] Binary $
+                     [20] x6 # lambda is_prime() substitute
+                     [20] Binary $
+                         [24] x7 # sum fibbonaci over x4
+                         [24] x4
+             [12] x4
+             [12] Binary $
+                 [16] x3
+                 [16] Binary +
+                     [20] x4
+                     [20] Integer(1)
+
+# >>> f5:
+#  [0] Lambda x1
+#      [4] Binary $
+#          [8] String("f3")
+#          [8] String("f3")
+
+>>> f6: # recursive sum (x4)
+ [0] Lambda x3 # f
+     [4] Lambda x4
+         [8] If # if (x4 < 2)
+             [12] Binary < 
+                 [16] x4
+                 [16] Integer(2)
+             [12] Integer(1)
+             [12] Binary + # else { f(x4 - 1) + f(x4 - 2)}
+                 [16] Binary $
+                     [20] x3 
+                     [20] Binary -
+                         [24] x4
+                         [24] Integer(1)
+                 [16] Binary $
+                     [20] x3
+                     [20] Binary -
+                         [24] x4
+                         [24] Integer(2)
+
+# >>> f7:
+#  [0] Lambda x1
+#      [4] Binary $
+#          [8] String("f3")
+#          [8] String("f3")
+
+>>> f8: #is_prime(x5)
+ [0] Lambda x3
+     [4] Lambda x4
+         [8] If
+             [12] Binary =
+                 [16] x4
+                 [16] x5
+             [12] Boolean(true)
+             [12] If
+                 [16] Binary =
+                     [20] Binary %
+                         [24] x5
+                         [24] x4
+                     [20] Integer(0)
+                 [16] Boolean(false)
+                 [16] Binary $
+                     [20] x3
+                     [20] Binary +
+                         [24] x4
+                         [24] Integer(1)
