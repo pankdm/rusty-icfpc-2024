@@ -1,0 +1,208 @@
+>>> f0:
+ [0] Binary $
+     [4] Binary $
+         [8] Lambda x1 # recurisve call
+             [12] String("f1")
+         [8] Lambda x3 # x3 -> function name f
+             [12] Lambda x4 # x4 -> function argument x
+                 [16] String("f3")
+     [4] Integer(1234567)
+
+>>> f1:
+ [0] Binary $
+     [4] Lambda x2
+         [8] String("f2")
+     [4] Lambda x2
+         [8] String("f2")
+
+>>> f2:
+ [0] Binary $
+     [4] x1
+     [4] Binary $
+         [8] x2
+         [8] x2
+
+>>> f3:
+ [0] Binary $
+     [4] Binary $ # curried function min(value, x4)
+         [8] Lambda x1
+             [12] Lambda x2
+                 [16] If
+                     [20] Binary <
+                         [24] x1
+                         [24] x2
+                     [20] x1
+                     [20] x2
+         [8] x4
+     [4] Binary +
+         [8] Integer(1)
+         [8] If
+             [12] Binary >
+                 [16] x4
+                 [16] Integer(2)
+             [12] String("f4")
+             [12] x4
+
+>>> f4:
+ [0] Binary $
+     [4] Binary $
+         [8] String("f5")
+         [8] Integer(2) # (2) <- starting value for recursive f5
+     [4] x4
+
+>>> f5:
+ [0] Binary $
+     [4] Lambda x1 # (2) recurisve call
+         [8] String("f6")
+     [4] Lambda x5 # (2) <- function name: g
+         [8] Lambda x6 # (2) <- function argument: y -> g(y) returns a function
+             [12] Lambda x7
+                 [16] If # if x == y -> return x7
+                     [20] Binary = 
+                         [24] x6
+                         [24] x4
+                     [20] x7 # (2) <- return
+                     [20] String("f7")
+
+>>> f6:
+ [0] Binary $
+     [4] Lambda x2
+         [8] String("f2")
+     [4] Lambda x2
+         [8] String("f2")
+
+>>> f7:
+ [0] Binary $
+     [4] Binary $ # g(y + 1)
+         [8] x5 
+         [8] Binary +
+             [12] x6
+             [12] Integer(1)
+     [4] If # if f(y) > y - 1
+         [8] Binary >
+             [12] String("f8")  # f(y)
+             [12] Binary -
+                 [16] x6
+                 [16] Integer(1)
+         [8] If # if x % y == 0
+             [12] Binary =
+                 [16] Binary %
+                     [20] x4
+                     [20] x6
+                 [16] Integer(0)
+             [12] Binary * # ( x7 / f(y) ) * y - 1
+                 [16] Binary /
+                     [20] x7
+                     [20] String("f8") # f(y)
+                 [16] Binary -
+                     [20] String("f8") # f(y)
+                     [20] Integer(1)
+             [12] x7
+         [8] x7
+
+>>> f8:
+ [0] Binary $
+     [4] x3 # function f
+     [4] x6 # argument y
+
+
+# ================================
+
+Full example:
+ [0] Binary $
+     [4] Binary $
+         [8] Lambda x1
+             [12] Binary $
+                 [16] Lambda x2
+                     [20] Binary $
+                         [24] x1
+                         [24] Binary $
+                             [28] x2
+                             [28] x2
+                 [16] Lambda x2
+                     [20] Binary $
+                         [24] x1
+                         [24] Binary $
+                             [28] x2
+                             [28] x2
+         [8] Lambda x3
+             [12] Lambda x4
+                 [16] Binary $
+                     [20] Binary $
+                         [24] Lambda x1
+                             [28] Lambda x2
+                                 [32] If
+                                     [36] Binary <
+                                         [40] x1
+                                         [40] x2
+                                     [36] x1
+                                     [36] x2
+                         [24] x4
+                     [20] Binary +
+                         [24] Integer(1)
+                         [24] If
+                             [28] Binary >
+                                 [32] x4
+                                 [32] Integer(2)
+                             [28] Binary $
+                                 [32] Binary $
+                                     [36] Binary $
+                                         [40] Lambda x1
+                                             [44] Binary $
+                                                 [48] Lambda x2
+                                                     [52] Binary $
+                                                         [56] x1
+                                                         [56] Binary $
+                                                             [60] x2
+                                                             [60] x2
+                                                 [48] Lambda x2
+                                                     [52] Binary $
+                                                         [56] x1
+                                                         [56] Binary $
+                                                             [60] x2
+                                                             [60] x2
+                                         [40] Lambda x5
+                                             [44] Lambda x6
+                                                 [48] Lambda x7
+                                                     [52] If
+                                                         [56] Binary =
+                                                             [60] x6
+                                                             [60] x4
+                                                         [56] x7
+                                                         [56] Binary $
+                                                             [60] Binary $
+                                                                 [64] x5
+                                                                 [64] Binary +
+                                                                     [68] x6
+                                                                     [68] Integer(1)
+                                                             [60] If
+                                                                 [64] Binary >
+                                                                     [68] Binary $
+                                                                         [72] x3
+                                                                         [72] x6
+                                                                     [68] Binary -
+                                                                         [72] x6
+                                                                         [72] Integer(1)
+                                                                 [64] If
+                                                                     [68] Binary =
+                                                                         [72] Binary %
+                                                                             [76] x4
+                                                                             [76] x6
+                                                                         [72] Integer(0)
+                                                                     [68] Binary *
+                                                                         [72] Binary /
+                                                                             [76] x7
+                                                                             [76] Binary $
+                                                                                 [80] x3
+                                                                                 [80] x6
+                                                                         [72] Binary -
+                                                                             [76] Binary $
+                                                                                 [80] x3
+                                                                                 [80] x6
+                                                                             [76] Integer(1)
+                                                                     [68] x7
+                                                                 [64] x7
+                                     [36] Integer(2)
+                                 [32] x4
+                             [28] x4
+     [4] Integer(1234567)

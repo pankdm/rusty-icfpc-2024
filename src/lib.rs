@@ -1,6 +1,6 @@
-use once_cell::sync::Lazy;
 use regex::Regex;
 
+use once_cell::sync::Lazy;
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::fs;
@@ -58,6 +58,14 @@ pub fn unwrap_binary(e: ExprPtr) -> (char, ExprPtr, ExprPtr) {
     panic!("Expected Expr::Binary, got {:?}", e);
 }
 
+pub fn unwrap_lambda(e: ExprPtr) -> (i64, ExprPtr) {
+    if let Expr::Lambda(x, a) = &*e.clone().borrow() {
+        return (*x, a.clone());
+    }
+    panic!("Expected Expr::Lambda, got {:?}", e);
+}
+
+
 pub fn unwrap_bool(e: &Expr) -> bool {
     if let Expr::Boolean(x) = e {
         return *x;
@@ -95,8 +103,9 @@ fn is_basic(e: &Expr) -> bool {
     }
 }
 
-fn apply(expr_ptr: ExprPtr, target_x: i64, value: ExprPtr) -> ExprPtr {
-    // println!("Apply Impl, f={}, x{}, v={}", short_str(&expr_ptr.borrow()), target_x, short_str(&value.borrow()));
+pub fn apply(expr_ptr: ExprPtr, target_x: i64, value: ExprPtr) -> ExprPtr {
+    println!("Apply Impl, f={}, x{}, v={}", short_str(&expr_ptr.borrow()), target_x, short_str(&value.clone().borrow()));
+    // print_ast(value.clone());
     {
         let mut expr = expr_ptr.as_ref().borrow_mut();
         if is_basic(&*expr) {
@@ -262,7 +271,8 @@ pub fn eval(expr_ptr: ExprPtr) -> ExprPtr {
             }
         }
         _ => {
-            panic!("[eval] Unsupported expression: {:?}", e)
+            return as_ptr(Expr::Boolean(true));
+            // panic!("[eval] Unsupported expression: {:?}", e)
         }
     }
 }
@@ -437,6 +447,47 @@ pub fn print_ast(e_ptr: ExprPtr) {
     p.print_ast_impl(e_ptr, 0, p.counter);
 }
 
+
+pub fn print_ast_eval(e_ptr: ExprPtr) {
+    print_ast_impl2(e_ptr, 0);
+}
+
+fn print_ast_impl2(e_ptr: ExprPtr, indent: usize) {
+    let delta = 4 as usize;
+    // let delta = 0 as usize;
+    let ref e = *e_ptr.borrow();
+    let shift = " ".repeat(indent);
+    let evaled = eval(e_ptr.clone());
+    match e {
+        Expr::Unary(op, expr) => {
+            println!("{} [{}] Unary {} [{}]", shift, indent, op, short_str(&evaled.borrow()));
+            print_ast_impl2(expr.clone(), indent + delta);
+        }
+        Expr::Binary(op, expr_a, expr_b) => {
+            println!("{} [{}] Binary {} [{}]", shift, indent, op, short_str(&evaled.borrow()));
+            print_ast_impl2(expr_a.clone(), indent + delta);
+            print_ast_impl2(expr_b.clone(), indent + delta);
+        }
+        Expr::Lambda(x, expr) => {
+            println!("{} [{}] Lambda x{} [{}]", shift, indent, x, short_str(&evaled.borrow()));
+            print_ast_impl2(expr.clone(), indent + delta);
+        }
+        Expr::Var(x) => {
+            println!("{} [{}] x{}", shift, indent, x);
+        }
+        Expr::If(expr_a, expr_b, expr_c) => {
+            println!("{} [{}] If [{}]", shift, indent, short_str(&evaled.borrow()));
+            print_ast_impl2(expr_a.clone(), indent + delta);
+            print_ast_impl2(expr_b.clone(), indent + delta);
+            print_ast_impl2(expr_c.clone(), indent + delta);
+        }
+        _ => {
+            let str = format!("{:?}", e);
+            println!("{} [{}] {}", shift, indent, str);
+        }
+    }
+}
+
 struct Printer {
     counter: i32,
 }
@@ -450,7 +501,7 @@ impl Printer {
         let delta = 4 as usize;
         // let delta = 0 as usize;
         let ref e = *e_ptr.borrow();
-        let shift = " ".repeat(0 * indent);
+        let shift = " ".repeat(indent);
         match e {
             Expr::Unary(op, expr) => {
                 println!("{} [{}] Unary {}", shift, indent, op);
@@ -580,15 +631,18 @@ const OP_LIMIT: usize = 10_000_000;
 const DEBUG: bool = true;
 
 pub fn eval_expr(mut expr_ptr: ExprPtr) -> (Expr, usize) {
-    for step in 0..OP_LIMIT {
+    for step in 0..550 {
         if DEBUG {
             println!("step = {}, AST:", step);
-            print_ast(expr_ptr.clone());
+            if step >= 55 {
+                // print_ast_eval(expr_ptr.clone());
+                print_ast(expr_ptr.clone());
+            }
 
             let mut input = String::new();
-            io::stdin()
-                .read_line(&mut input)
-                .expect("Press enter to continue:");
+            // io::stdin()
+            //     .read_line(&mut input)
+            //     .expect("Press enter to continue:");
         }
 
         if is_basic(&*expr_ptr.clone().borrow()) {

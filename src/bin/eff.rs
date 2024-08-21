@@ -2,9 +2,13 @@ use icfpc_2024::*;
 
 use std::{collections::HashMap, fs};
 
+use std::fs::File;
+use std::io::Write;
+use std::io::Result;
+
 fn is_lambda(expr_ptr: ExprPtr) -> bool {
     let ref e = *expr_ptr.borrow();
-    if let Expr::Lambda(_, _) = e {
+    if let Expr::Binary('$', _, _) = e {
         return true;
     }
     return false;
@@ -118,7 +122,7 @@ mod tests {
 
 fn solve_eff_generic(name: String) {
     let example = fs::read_to_string(format!("problems/{}.txt", name)).unwrap();
-    let mut expr_ptr = parse_into_ast(example);
+    let mut expr_ptr = parse_into_ast(example.clone());
     // let (res, _) = eval_expr(expr_ptr.clone());
     // print_ast(expr_ptr.clone());
 
@@ -127,6 +131,11 @@ fn solve_eff_generic(name: String) {
         println!("\n>>> f{}: ", n);
         print_ast(expr.clone());
     }
+
+    let expr_copy = parse_into_ast(example);
+
+    println!("\nFull example:");
+    print_ast(expr_copy)
 }
 
 // == Eff 1 ==
@@ -303,6 +312,7 @@ fn solve_eff5() {
 
 // == Eff 6 ==
 // Solution: Integer(42)
+
 // x > 30 && is_prime(fibo(x))
 fn solve_eff6() {
     let mut x = 31;
@@ -341,6 +351,261 @@ fn fibo(n: i64, cache: &mut HashMap<i64, i64>) -> i64 {
     }
 }
 
+// == Eff 7 ==
+
+fn visit_single_sat3(expr_ptr: ExprPtr) -> Vec<i64> {
+    let e = &*expr_ptr.borrow();
+    match e {
+        Expr::Binary('|', a, b) => {
+            let mut res = Vec::new();
+            let mut res_a = visit_single_sat3(a.clone());
+            let mut res_b = visit_single_sat3(b.clone());
+            res.append(&mut res_a);
+            res.append(&mut res_b);
+            return res;
+        }
+        Expr::Unary('!', a) => {
+            let mut res = Vec::new();
+            let res_a = visit_single_sat3(a.clone());
+            assert_eq!(res_a.len(), 1);
+            for x in res_a {
+                res.push(-x);
+            }
+            return res;
+        }
+        Expr::Var(x) => {
+            return vec![*x];
+        }
+        _ => { panic!("Unexpected expression: {:?}", e)}
+    }
+}
+
+fn visit_sat3(expr_ptr: ExprPtr, res: &mut Vec<Vec<i64>>) {
+    let e = &*expr_ptr.borrow();
+    match e {
+        Expr::Unary(_, a) => {
+            let sat = visit_single_sat3(expr_ptr.clone());
+            res.push(sat);
+        }
+        Expr::Binary(op, a, b) => {
+            if *op == '|' {
+                let sat = visit_single_sat3(expr_ptr.clone());
+                res.push(sat);
+            } else {
+                visit_sat3(a.clone(), res);
+                visit_sat3(b.clone(), res);    
+            }
+        }
+        Expr::Lambda(_, a) => {
+            visit_sat3(a.clone(), res);
+        }
+        Expr::If(a, b, c) => {
+            visit_sat3(a.clone(), res);
+            visit_sat3(b.clone(), res);
+            visit_sat3(c.clone(), res);
+        }
+        Expr::Var(x) => {
+            res.push(vec![*x]);
+        }
+        Expr::String(_) | Expr::Integer(_)=> {
+            // ignore temporary strings
+        }
+        _ => {
+            panic!("Unexpected expression: {:?}", e);
+        }
+    }
+
+}
+
+fn convert_to_sat3(expr_ptr: ExprPtr) -> Vec<Vec<i64>> {
+    let mut res = Vec::new();
+    let list = decompose_expr(expr_ptr);
+    for (id, l) in list.iter().enumerate() {
+        // println!("\nid = {}", id);
+        // print_ast(l.clone());
+    }
+    let last_expr = list[list.len() - 2].clone();
+    visit_sat3(last_expr, &mut res);
+    res
+}
+
+
+fn get_sat_string(input: &Vec<Vec<i64>>) -> String {
+    let total = input.len();
+    let mut mx = 0;
+    for vals in input {
+        mx = mx.max(vals.iter().map(|x| {x.abs()}).max().unwrap());
+    }
+    format!("p cnf {} {}\n", mx, total)
+}
+
+fn solve_eff7() {
+    let example = fs::read_to_string("problems/7.txt").unwrap();
+    let expr_ptr = parse_into_ast(example);
+
+    let sat3 = convert_to_sat3(expr_ptr);
+    println!("{:?}", sat3);
+
+
+    let mut file = File::create("solutions/7-minisat.txt").unwrap();
+    file.write_all(get_sat_string(&sat3).as_bytes());
+    for vals in sat3 {
+        let mut new_vals = vals.clone();
+        new_vals.push(0);
+        let output: String = new_vals.iter().map(|x| {x.to_string()}).collect::<Vec<String>>().join(" ");
+        file.write_all((output + "\n").as_bytes());
+    }
+
+    // let output = "-1 -2 -3 -4 -5 6 -7 -8 -9 10 -11 12 -13 -14 -15 -16 -17 -18 -19 -20 -21 22 -23 -24 25 26 -27 28 -29 -30 -31 -32 -33 -34 -35 36 -37 -38 -39 -40 0";
+    let output = "1 -2 -3 -4 -5 6 -7 -8 -9 10 -11 12 -13 -14 15 -16 -17 -18 -19 -20 -21 22 -23 -24 25 26 -27 28 -29 -30 -31 -32 -33 -34 -35 36 -37 -38 -39 40 0";
+    let parts = output.split(" ");
+    let mut res = 0 as i64;
+    for part in parts {
+        let x: i64 = part.parse().unwrap();
+        if x > 0 {
+            let add = 1 << (x.abs() - 1);
+            println!("x = {}, add = {}", x, add);
+            res += add;
+        }
+    }
+    println!("res = {}", res);
+    return;
+    // {
+    //     // verify the solution
+    //     println!("\nVerifying the solution");
+    //     let example = fs::read_to_string("problems/7.txt").unwrap();
+    //     let expr_ptr = parse_into_ast(example);
+    //     let expr = &*expr_ptr.borrow();
+    //     if let Expr::Binary(_, a, b) = expr {
+    //         *b.borrow_mut() = Expr::Integer(34546387488);
+    //         print_ast(b.clone());
+    //     } else {
+    //         panic!("Unreachable part");
+    //     }
+    //     let (res, _) = eval_expr(expr_ptr.clone());
+    //     print_ast(as_ptr(res));
+    // } 
+    // {
+    //     // verify the solution
+    //     println!("\nVerifying the solution");
+    //     let example = fs::read_to_string("problems/7.txt").unwrap();
+    //     let expr_ptr = parse_into_ast(example);
+    //     let (_, expr1, _) = unwrap_binary(expr_ptr);
+    //     let (_, _, expr2) = unwrap_binary(expr1);
+    //     let (_, expr3) = unwrap_lambda(expr2);
+    //     let (_, expr4) = unwrap_lambda(expr3);
+
+    //     // print_ast(expr3.clone());
+    //     let res = apply(expr4, 41, as_ptr(Expr::Integer(34546387488)));
+    //     // print_ast(res);
+    //     eval_expr(res);
+
+    // }
+
+}
+
+
+fn invert_solution(f: i32, s: &str) -> i64 {
+    let parts = s.split(" ");
+
+    let mut inverted = parts.clone().map(|x| {
+        return (x.parse::<i64>().unwrap() * -1).to_string();
+    }).collect::<Vec<String>>().join(" ");
+    println!("inverted = \n{}", inverted);
+
+    if f == 1 {
+        let parts = inverted.split(" ");
+        let mut res = 0 as i64;
+        for part in parts {
+            let x: i64 = part.parse().unwrap();
+            if x > 0 {
+                let add = 1 << (x.abs() - 1);
+                println!("x = {}, add = {}", x, add);
+                res += add;
+            }
+        }
+        println!("res = {}", res);    
+        return res;
+    }
+    -1
+}
+
+fn read_all_solution() {
+    let mut res = Vec::new();
+    let lines = fs::read_to_string("solutions/8-minisat-iter2.txt").unwrap();
+    for line in lines.split('\n') {
+        if line.len() < 30 {
+            continue
+        }
+        let s = invert_solution(1, line);
+        println!("{}", s);
+        res.push(s);
+    }
+    println!("min = {}", res.iter().min().unwrap());
+}
+
+
+fn solve_eff8() {
+    let example = fs::read_to_string("problems/8.txt").unwrap();
+    let expr_ptr = parse_into_ast(example);
+
+    let sat3 = convert_to_sat3(expr_ptr);
+    println!("{:?}", sat3);
+
+
+    let mut file = File::create("solutions/8-minisat.txt").unwrap();
+    file.write_all(get_sat_string(&sat3).as_bytes());
+    for vals in sat3 {
+        let mut new_vals = vals.clone();
+        new_vals.push(0);
+        let output: String = new_vals.iter().map(|x| {x.to_string()}).collect::<Vec<String>>().join(" ");
+        file.write_all((output + "\n").as_bytes());
+    }
+
+    read_all_solution();
+
+    // let output = "-1 -2 -3 -4 -5 6 -7 -8 -9 10 -11 12 -13 -14 -15 -16 -17 -18 -19 -20 -21 22 -23 -24 25 26 -27 28 -29 -30 -31 -32 -33 -34 -35 36 -37 -38 -39 -40 0";
+
+
+    // invert_solution(0, "-1 2 -3 4 5 6 7 8 9 -10 -11 12 -13 14 15 -16 -17 -18 19 20 -21 -22 23 -24 -25 -26 27 -28 -29 -30 -31 32 -33 -34 35 36 37 38 39 -40 -41 -42 -43 -44 -45 -46 47 48 49 -50 0");
+    // invert_solution(0, "-1 2 -3 4 5 6 7 8 9 -10 -11 12 -13 14 15 -16 -17 -18 19 20 -21 -22 23 -24 -25 -26 27 -28 -29 -30 -31 32 -33 -34 35 36 37 38 39 -40 -41 42 -43 -44 -45 -46 47 48 49 -50 0");
+    // invert_solution(0, "-1 2 -3 4 5 6 7 8 9 10 -11 12 -13 14 15 -16 -17 -18 19 20 -21 -22 23 -24 -25 -26 27 -28 -29 -30 -31 32 -33 -34 35 36 37 38 39 -40 -41 42 -43 -44 -45 -46 47 48 49 -50 0");
+    // invert_solution(0, "-1 2 -3 4 5 6 7 8 9 10 -11 12 -13 14 15 -16 -17 -18 19 20 -21 -22 23 -24 -25 -26 27 -28 -29 -30 -31 32 -33 -34 35 36 37 38 39 -40 -41 -42 -43 -44 -45 -46 47 48 49 -50 0");
+    // invert_solution(1, "-1 2 -3 4 5 6 7 8 9 -10 -11 12 -13 14 15 -16 -17 -18 19 20 -21 -22 23 -24 -25 -26 27 -28 -29 -30 -31 -32 -33 -34 35 36 37 38 39 -40 -41 42 -43 -44 -45 -46 47 48 49 -50 0");
+    // {
+    //     // verify the solution
+    //     println!("\nVerifying the solution");
+    //     let example = fs::read_to_string("problems/8.txt").unwrap();
+    //     let expr_ptr = parse_into_ast(example);
+    //     let expr = &*expr_ptr.borrow();
+    //     if let Expr::Binary(_, a, b) = expr {
+    //         *b.borrow_mut() = Expr::Integer(493116004788730);
+    //         print_ast(b.clone());
+    //     } else {
+    //         panic!("Unreachable part");
+    //     }
+    //     let (res, _) = eval_expr(expr_ptr.clone());
+    //     print_ast(as_ptr(res));
+    // } 
+
+    // {
+    //     // verify the solution
+    //     println!("\nVerifying the solution");
+    //     let example = fs::read_to_string("problems/8.txt").unwrap();
+    //     let expr_ptr = parse_into_ast(example);
+    //     let (_, expr1, _) = unwrap_binary(expr_ptr);
+    //     let (_, _, expr2) = unwrap_binary(expr1);
+    //     let (_, expr3) = unwrap_lambda(expr2);
+    //     let (_, expr4) = unwrap_lambda(expr3);
+
+    //     // print_ast(expr3.clone());
+    //     let res = apply(expr4, 51, as_ptr(Expr::Integer(493116004788730)));
+    //     // print_ast(res);
+    //     eval_expr(res);
+
+    // }
+
+}
 // == Eff 13 ==
 // Solution: Integer(536870919)
 
@@ -421,7 +686,10 @@ fn main() {
     // solve_eff3();
     // solve_eff4();
     // solve_eff5();
-    solve_eff6();
+    // solve_eff6();
+    // solve_eff7();
+    solve_eff8();
+
 
     // solve_eff13();
 }

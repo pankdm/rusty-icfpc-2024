@@ -1,0 +1,9996 @@
+
+>>> f0: 
+ [0] Binary $ 
+ [4] Binary $ 
+ [8] Lambda x1
+ [12] String("f1")
+ [8] Lambda x2
+ [12] Lambda x1
+ [16] String("f3")
+ [4] Integer(1)
+
+>>> f1: 
+ [0] Binary $ 
+ [4] Lambda x2
+ [8] String("f2")
+ [4] Lambda x2
+ [8] String("f2")
+
+>>> f2: 
+ [0] Binary $ 
+ [4] x1
+ [4] Binary $ 
+ [8] x2
+ [8] x2
+
+>>> f3: 
+ [0] Binary $ 
+ [4] Lambda x11
+ [8] String("f4")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(5063422129713559681)
+ [12] Integer(9)
+
+>>> f4: 
+ [0] Binary $ 
+ [4] Lambda x12
+ [8] String("f5")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-1487035771555110215)
+ [12] Integer(9)
+
+>>> f5: 
+ [0] Binary $ 
+ [4] Lambda x13
+ [8] String("f6")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(3934050263984888113)
+ [12] Integer(9)
+
+>>> f6: 
+ [0] Binary $ 
+ [4] Lambda x14
+ [8] String("f7")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4536393156822665705)
+ [12] Integer(9)
+
+>>> f7: 
+ [0] Binary $ 
+ [4] Lambda x15
+ [8] String("f8")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-3595232776732937503)
+ [12] Integer(9)
+
+>>> f8: 
+ [0] Binary $ 
+ [4] Lambda x16
+ [8] String("f9")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1650167921886290457)
+ [12] Integer(9)
+
+>>> f9: 
+ [0] Binary $ 
+ [4] Lambda x17
+ [8] String("f10")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6332266682557216145)
+ [12] Integer(9)
+
+>>> f10: 
+ [0] Binary $ 
+ [4] Lambda x18
+ [8] String("f11")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(8902138108599491401)
+ [12] Integer(9)
+
+>>> f11: 
+ [0] Binary $ 
+ [4] Lambda x19
+ [8] String("f12")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-7209426465137635007)
+ [12] Integer(9)
+
+>>> f12: 
+ [0] Binary $ 
+ [4] Lambda x21
+ [8] String("f13")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(3298229075809052025)
+ [12] Integer(9)
+
+>>> f13: 
+ [0] Binary $ 
+ [4] Lambda x22
+ [8] String("f14")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6515384588548634097)
+ [12] Integer(9)
+
+>>> f14: 
+ [0] Binary $ 
+ [4] Lambda x23
+ [8] String("f15")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(723931620949848233)
+ [12] Integer(9)
+
+>>> f15: 
+ [0] Binary $ 
+ [4] Lambda x24
+ [8] String("f16")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2130075077184377761)
+ [12] Integer(9)
+
+>>> f16: 
+ [0] Binary $ 
+ [4] Lambda x25
+ [8] String("f17")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4335951469400386777)
+ [12] Integer(9)
+
+>>> f17: 
+ [0] Binary $ 
+ [4] Lambda x26
+ [8] String("f18")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-7716780536159757743)
+ [12] Integer(9)
+
+>>> f18: 
+ [0] Binary $ 
+ [4] Lambda x27
+ [8] String("f19")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-9055972981221996023)
+ [12] Integer(9)
+
+>>> f19: 
+ [0] Binary $ 
+ [4] Lambda x28
+ [8] String("f20")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-9204772141784466943)
+ [12] Integer(9)
+
+>>> f20: 
+ [0] Binary $ 
+ [4] Lambda x29
+ [8] String("f21")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1026885770213898297)
+ [12] Integer(9)
+
+>>> f21: 
+ [0] Binary $ 
+ [4] Lambda x31
+ [8] String("f22")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-6034816272323861839)
+ [12] Integer(9)
+
+>>> f22: 
+ [0] Binary $ 
+ [4] Lambda x32
+ [8] String("f23")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(7528017780279371625)
+ [12] Integer(9)
+
+>>> f23: 
+ [0] Binary $ 
+ [4] Lambda x33
+ [8] String("f24")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6985361111267558497)
+ [12] Integer(9)
+
+>>> f24: 
+ [0] Binary $ 
+ [4] Lambda x34
+ [8] String("f25")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4875427695409629081)
+ [12] Integer(9)
+
+>>> f25: 
+ [0] Binary $ 
+ [4] Lambda x35
+ [8] String("f26")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6690628879615364881)
+ [12] Integer(9)
+
+>>> f26: 
+ [0] Binary $ 
+ [4] Lambda x36
+ [8] String("f27")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4842679669670496457)
+ [12] Integer(9)
+
+>>> f27: 
+ [0] Binary $ 
+ [4] Lambda x37
+ [8] String("f28")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-7660477402796412223)
+ [12] Integer(9)
+
+>>> f28: 
+ [0] Binary $ 
+ [4] Lambda x38
+ [8] String("f29")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1198474074545904377)
+ [12] Integer(9)
+
+>>> f29: 
+ [0] Binary $ 
+ [4] Lambda x39
+ [8] String("f30")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(8331716707709345649)
+ [12] Integer(9)
+
+>>> f30: 
+ [0] Binary $ 
+ [4] Lambda x41
+ [8] String("f31")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(925746300856593961)
+ [12] Integer(9)
+
+>>> f31: 
+ [0] Binary $ 
+ [4] Lambda x42
+ [8] String("f32")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-1946777530316995295)
+ [12] Integer(9)
+
+>>> f32: 
+ [0] Binary $ 
+ [4] Lambda x43
+ [8] String("f33")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-8414861536128355751)
+ [12] Integer(9)
+
+>>> f33: 
+ [0] Binary $ 
+ [4] Lambda x44
+ [8] String("f34")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-2984622845537545263)
+ [12] Integer(9)
+
+>>> f34: 
+ [0] Binary $ 
+ [4] Lambda x45
+ [8] String("f35")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-331624760615282807)
+ [12] Integer(9)
+
+>>> f35: 
+ [0] Binary $ 
+ [4] Lambda x46
+ [8] String("f36")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-8235400117272609919)
+ [12] Integer(9)
+
+>>> f36: 
+ [0] Binary $ 
+ [4] Lambda x47
+ [8] String("f37")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-5014320918299079239)
+ [12] Integer(9)
+
+>>> f37: 
+ [0] Binary $ 
+ [4] Lambda x48
+ [8] String("f38")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-2606784999112070095)
+ [12] Integer(9)
+
+>>> f38: 
+ [0] Binary $ 
+ [4] Lambda x49
+ [8] String("f39")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-4388919238503463703)
+ [12] Integer(9)
+
+>>> f39: 
+ [0] Binary $ 
+ [4] Lambda x51
+ [8] String("f40")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(3611618767657293281)
+ [12] Integer(9)
+
+>>> f40: 
+ [0] Binary $ 
+ [4] Lambda x52
+ [8] String("f41")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(8599843895832833305)
+ [12] Integer(9)
+
+>>> f41: 
+ [0] Binary $ 
+ [4] Lambda x53
+ [8] String("f42")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(5054814671472437393)
+ [12] Integer(9)
+
+>>> f42: 
+ [0] Binary $ 
+ [4] Lambda x54
+ [8] String("f43")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2611284305020221001)
+ [12] Integer(9)
+
+>>> f43: 
+ [0] Binary $ 
+ [4] Lambda x55
+ [8] String("f44")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4389419161382147137)
+ [12] Integer(9)
+
+>>> f44: 
+ [0] Binary $ 
+ [4] Lambda x56
+ [8] String("f45")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-7710839681495117703)
+ [12] Integer(9)
+
+>>> f45: 
+ [0] Binary $ 
+ [4] Lambda x57
+ [8] String("f46")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-7005674655847085839)
+ [12] Integer(9)
+
+>>> f46: 
+ [0] Binary $ 
+ [4] Lambda x58
+ [8] String("f47")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1271229935318051753)
+ [12] Integer(9)
+
+>>> f47: 
+ [0] Binary $ 
+ [4] Lambda x59
+ [8] String("f48")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2190886001003067041)
+ [12] Integer(9)
+
+>>> f48: 
+ [0] Binary $ 
+ [4] Lambda x61
+ [8] String("f49")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2293070008301402073)
+ [12] Integer(9)
+
+>>> f49: 
+ [0] Binary $ 
+ [4] Lambda x62
+ [8] String("f50")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6403700247714450769)
+ [12] Integer(9)
+
+>>> f50: 
+ [0] Binary $ 
+ [4] Lambda x63
+ [8] String("f51")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4810798710570394889)
+ [12] Integer(9)
+
+>>> f51: 
+ [0] Binary $ 
+ [4] Lambda x64
+ [8] String("f52")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(8733086111712066817)
+ [12] Integer(9)
+
+>>> f52: 
+ [0] Binary $ 
+ [4] Lambda x65
+ [8] String("f53")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(5069619362125685561)
+ [12] Integer(9)
+
+>>> f53: 
+ [0] Binary $ 
+ [4] Lambda x66
+ [8] String("f54")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-3535985420588157519)
+ [12] Integer(9)
+
+>>> f54: 
+ [0] Binary $ 
+ [4] Lambda x67
+ [8] String("f55")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(5756027422282277481)
+ [12] Integer(9)
+
+>>> f55: 
+ [0] Binary $ 
+ [4] Lambda x68
+ [8] String("f56")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(639558602475808609)
+ [12] Integer(9)
+
+>>> f56: 
+ [0] Binary $ 
+ [4] Lambda x69
+ [8] String("f57")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-8127490854706933095)
+ [12] Integer(9)
+
+>>> f57: 
+ [0] Binary $ 
+ [4] Lambda x71
+ [8] String("f58")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-903054539411881455)
+ [12] Integer(9)
+
+>>> f58: 
+ [0] Binary $ 
+ [4] Lambda x72
+ [8] String("f59")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6048575297968530377)
+ [12] Integer(9)
+
+>>> f59: 
+ [0] Binary $ 
+ [4] Lambda x73
+ [8] String("f60")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2721702152408675777)
+ [12] Integer(9)
+
+>>> f60: 
+ [0] Binary $ 
+ [4] Lambda x74
+ [8] String("f61")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(8500964271916320249)
+ [12] Integer(9)
+
+>>> f61: 
+ [0] Binary $ 
+ [4] Lambda x75
+ [8] String("f62")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(7093466277004997233)
+ [12] Integer(9)
+
+>>> f62: 
+ [0] Binary $ 
+ [4] Lambda x76
+ [8] String("f63")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-1261475310744950487)
+ [12] Integer(9)
+
+>>> f63: 
+ [0] Binary $ 
+ [4] Lambda x77
+ [8] String("f64")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(-6289078614652622815)
+ [12] Integer(9)
+
+>>> f64: 
+ [0] Binary $ 
+ [4] Lambda x78
+ [8] String("f65")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1350851717672992089)
+ [12] Integer(9)
+
+>>> f65: 
+ [0] Binary $ 
+ [4] Lambda x79
+ [8] String("f66")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(150094635296999121)
+ [12] Integer(9)
+
+>>> f66: 
+ [0] Binary $ 
+ [4] Lambda x81
+ [8] String("f67")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(16677181699666569)
+ [12] Integer(9)
+
+>>> f67: 
+ [0] Binary $ 
+ [4] Lambda x82
+ [8] String("f68")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1853020188851841)
+ [12] Integer(9)
+
+>>> f68: 
+ [0] Binary $ 
+ [4] Lambda x83
+ [8] String("f69")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(205891132094649)
+ [12] Integer(9)
+
+>>> f69: 
+ [0] Binary $ 
+ [4] Lambda x84
+ [8] String("f70")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(22876792454961)
+ [12] Integer(9)
+
+>>> f70: 
+ [0] Binary $ 
+ [4] Lambda x85
+ [8] String("f71")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(2541865828329)
+ [12] Integer(9)
+
+>>> f71: 
+ [0] Binary $ 
+ [4] Lambda x86
+ [8] String("f72")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(282429536481)
+ [12] Integer(9)
+
+>>> f72: 
+ [0] Binary $ 
+ [4] Lambda x87
+ [8] String("f73")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(31381059609)
+ [12] Integer(9)
+
+>>> f73: 
+ [0] Binary $ 
+ [4] Lambda x88
+ [8] String("f74")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(3486784401)
+ [12] Integer(9)
+
+>>> f74: 
+ [0] Binary $ 
+ [4] Lambda x89
+ [8] String("f75")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(387420489)
+ [12] Integer(9)
+
+>>> f75: 
+ [0] Binary $ 
+ [4] Lambda x91
+ [8] String("f76")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(43046721)
+ [12] Integer(9)
+
+>>> f76: 
+ [0] Binary $ 
+ [4] Lambda x92
+ [8] String("f77")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(4782969)
+ [12] Integer(9)
+
+>>> f77: 
+ [0] Binary $ 
+ [4] Lambda x93
+ [8] String("f78")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(531441)
+ [12] Integer(9)
+
+>>> f78: 
+ [0] Binary $ 
+ [4] Lambda x94
+ [8] String("f79")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(59049)
+ [12] Integer(9)
+
+>>> f79: 
+ [0] Binary $ 
+ [4] Lambda x95
+ [8] String("f80")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(6561)
+ [12] Integer(9)
+
+>>> f80: 
+ [0] Binary $ 
+ [4] Lambda x96
+ [8] String("f81")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(729)
+ [12] Integer(9)
+
+>>> f81: 
+ [0] Binary $ 
+ [4] Lambda x97
+ [8] String("f82")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(81)
+ [12] Integer(9)
+
+>>> f82: 
+ [0] Binary $ 
+ [4] Lambda x98
+ [8] String("f83")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(9)
+ [12] Integer(9)
+
+>>> f83: 
+ [0] Binary $ 
+ [4] Lambda x99
+ [8] If
+ [12] Binary & 
+ [16] Binary & 
+ [20] Binary & 
+ [24] Binary & 
+ [28] Binary & 
+ [32] Binary & 
+ [36] Binary & 
+ [40] Binary & 
+ [44] Binary & 
+ [48] Binary & 
+ [52] Binary & 
+ [56] Binary & 
+ [60] Binary & 
+ [64] Binary & 
+ [68] Binary & 
+ [72] Binary & 
+ [76] Binary & 
+ [80] Binary & 
+ [84] Binary & 
+ [88] Binary & 
+ [92] Binary & 
+ [96] Binary & 
+ [100] Binary & 
+ [104] Binary & 
+ [108] Binary & 
+ [112] Binary & 
+ [116] Binary & 
+ [120] Binary & 
+ [124] Binary & 
+ [128] Binary & 
+ [132] Binary & 
+ [136] Binary & 
+ [140] Binary & 
+ [144] Binary & 
+ [148] Binary & 
+ [152] Binary & 
+ [156] Binary & 
+ [160] Binary & 
+ [164] Binary & 
+ [168] Binary & 
+ [172] Binary & 
+ [176] Binary & 
+ [180] Binary & 
+ [184] Binary & 
+ [188] Binary & 
+ [192] Binary & 
+ [196] Binary & 
+ [200] Binary & 
+ [204] Binary & 
+ [208] Binary & 
+ [212] Binary & 
+ [216] Binary & 
+ [220] Binary & 
+ [224] Binary & 
+ [228] Binary & 
+ [232] Binary & 
+ [236] Binary & 
+ [240] Binary & 
+ [244] Binary & 
+ [248] Binary & 
+ [252] Binary & 
+ [256] Binary & 
+ [260] Binary & 
+ [264] Binary & 
+ [268] Binary & 
+ [272] Binary & 
+ [276] Binary & 
+ [280] Binary & 
+ [284] Binary & 
+ [288] Binary & 
+ [292] Binary & 
+ [296] Binary & 
+ [300] Binary & 
+ [304] Binary & 
+ [308] Binary & 
+ [312] Binary & 
+ [316] Binary & 
+ [320] Binary & 
+ [324] Binary & 
+ [328] Binary & 
+ [332] Binary & 
+ [336] Binary & 
+ [340] Binary & 
+ [344] Binary & 
+ [348] Binary & 
+ [352] Binary & 
+ [356] Binary & 
+ [360] Binary & 
+ [364] Binary & 
+ [368] Binary & 
+ [372] Binary & 
+ [376] Binary & 
+ [380] Binary & 
+ [384] Binary & 
+ [388] Binary & 
+ [392] Binary & 
+ [396] Binary & 
+ [400] Binary & 
+ [404] Binary & 
+ [408] Binary & 
+ [412] Binary & 
+ [416] Binary & 
+ [420] Binary & 
+ [424] Binary & 
+ [428] Binary & 
+ [432] Binary & 
+ [436] Binary & 
+ [440] Binary & 
+ [444] Binary & 
+ [448] Binary & 
+ [452] Binary & 
+ [456] Binary & 
+ [460] Binary & 
+ [464] Binary & 
+ [468] Binary & 
+ [472] Binary & 
+ [476] Binary & 
+ [480] Binary & 
+ [484] Binary & 
+ [488] Binary & 
+ [492] Binary & 
+ [496] Binary & 
+ [500] Binary & 
+ [504] Binary & 
+ [508] Binary & 
+ [512] Binary & 
+ [516] Binary & 
+ [520] Binary & 
+ [524] Binary & 
+ [528] Binary & 
+ [532] Binary & 
+ [536] Binary & 
+ [540] Binary & 
+ [544] Binary & 
+ [548] Binary & 
+ [552] Binary & 
+ [556] Binary & 
+ [560] Binary & 
+ [564] Binary & 
+ [568] Binary & 
+ [572] Binary & 
+ [576] Binary & 
+ [580] Binary & 
+ [584] Binary & 
+ [588] Binary & 
+ [592] Binary & 
+ [596] Binary & 
+ [600] Binary & 
+ [604] Binary & 
+ [608] Binary & 
+ [612] Binary & 
+ [616] Binary & 
+ [620] Binary & 
+ [624] Binary & 
+ [628] Binary & 
+ [632] Binary & 
+ [636] Binary & 
+ [640] Binary & 
+ [644] Binary & 
+ [648] Binary & 
+ [652] Binary & 
+ [656] Binary & 
+ [660] Binary & 
+ [664] Binary & 
+ [668] Binary & 
+ [672] Binary & 
+ [676] Binary & 
+ [680] Binary & 
+ [684] Binary & 
+ [688] Binary & 
+ [692] Binary & 
+ [696] Binary & 
+ [700] Binary & 
+ [704] Binary & 
+ [708] Binary & 
+ [712] Binary & 
+ [716] Binary & 
+ [720] Binary & 
+ [724] Binary & 
+ [728] Binary & 
+ [732] Binary & 
+ [736] Binary & 
+ [740] Binary & 
+ [744] Binary & 
+ [748] Binary & 
+ [752] Binary & 
+ [756] Binary & 
+ [760] Binary & 
+ [764] Binary & 
+ [768] Binary & 
+ [772] Binary & 
+ [776] Binary & 
+ [780] Binary & 
+ [784] Binary & 
+ [788] Binary & 
+ [792] Binary & 
+ [796] Binary & 
+ [800] Binary & 
+ [804] Binary & 
+ [808] Binary & 
+ [812] Binary & 
+ [816] Binary & 
+ [820] Binary & 
+ [824] Binary & 
+ [828] Binary & 
+ [832] Binary & 
+ [836] Binary & 
+ [840] Binary & 
+ [844] Binary & 
+ [848] Binary & 
+ [852] Binary & 
+ [856] Binary & 
+ [860] Binary & 
+ [864] Binary & 
+ [868] Binary & 
+ [872] Binary & 
+ [876] Binary & 
+ [880] Binary & 
+ [884] Binary & 
+ [888] Binary & 
+ [892] Binary & 
+ [896] Binary & 
+ [900] Binary & 
+ [904] Binary & 
+ [908] Binary & 
+ [912] Binary & 
+ [916] Binary & 
+ [920] Binary & 
+ [924] Binary & 
+ [928] Binary & 
+ [932] Binary & 
+ [936] Binary & 
+ [940] Binary & 
+ [944] Binary & 
+ [948] Binary & 
+ [952] Binary & 
+ [956] Binary & 
+ [960] Binary & 
+ [964] Binary & 
+ [968] Binary & 
+ [972] Binary & 
+ [976] Binary & 
+ [980] Binary & 
+ [984] Binary & 
+ [988] Binary & 
+ [992] Binary & 
+ [996] Binary & 
+ [1000] Binary & 
+ [1004] Binary & 
+ [1008] Binary & 
+ [1012] Binary & 
+ [1016] Binary & 
+ [1020] Binary & 
+ [1024] Binary & 
+ [1028] Binary & 
+ [1032] Binary & 
+ [1036] Binary & 
+ [1040] Binary & 
+ [1044] Binary & 
+ [1048] Binary & 
+ [1052] Binary & 
+ [1056] Binary & 
+ [1060] Binary & 
+ [1064] Binary & 
+ [1068] Binary & 
+ [1072] Binary & 
+ [1076] Binary & 
+ [1080] Binary & 
+ [1084] Binary & 
+ [1088] Binary & 
+ [1092] Binary & 
+ [1096] Binary & 
+ [1100] Binary & 
+ [1104] Binary & 
+ [1108] Binary & 
+ [1112] Binary & 
+ [1116] Binary & 
+ [1120] Binary & 
+ [1124] Binary & 
+ [1128] Binary & 
+ [1132] Binary & 
+ [1136] Binary & 
+ [1140] Binary & 
+ [1144] Binary & 
+ [1148] Binary & 
+ [1152] Binary & 
+ [1156] Binary & 
+ [1160] Binary & 
+ [1164] Binary & 
+ [1168] Binary & 
+ [1172] Binary & 
+ [1176] Binary & 
+ [1180] Binary & 
+ [1184] Binary & 
+ [1188] Binary & 
+ [1192] Binary & 
+ [1196] Binary & 
+ [1200] Binary & 
+ [1204] Binary & 
+ [1208] Binary & 
+ [1212] Binary & 
+ [1216] Binary & 
+ [1220] Binary & 
+ [1224] Binary & 
+ [1228] Binary & 
+ [1232] Binary & 
+ [1236] Binary & 
+ [1240] Binary & 
+ [1244] Binary & 
+ [1248] Binary & 
+ [1252] Binary & 
+ [1256] Binary & 
+ [1260] Binary & 
+ [1264] Binary & 
+ [1268] Binary & 
+ [1272] Binary & 
+ [1276] Binary & 
+ [1280] Binary & 
+ [1284] Binary & 
+ [1288] Binary & 
+ [1292] Binary & 
+ [1296] Binary & 
+ [1300] Binary & 
+ [1304] Binary & 
+ [1308] Binary & 
+ [1312] Binary & 
+ [1316] Binary & 
+ [1320] Binary & 
+ [1324] Binary & 
+ [1328] Binary & 
+ [1332] Binary & 
+ [1336] Binary & 
+ [1340] Binary & 
+ [1344] Binary & 
+ [1348] Binary & 
+ [1352] Binary & 
+ [1356] Binary & 
+ [1360] Binary & 
+ [1364] Binary & 
+ [1368] Binary & 
+ [1372] Binary & 
+ [1376] Binary & 
+ [1380] Binary & 
+ [1384] Binary & 
+ [1388] Binary & 
+ [1392] Binary & 
+ [1396] Binary & 
+ [1400] Binary & 
+ [1404] Binary & 
+ [1408] Binary & 
+ [1412] Binary & 
+ [1416] Binary & 
+ [1420] Binary & 
+ [1424] Binary & 
+ [1428] Binary & 
+ [1432] Binary & 
+ [1436] Binary & 
+ [1440] Binary & 
+ [1444] Binary & 
+ [1448] Binary & 
+ [1452] Binary & 
+ [1456] Binary & 
+ [1460] Binary & 
+ [1464] Binary & 
+ [1468] Binary & 
+ [1472] Binary & 
+ [1476] Binary & 
+ [1480] Binary & 
+ [1484] Binary & 
+ [1488] Binary & 
+ [1492] Binary & 
+ [1496] Binary & 
+ [1500] Binary & 
+ [1504] Binary & 
+ [1508] Binary & 
+ [1512] Binary & 
+ [1516] Binary & 
+ [1520] Binary & 
+ [1524] Binary & 
+ [1528] Binary & 
+ [1532] Binary & 
+ [1536] Binary & 
+ [1540] Binary & 
+ [1544] Binary & 
+ [1548] Binary & 
+ [1552] Binary & 
+ [1556] Binary & 
+ [1560] Binary & 
+ [1564] Binary & 
+ [1568] Binary & 
+ [1572] Binary & 
+ [1576] Binary & 
+ [1580] Binary & 
+ [1584] Binary & 
+ [1588] Binary & 
+ [1592] Binary & 
+ [1596] Binary & 
+ [1600] Binary & 
+ [1604] Binary & 
+ [1608] Binary & 
+ [1612] Binary & 
+ [1616] Binary & 
+ [1620] Binary & 
+ [1624] Binary & 
+ [1628] Binary & 
+ [1632] Binary & 
+ [1636] Binary & 
+ [1640] Binary & 
+ [1644] Binary & 
+ [1648] Binary & 
+ [1652] Binary & 
+ [1656] Binary & 
+ [1660] Binary & 
+ [1664] Binary & 
+ [1668] Binary & 
+ [1672] Binary & 
+ [1676] Binary & 
+ [1680] Binary & 
+ [1684] Binary & 
+ [1688] Binary & 
+ [1692] Binary & 
+ [1696] Binary & 
+ [1700] Binary & 
+ [1704] Binary & 
+ [1708] Binary & 
+ [1712] Binary & 
+ [1716] Binary & 
+ [1720] Binary & 
+ [1724] Binary & 
+ [1728] Binary & 
+ [1732] Binary & 
+ [1736] Binary & 
+ [1740] Binary & 
+ [1744] Binary & 
+ [1748] Binary & 
+ [1752] Binary & 
+ [1756] Binary & 
+ [1760] Binary & 
+ [1764] Binary & 
+ [1768] Binary & 
+ [1772] Binary & 
+ [1776] Binary & 
+ [1780] Binary & 
+ [1784] Binary & 
+ [1788] Binary & 
+ [1792] Binary & 
+ [1796] Binary & 
+ [1800] Binary & 
+ [1804] Binary & 
+ [1808] Binary & 
+ [1812] Binary & 
+ [1816] Binary & 
+ [1820] Binary & 
+ [1824] Binary & 
+ [1828] Binary & 
+ [1832] Binary & 
+ [1836] Binary & 
+ [1840] Binary & 
+ [1844] Binary & 
+ [1848] Binary & 
+ [1852] Binary & 
+ [1856] Binary & 
+ [1860] Binary & 
+ [1864] Binary & 
+ [1868] Binary & 
+ [1872] Binary & 
+ [1876] Binary & 
+ [1880] Binary & 
+ [1884] Binary & 
+ [1888] Binary & 
+ [1892] Binary & 
+ [1896] Binary & 
+ [1900] Binary & 
+ [1904] Binary & 
+ [1908] Binary & 
+ [1912] Binary & 
+ [1916] Binary & 
+ [1920] Binary & 
+ [1924] Binary & 
+ [1928] Binary & 
+ [1932] Binary & 
+ [1936] Binary & 
+ [1940] Binary & 
+ [1944] Binary & 
+ [1948] Binary & 
+ [1952] Binary & 
+ [1956] Binary & 
+ [1960] Binary & 
+ [1964] Binary & 
+ [1968] Binary & 
+ [1972] Binary & 
+ [1976] Binary & 
+ [1980] Binary & 
+ [1984] Binary & 
+ [1988] Binary & 
+ [1992] Binary & 
+ [1996] Binary & 
+ [2000] Binary & 
+ [2004] Binary & 
+ [2008] Binary & 
+ [2012] Binary & 
+ [2016] Binary & 
+ [2020] Binary & 
+ [2024] Binary & 
+ [2028] Binary & 
+ [2032] Binary & 
+ [2036] Binary & 
+ [2040] Binary & 
+ [2044] Binary & 
+ [2048] Binary & 
+ [2052] Binary & 
+ [2056] Binary & 
+ [2060] Binary & 
+ [2064] Binary & 
+ [2068] Binary & 
+ [2072] Binary & 
+ [2076] Binary & 
+ [2080] Binary & 
+ [2084] Binary & 
+ [2088] Binary & 
+ [2092] Binary & 
+ [2096] Binary & 
+ [2100] Binary & 
+ [2104] Binary & 
+ [2108] Binary & 
+ [2112] Binary & 
+ [2116] Binary & 
+ [2120] Binary & 
+ [2124] Binary & 
+ [2128] Binary & 
+ [2132] Binary & 
+ [2136] Binary & 
+ [2140] Binary & 
+ [2144] Binary & 
+ [2148] Binary & 
+ [2152] Binary & 
+ [2156] Binary & 
+ [2160] Binary & 
+ [2164] Binary & 
+ [2168] Binary & 
+ [2172] Binary & 
+ [2176] Binary & 
+ [2180] Binary & 
+ [2184] Binary & 
+ [2188] Binary & 
+ [2192] Binary & 
+ [2196] Binary & 
+ [2200] Binary & 
+ [2204] Binary & 
+ [2208] Binary & 
+ [2212] Binary & 
+ [2216] Binary & 
+ [2220] Binary & 
+ [2224] Binary & 
+ [2228] Binary & 
+ [2232] Binary & 
+ [2236] Binary & 
+ [2240] Binary & 
+ [2244] Binary & 
+ [2248] Binary & 
+ [2252] Binary & 
+ [2256] Binary & 
+ [2260] Binary & 
+ [2264] Binary & 
+ [2268] Binary & 
+ [2272] Binary & 
+ [2276] Binary & 
+ [2280] Binary & 
+ [2284] Binary & 
+ [2288] Binary & 
+ [2292] Binary & 
+ [2296] Binary & 
+ [2300] Binary & 
+ [2304] Binary & 
+ [2308] Binary & 
+ [2312] Binary & 
+ [2316] Binary & 
+ [2320] Binary & 
+ [2324] Binary & 
+ [2328] Binary & 
+ [2332] Binary & 
+ [2336] Binary & 
+ [2340] Binary & 
+ [2344] Binary & 
+ [2348] Binary & 
+ [2352] Binary & 
+ [2356] Binary & 
+ [2360] Binary & 
+ [2364] Binary & 
+ [2368] Binary & 
+ [2372] Binary & 
+ [2376] Binary & 
+ [2380] Binary & 
+ [2384] Binary & 
+ [2388] Binary & 
+ [2392] Binary & 
+ [2396] Binary & 
+ [2400] Binary & 
+ [2404] Binary & 
+ [2408] Binary & 
+ [2412] Binary & 
+ [2416] Binary & 
+ [2420] Binary & 
+ [2424] Binary & 
+ [2428] Binary & 
+ [2432] Binary & 
+ [2436] Binary & 
+ [2440] Binary & 
+ [2444] Binary & 
+ [2448] Binary & 
+ [2452] Binary & 
+ [2456] Binary & 
+ [2460] Binary & 
+ [2464] Binary & 
+ [2468] Binary & 
+ [2472] Binary & 
+ [2476] Binary & 
+ [2480] Binary & 
+ [2484] Binary & 
+ [2488] Binary & 
+ [2492] Binary & 
+ [2496] Binary & 
+ [2500] Binary & 
+ [2504] Binary & 
+ [2508] Binary & 
+ [2512] Binary & 
+ [2516] Binary & 
+ [2520] Binary & 
+ [2524] Binary & 
+ [2528] Binary & 
+ [2532] Binary & 
+ [2536] Binary & 
+ [2540] Binary & 
+ [2544] Binary & 
+ [2548] Binary & 
+ [2552] Binary & 
+ [2556] Binary & 
+ [2560] Binary & 
+ [2564] Binary & 
+ [2568] Binary & 
+ [2572] Binary & 
+ [2576] Binary & 
+ [2580] Binary & 
+ [2584] Binary & 
+ [2588] Binary & 
+ [2592] Binary & 
+ [2596] Binary & 
+ [2600] Binary & 
+ [2604] Binary & 
+ [2608] Binary & 
+ [2612] Binary & 
+ [2616] Binary & 
+ [2620] Binary & 
+ [2624] Binary & 
+ [2628] Binary & 
+ [2632] Binary & 
+ [2636] Binary & 
+ [2640] Binary & 
+ [2644] Binary & 
+ [2648] Binary & 
+ [2652] Binary & 
+ [2656] Binary & 
+ [2660] Binary & 
+ [2664] Binary & 
+ [2668] Binary & 
+ [2672] Binary & 
+ [2676] Binary & 
+ [2680] Binary & 
+ [2684] Binary & 
+ [2688] Binary & 
+ [2692] Binary & 
+ [2696] Binary & 
+ [2700] Binary & 
+ [2704] Binary & 
+ [2708] Binary & 
+ [2712] Binary & 
+ [2716] Binary & 
+ [2720] Binary & 
+ [2724] Binary & 
+ [2728] Binary & 
+ [2732] Binary & 
+ [2736] Binary & 
+ [2740] Binary & 
+ [2744] Binary & 
+ [2748] Binary & 
+ [2752] Binary & 
+ [2756] Binary & 
+ [2760] Binary & 
+ [2764] Binary & 
+ [2768] Binary & 
+ [2772] Binary & 
+ [2776] Binary & 
+ [2780] Binary & 
+ [2784] Binary & 
+ [2788] Binary & 
+ [2792] Binary & 
+ [2796] Binary & 
+ [2800] Binary & 
+ [2804] Binary & 
+ [2808] Binary & 
+ [2812] Binary & 
+ [2816] Binary & 
+ [2820] Binary & 
+ [2824] Binary & 
+ [2828] Binary & 
+ [2832] Binary & 
+ [2836] Binary & 
+ [2840] Binary & 
+ [2844] Binary & 
+ [2848] Binary & 
+ [2852] Binary & 
+ [2856] Binary & 
+ [2860] Binary & 
+ [2864] Binary & 
+ [2868] Binary & 
+ [2872] Binary & 
+ [2876] Binary & 
+ [2880] Binary & 
+ [2884] Binary & 
+ [2888] Binary & 
+ [2892] Binary & 
+ [2896] Binary & 
+ [2900] Binary & 
+ [2904] Binary & 
+ [2908] Binary & 
+ [2912] Binary & 
+ [2916] Binary & 
+ [2920] Binary & 
+ [2924] Binary & 
+ [2928] Binary & 
+ [2932] Binary & 
+ [2936] Binary & 
+ [2940] Binary & 
+ [2944] Binary & 
+ [2948] Binary & 
+ [2952] Binary & 
+ [2956] Binary & 
+ [2960] Binary & 
+ [2964] Binary & 
+ [2968] Binary & 
+ [2972] Binary & 
+ [2976] Binary & 
+ [2980] Binary & 
+ [2984] Binary & 
+ [2988] Binary & 
+ [2992] Binary & 
+ [2996] Binary & 
+ [3000] Binary & 
+ [3004] Binary & 
+ [3008] Binary & 
+ [3012] Binary & 
+ [3016] Binary & 
+ [3020] Binary & 
+ [3024] Binary & 
+ [3028] Binary & 
+ [3032] Binary & 
+ [3036] Binary & 
+ [3040] Binary & 
+ [3044] Binary & 
+ [3048] Binary & 
+ [3052] Binary & 
+ [3056] Binary & 
+ [3060] Binary & 
+ [3064] Binary & 
+ [3068] Binary & 
+ [3072] Binary & 
+ [3076] Binary & 
+ [3080] Binary & 
+ [3084] Binary & 
+ [3088] Binary & 
+ [3092] Binary & 
+ [3096] Binary & 
+ [3100] Binary & 
+ [3104] Binary & 
+ [3108] Binary & 
+ [3112] Binary & 
+ [3116] Binary & 
+ [3120] Binary & 
+ [3124] Binary & 
+ [3128] Binary & 
+ [3132] Binary & 
+ [3136] Binary & 
+ [3140] Binary & 
+ [3144] Binary & 
+ [3148] Binary & 
+ [3152] Binary & 
+ [3156] Binary & 
+ [3160] Binary & 
+ [3164] Binary & 
+ [3168] Binary & 
+ [3172] Binary & 
+ [3176] Binary & 
+ [3180] Binary & 
+ [3184] Binary & 
+ [3188] Binary & 
+ [3192] Binary & 
+ [3196] Binary & 
+ [3200] Binary & 
+ [3204] Binary & 
+ [3208] Binary & 
+ [3212] Binary & 
+ [3216] Binary & 
+ [3220] Binary & 
+ [3224] Binary & 
+ [3228] Binary & 
+ [3232] Binary & 
+ [3236] Binary & 
+ [3240] Binary & 
+ [3244] Binary & 
+ [3248] Binary & 
+ [3252] Binary & 
+ [3256] Binary & 
+ [3260] Binary & 
+ [3264] Binary & 
+ [3268] Binary & 
+ [3272] Binary & 
+ [3276] Binary & 
+ [3280] Binary & 
+ [3284] Binary & 
+ [3288] Binary & 
+ [3292] Binary & 
+ [3296] Binary & 
+ [3300] Binary & 
+ [3304] Binary & 
+ [3308] Binary & 
+ [3312] Binary & 
+ [3316] Unary !
+ [3320] Binary = 
+ [3324] x11
+ [3324] x12
+ [3316] Unary !
+ [3320] Binary = 
+ [3324] x11
+ [3324] x13
+ [3312] Unary !
+ [3316] Binary = 
+ [3320] x11
+ [3320] x14
+ [3308] Unary !
+ [3312] Binary = 
+ [3316] x11
+ [3316] x15
+ [3304] Unary !
+ [3308] Binary = 
+ [3312] x11
+ [3312] x16
+ [3300] Unary !
+ [3304] Binary = 
+ [3308] x11
+ [3308] x17
+ [3296] Unary !
+ [3300] Binary = 
+ [3304] x11
+ [3304] x18
+ [3292] Unary !
+ [3296] Binary = 
+ [3300] x11
+ [3300] x19
+ [3288] Unary !
+ [3292] Binary = 
+ [3296] x11
+ [3296] x21
+ [3284] Unary !
+ [3288] Binary = 
+ [3292] x11
+ [3292] x22
+ [3280] Unary !
+ [3284] Binary = 
+ [3288] x11
+ [3288] x23
+ [3276] Unary !
+ [3280] Binary = 
+ [3284] x11
+ [3284] x31
+ [3272] Unary !
+ [3276] Binary = 
+ [3280] x11
+ [3280] x32
+ [3268] Unary !
+ [3272] Binary = 
+ [3276] x11
+ [3276] x33
+ [3264] Unary !
+ [3268] Binary = 
+ [3272] x11
+ [3272] x41
+ [3260] Unary !
+ [3264] Binary = 
+ [3268] x11
+ [3268] x51
+ [3256] Unary !
+ [3260] Binary = 
+ [3264] x11
+ [3264] x61
+ [3252] Unary !
+ [3256] Binary = 
+ [3260] x11
+ [3260] x71
+ [3248] Unary !
+ [3252] Binary = 
+ [3256] x11
+ [3256] x81
+ [3244] Unary !
+ [3248] Binary = 
+ [3252] x11
+ [3252] x91
+ [3240] Unary !
+ [3244] Binary = 
+ [3248] x12
+ [3248] x13
+ [3236] Unary !
+ [3240] Binary = 
+ [3244] x12
+ [3244] x14
+ [3232] Unary !
+ [3236] Binary = 
+ [3240] x12
+ [3240] x15
+ [3228] Unary !
+ [3232] Binary = 
+ [3236] x12
+ [3236] x16
+ [3224] Unary !
+ [3228] Binary = 
+ [3232] x12
+ [3232] x17
+ [3220] Unary !
+ [3224] Binary = 
+ [3228] x12
+ [3228] x18
+ [3216] Unary !
+ [3220] Binary = 
+ [3224] x12
+ [3224] x19
+ [3212] Unary !
+ [3216] Binary = 
+ [3220] x12
+ [3220] x21
+ [3208] Unary !
+ [3212] Binary = 
+ [3216] x12
+ [3216] x22
+ [3204] Unary !
+ [3208] Binary = 
+ [3212] x12
+ [3212] x23
+ [3200] Unary !
+ [3204] Binary = 
+ [3208] x12
+ [3208] x31
+ [3196] Unary !
+ [3200] Binary = 
+ [3204] x12
+ [3204] x32
+ [3192] Unary !
+ [3196] Binary = 
+ [3200] x12
+ [3200] x33
+ [3188] Unary !
+ [3192] Binary = 
+ [3196] x12
+ [3196] x42
+ [3184] Unary !
+ [3188] Binary = 
+ [3192] x12
+ [3192] x52
+ [3180] Unary !
+ [3184] Binary = 
+ [3188] x12
+ [3188] x62
+ [3176] Unary !
+ [3180] Binary = 
+ [3184] x12
+ [3184] x72
+ [3172] Unary !
+ [3176] Binary = 
+ [3180] x12
+ [3180] x82
+ [3168] Unary !
+ [3172] Binary = 
+ [3176] x12
+ [3176] x92
+ [3164] Unary !
+ [3168] Binary = 
+ [3172] x13
+ [3172] x14
+ [3160] Unary !
+ [3164] Binary = 
+ [3168] x13
+ [3168] x15
+ [3156] Unary !
+ [3160] Binary = 
+ [3164] x13
+ [3164] x16
+ [3152] Unary !
+ [3156] Binary = 
+ [3160] x13
+ [3160] x17
+ [3148] Unary !
+ [3152] Binary = 
+ [3156] x13
+ [3156] x18
+ [3144] Unary !
+ [3148] Binary = 
+ [3152] x13
+ [3152] x19
+ [3140] Unary !
+ [3144] Binary = 
+ [3148] x13
+ [3148] x21
+ [3136] Unary !
+ [3140] Binary = 
+ [3144] x13
+ [3144] x22
+ [3132] Unary !
+ [3136] Binary = 
+ [3140] x13
+ [3140] x23
+ [3128] Unary !
+ [3132] Binary = 
+ [3136] x13
+ [3136] x31
+ [3124] Unary !
+ [3128] Binary = 
+ [3132] x13
+ [3132] x32
+ [3120] Unary !
+ [3124] Binary = 
+ [3128] x13
+ [3128] x33
+ [3116] Unary !
+ [3120] Binary = 
+ [3124] x13
+ [3124] x43
+ [3112] Unary !
+ [3116] Binary = 
+ [3120] x13
+ [3120] x53
+ [3108] Unary !
+ [3112] Binary = 
+ [3116] x13
+ [3116] x63
+ [3104] Unary !
+ [3108] Binary = 
+ [3112] x13
+ [3112] x73
+ [3100] Unary !
+ [3104] Binary = 
+ [3108] x13
+ [3108] x83
+ [3096] Unary !
+ [3100] Binary = 
+ [3104] x13
+ [3104] x93
+ [3092] Unary !
+ [3096] Binary = 
+ [3100] x14
+ [3100] x15
+ [3088] Unary !
+ [3092] Binary = 
+ [3096] x14
+ [3096] x16
+ [3084] Unary !
+ [3088] Binary = 
+ [3092] x14
+ [3092] x17
+ [3080] Unary !
+ [3084] Binary = 
+ [3088] x14
+ [3088] x18
+ [3076] Unary !
+ [3080] Binary = 
+ [3084] x14
+ [3084] x19
+ [3072] Unary !
+ [3076] Binary = 
+ [3080] x14
+ [3080] x24
+ [3068] Unary !
+ [3072] Binary = 
+ [3076] x14
+ [3076] x25
+ [3064] Unary !
+ [3068] Binary = 
+ [3072] x14
+ [3072] x26
+ [3060] Unary !
+ [3064] Binary = 
+ [3068] x14
+ [3068] x34
+ [3056] Unary !
+ [3060] Binary = 
+ [3064] x14
+ [3064] x35
+ [3052] Unary !
+ [3056] Binary = 
+ [3060] x14
+ [3060] x36
+ [3048] Unary !
+ [3052] Binary = 
+ [3056] x14
+ [3056] x44
+ [3044] Unary !
+ [3048] Binary = 
+ [3052] x14
+ [3052] x54
+ [3040] Unary !
+ [3044] Binary = 
+ [3048] x14
+ [3048] x64
+ [3036] Unary !
+ [3040] Binary = 
+ [3044] x14
+ [3044] x74
+ [3032] Unary !
+ [3036] Binary = 
+ [3040] x14
+ [3040] x84
+ [3028] Unary !
+ [3032] Binary = 
+ [3036] x14
+ [3036] x94
+ [3024] Unary !
+ [3028] Binary = 
+ [3032] x15
+ [3032] x16
+ [3020] Unary !
+ [3024] Binary = 
+ [3028] x15
+ [3028] x17
+ [3016] Unary !
+ [3020] Binary = 
+ [3024] x15
+ [3024] x18
+ [3012] Unary !
+ [3016] Binary = 
+ [3020] x15
+ [3020] x19
+ [3008] Unary !
+ [3012] Binary = 
+ [3016] x15
+ [3016] x24
+ [3004] Unary !
+ [3008] Binary = 
+ [3012] x15
+ [3012] x25
+ [3000] Unary !
+ [3004] Binary = 
+ [3008] x15
+ [3008] x26
+ [2996] Unary !
+ [3000] Binary = 
+ [3004] x15
+ [3004] x34
+ [2992] Unary !
+ [2996] Binary = 
+ [3000] x15
+ [3000] x35
+ [2988] Unary !
+ [2992] Binary = 
+ [2996] x15
+ [2996] x36
+ [2984] Unary !
+ [2988] Binary = 
+ [2992] x15
+ [2992] x45
+ [2980] Unary !
+ [2984] Binary = 
+ [2988] x15
+ [2988] x55
+ [2976] Unary !
+ [2980] Binary = 
+ [2984] x15
+ [2984] x65
+ [2972] Unary !
+ [2976] Binary = 
+ [2980] x15
+ [2980] x75
+ [2968] Unary !
+ [2972] Binary = 
+ [2976] x15
+ [2976] x85
+ [2964] Unary !
+ [2968] Binary = 
+ [2972] x15
+ [2972] x95
+ [2960] Unary !
+ [2964] Binary = 
+ [2968] x16
+ [2968] x17
+ [2956] Unary !
+ [2960] Binary = 
+ [2964] x16
+ [2964] x18
+ [2952] Unary !
+ [2956] Binary = 
+ [2960] x16
+ [2960] x19
+ [2948] Unary !
+ [2952] Binary = 
+ [2956] x16
+ [2956] x24
+ [2944] Unary !
+ [2948] Binary = 
+ [2952] x16
+ [2952] x25
+ [2940] Unary !
+ [2944] Binary = 
+ [2948] x16
+ [2948] x26
+ [2936] Unary !
+ [2940] Binary = 
+ [2944] x16
+ [2944] x34
+ [2932] Unary !
+ [2936] Binary = 
+ [2940] x16
+ [2940] x35
+ [2928] Unary !
+ [2932] Binary = 
+ [2936] x16
+ [2936] x36
+ [2924] Unary !
+ [2928] Binary = 
+ [2932] x16
+ [2932] x46
+ [2920] Unary !
+ [2924] Binary = 
+ [2928] x16
+ [2928] x56
+ [2916] Unary !
+ [2920] Binary = 
+ [2924] x16
+ [2924] x66
+ [2912] Unary !
+ [2916] Binary = 
+ [2920] x16
+ [2920] x76
+ [2908] Unary !
+ [2912] Binary = 
+ [2916] x16
+ [2916] x86
+ [2904] Unary !
+ [2908] Binary = 
+ [2912] x16
+ [2912] x96
+ [2900] Unary !
+ [2904] Binary = 
+ [2908] x17
+ [2908] x18
+ [2896] Unary !
+ [2900] Binary = 
+ [2904] x17
+ [2904] x19
+ [2892] Unary !
+ [2896] Binary = 
+ [2900] x17
+ [2900] x27
+ [2888] Unary !
+ [2892] Binary = 
+ [2896] x17
+ [2896] x28
+ [2884] Unary !
+ [2888] Binary = 
+ [2892] x17
+ [2892] x29
+ [2880] Unary !
+ [2884] Binary = 
+ [2888] x17
+ [2888] x37
+ [2876] Unary !
+ [2880] Binary = 
+ [2884] x17
+ [2884] x38
+ [2872] Unary !
+ [2876] Binary = 
+ [2880] x17
+ [2880] x39
+ [2868] Unary !
+ [2872] Binary = 
+ [2876] x17
+ [2876] x47
+ [2864] Unary !
+ [2868] Binary = 
+ [2872] x17
+ [2872] x57
+ [2860] Unary !
+ [2864] Binary = 
+ [2868] x17
+ [2868] x67
+ [2856] Unary !
+ [2860] Binary = 
+ [2864] x17
+ [2864] x77
+ [2852] Unary !
+ [2856] Binary = 
+ [2860] x17
+ [2860] x87
+ [2848] Unary !
+ [2852] Binary = 
+ [2856] x17
+ [2856] x97
+ [2844] Unary !
+ [2848] Binary = 
+ [2852] x18
+ [2852] x19
+ [2840] Unary !
+ [2844] Binary = 
+ [2848] x18
+ [2848] x27
+ [2836] Unary !
+ [2840] Binary = 
+ [2844] x18
+ [2844] x28
+ [2832] Unary !
+ [2836] Binary = 
+ [2840] x18
+ [2840] x29
+ [2828] Unary !
+ [2832] Binary = 
+ [2836] x18
+ [2836] x37
+ [2824] Unary !
+ [2828] Binary = 
+ [2832] x18
+ [2832] x38
+ [2820] Unary !
+ [2824] Binary = 
+ [2828] x18
+ [2828] x39
+ [2816] Unary !
+ [2820] Binary = 
+ [2824] x18
+ [2824] x48
+ [2812] Unary !
+ [2816] Binary = 
+ [2820] x18
+ [2820] x58
+ [2808] Unary !
+ [2812] Binary = 
+ [2816] x18
+ [2816] x68
+ [2804] Unary !
+ [2808] Binary = 
+ [2812] x18
+ [2812] x78
+ [2800] Unary !
+ [2804] Binary = 
+ [2808] x18
+ [2808] x88
+ [2796] Unary !
+ [2800] Binary = 
+ [2804] x18
+ [2804] x98
+ [2792] Unary !
+ [2796] Binary = 
+ [2800] x19
+ [2800] x27
+ [2788] Unary !
+ [2792] Binary = 
+ [2796] x19
+ [2796] x28
+ [2784] Unary !
+ [2788] Binary = 
+ [2792] x19
+ [2792] x29
+ [2780] Unary !
+ [2784] Binary = 
+ [2788] x19
+ [2788] x37
+ [2776] Unary !
+ [2780] Binary = 
+ [2784] x19
+ [2784] x38
+ [2772] Unary !
+ [2776] Binary = 
+ [2780] x19
+ [2780] x39
+ [2768] Unary !
+ [2772] Binary = 
+ [2776] x19
+ [2776] x49
+ [2764] Unary !
+ [2768] Binary = 
+ [2772] x19
+ [2772] x59
+ [2760] Unary !
+ [2764] Binary = 
+ [2768] x19
+ [2768] x69
+ [2756] Unary !
+ [2760] Binary = 
+ [2764] x19
+ [2764] x79
+ [2752] Unary !
+ [2756] Binary = 
+ [2760] x19
+ [2760] x89
+ [2748] Unary !
+ [2752] Binary = 
+ [2756] x19
+ [2756] x99
+ [2744] Unary !
+ [2748] Binary = 
+ [2752] x21
+ [2752] x22
+ [2740] Unary !
+ [2744] Binary = 
+ [2748] x21
+ [2748] x23
+ [2736] Unary !
+ [2740] Binary = 
+ [2744] x21
+ [2744] x24
+ [2732] Unary !
+ [2736] Binary = 
+ [2740] x21
+ [2740] x25
+ [2728] Unary !
+ [2732] Binary = 
+ [2736] x21
+ [2736] x26
+ [2724] Unary !
+ [2728] Binary = 
+ [2732] x21
+ [2732] x27
+ [2720] Unary !
+ [2724] Binary = 
+ [2728] x21
+ [2728] x28
+ [2716] Unary !
+ [2720] Binary = 
+ [2724] x21
+ [2724] x29
+ [2712] Unary !
+ [2716] Binary = 
+ [2720] x21
+ [2720] x31
+ [2708] Unary !
+ [2712] Binary = 
+ [2716] x21
+ [2716] x32
+ [2704] Unary !
+ [2708] Binary = 
+ [2712] x21
+ [2712] x33
+ [2700] Unary !
+ [2704] Binary = 
+ [2708] x21
+ [2708] x41
+ [2696] Unary !
+ [2700] Binary = 
+ [2704] x21
+ [2704] x51
+ [2692] Unary !
+ [2696] Binary = 
+ [2700] x21
+ [2700] x61
+ [2688] Unary !
+ [2692] Binary = 
+ [2696] x21
+ [2696] x71
+ [2684] Unary !
+ [2688] Binary = 
+ [2692] x21
+ [2692] x81
+ [2680] Unary !
+ [2684] Binary = 
+ [2688] x21
+ [2688] x91
+ [2676] Unary !
+ [2680] Binary = 
+ [2684] x22
+ [2684] x23
+ [2672] Unary !
+ [2676] Binary = 
+ [2680] x22
+ [2680] x24
+ [2668] Unary !
+ [2672] Binary = 
+ [2676] x22
+ [2676] x25
+ [2664] Unary !
+ [2668] Binary = 
+ [2672] x22
+ [2672] x26
+ [2660] Unary !
+ [2664] Binary = 
+ [2668] x22
+ [2668] x27
+ [2656] Unary !
+ [2660] Binary = 
+ [2664] x22
+ [2664] x28
+ [2652] Unary !
+ [2656] Binary = 
+ [2660] x22
+ [2660] x29
+ [2648] Unary !
+ [2652] Binary = 
+ [2656] x22
+ [2656] x31
+ [2644] Unary !
+ [2648] Binary = 
+ [2652] x22
+ [2652] x32
+ [2640] Unary !
+ [2644] Binary = 
+ [2648] x22
+ [2648] x33
+ [2636] Unary !
+ [2640] Binary = 
+ [2644] x22
+ [2644] x42
+ [2632] Unary !
+ [2636] Binary = 
+ [2640] x22
+ [2640] x52
+ [2628] Unary !
+ [2632] Binary = 
+ [2636] x22
+ [2636] x62
+ [2624] Unary !
+ [2628] Binary = 
+ [2632] x22
+ [2632] x72
+ [2620] Unary !
+ [2624] Binary = 
+ [2628] x22
+ [2628] x82
+ [2616] Unary !
+ [2620] Binary = 
+ [2624] x22
+ [2624] x92
+ [2612] Unary !
+ [2616] Binary = 
+ [2620] x23
+ [2620] x24
+ [2608] Unary !
+ [2612] Binary = 
+ [2616] x23
+ [2616] x25
+ [2604] Unary !
+ [2608] Binary = 
+ [2612] x23
+ [2612] x26
+ [2600] Unary !
+ [2604] Binary = 
+ [2608] x23
+ [2608] x27
+ [2596] Unary !
+ [2600] Binary = 
+ [2604] x23
+ [2604] x28
+ [2592] Unary !
+ [2596] Binary = 
+ [2600] x23
+ [2600] x29
+ [2588] Unary !
+ [2592] Binary = 
+ [2596] x23
+ [2596] x31
+ [2584] Unary !
+ [2588] Binary = 
+ [2592] x23
+ [2592] x32
+ [2580] Unary !
+ [2584] Binary = 
+ [2588] x23
+ [2588] x33
+ [2576] Unary !
+ [2580] Binary = 
+ [2584] x23
+ [2584] x43
+ [2572] Unary !
+ [2576] Binary = 
+ [2580] x23
+ [2580] x53
+ [2568] Unary !
+ [2572] Binary = 
+ [2576] x23
+ [2576] x63
+ [2564] Unary !
+ [2568] Binary = 
+ [2572] x23
+ [2572] x73
+ [2560] Unary !
+ [2564] Binary = 
+ [2568] x23
+ [2568] x83
+ [2556] Unary !
+ [2560] Binary = 
+ [2564] x23
+ [2564] x93
+ [2552] Unary !
+ [2556] Binary = 
+ [2560] x24
+ [2560] x25
+ [2548] Unary !
+ [2552] Binary = 
+ [2556] x24
+ [2556] x26
+ [2544] Unary !
+ [2548] Binary = 
+ [2552] x24
+ [2552] x27
+ [2540] Unary !
+ [2544] Binary = 
+ [2548] x24
+ [2548] x28
+ [2536] Unary !
+ [2540] Binary = 
+ [2544] x24
+ [2544] x29
+ [2532] Unary !
+ [2536] Binary = 
+ [2540] x24
+ [2540] x34
+ [2528] Unary !
+ [2532] Binary = 
+ [2536] x24
+ [2536] x35
+ [2524] Unary !
+ [2528] Binary = 
+ [2532] x24
+ [2532] x36
+ [2520] Unary !
+ [2524] Binary = 
+ [2528] x24
+ [2528] x44
+ [2516] Unary !
+ [2520] Binary = 
+ [2524] x24
+ [2524] x54
+ [2512] Unary !
+ [2516] Binary = 
+ [2520] x24
+ [2520] x64
+ [2508] Unary !
+ [2512] Binary = 
+ [2516] x24
+ [2516] x74
+ [2504] Unary !
+ [2508] Binary = 
+ [2512] x24
+ [2512] x84
+ [2500] Unary !
+ [2504] Binary = 
+ [2508] x24
+ [2508] x94
+ [2496] Unary !
+ [2500] Binary = 
+ [2504] x25
+ [2504] x26
+ [2492] Unary !
+ [2496] Binary = 
+ [2500] x25
+ [2500] x27
+ [2488] Unary !
+ [2492] Binary = 
+ [2496] x25
+ [2496] x28
+ [2484] Unary !
+ [2488] Binary = 
+ [2492] x25
+ [2492] x29
+ [2480] Unary !
+ [2484] Binary = 
+ [2488] x25
+ [2488] x34
+ [2476] Unary !
+ [2480] Binary = 
+ [2484] x25
+ [2484] x35
+ [2472] Unary !
+ [2476] Binary = 
+ [2480] x25
+ [2480] x36
+ [2468] Unary !
+ [2472] Binary = 
+ [2476] x25
+ [2476] x45
+ [2464] Unary !
+ [2468] Binary = 
+ [2472] x25
+ [2472] x55
+ [2460] Unary !
+ [2464] Binary = 
+ [2468] x25
+ [2468] x65
+ [2456] Unary !
+ [2460] Binary = 
+ [2464] x25
+ [2464] x75
+ [2452] Unary !
+ [2456] Binary = 
+ [2460] x25
+ [2460] x85
+ [2448] Unary !
+ [2452] Binary = 
+ [2456] x25
+ [2456] x95
+ [2444] Unary !
+ [2448] Binary = 
+ [2452] x26
+ [2452] x27
+ [2440] Unary !
+ [2444] Binary = 
+ [2448] x26
+ [2448] x28
+ [2436] Unary !
+ [2440] Binary = 
+ [2444] x26
+ [2444] x29
+ [2432] Unary !
+ [2436] Binary = 
+ [2440] x26
+ [2440] x34
+ [2428] Unary !
+ [2432] Binary = 
+ [2436] x26
+ [2436] x35
+ [2424] Unary !
+ [2428] Binary = 
+ [2432] x26
+ [2432] x36
+ [2420] Unary !
+ [2424] Binary = 
+ [2428] x26
+ [2428] x46
+ [2416] Unary !
+ [2420] Binary = 
+ [2424] x26
+ [2424] x56
+ [2412] Unary !
+ [2416] Binary = 
+ [2420] x26
+ [2420] x66
+ [2408] Unary !
+ [2412] Binary = 
+ [2416] x26
+ [2416] x76
+ [2404] Unary !
+ [2408] Binary = 
+ [2412] x26
+ [2412] x86
+ [2400] Unary !
+ [2404] Binary = 
+ [2408] x26
+ [2408] x96
+ [2396] Unary !
+ [2400] Binary = 
+ [2404] x27
+ [2404] x28
+ [2392] Unary !
+ [2396] Binary = 
+ [2400] x27
+ [2400] x29
+ [2388] Unary !
+ [2392] Binary = 
+ [2396] x27
+ [2396] x37
+ [2384] Unary !
+ [2388] Binary = 
+ [2392] x27
+ [2392] x38
+ [2380] Unary !
+ [2384] Binary = 
+ [2388] x27
+ [2388] x39
+ [2376] Unary !
+ [2380] Binary = 
+ [2384] x27
+ [2384] x47
+ [2372] Unary !
+ [2376] Binary = 
+ [2380] x27
+ [2380] x57
+ [2368] Unary !
+ [2372] Binary = 
+ [2376] x27
+ [2376] x67
+ [2364] Unary !
+ [2368] Binary = 
+ [2372] x27
+ [2372] x77
+ [2360] Unary !
+ [2364] Binary = 
+ [2368] x27
+ [2368] x87
+ [2356] Unary !
+ [2360] Binary = 
+ [2364] x27
+ [2364] x97
+ [2352] Unary !
+ [2356] Binary = 
+ [2360] x28
+ [2360] x29
+ [2348] Unary !
+ [2352] Binary = 
+ [2356] x28
+ [2356] x37
+ [2344] Unary !
+ [2348] Binary = 
+ [2352] x28
+ [2352] x38
+ [2340] Unary !
+ [2344] Binary = 
+ [2348] x28
+ [2348] x39
+ [2336] Unary !
+ [2340] Binary = 
+ [2344] x28
+ [2344] x48
+ [2332] Unary !
+ [2336] Binary = 
+ [2340] x28
+ [2340] x58
+ [2328] Unary !
+ [2332] Binary = 
+ [2336] x28
+ [2336] x68
+ [2324] Unary !
+ [2328] Binary = 
+ [2332] x28
+ [2332] x78
+ [2320] Unary !
+ [2324] Binary = 
+ [2328] x28
+ [2328] x88
+ [2316] Unary !
+ [2320] Binary = 
+ [2324] x28
+ [2324] x98
+ [2312] Unary !
+ [2316] Binary = 
+ [2320] x29
+ [2320] x37
+ [2308] Unary !
+ [2312] Binary = 
+ [2316] x29
+ [2316] x38
+ [2304] Unary !
+ [2308] Binary = 
+ [2312] x29
+ [2312] x39
+ [2300] Unary !
+ [2304] Binary = 
+ [2308] x29
+ [2308] x49
+ [2296] Unary !
+ [2300] Binary = 
+ [2304] x29
+ [2304] x59
+ [2292] Unary !
+ [2296] Binary = 
+ [2300] x29
+ [2300] x69
+ [2288] Unary !
+ [2292] Binary = 
+ [2296] x29
+ [2296] x79
+ [2284] Unary !
+ [2288] Binary = 
+ [2292] x29
+ [2292] x89
+ [2280] Unary !
+ [2284] Binary = 
+ [2288] x29
+ [2288] x99
+ [2276] Unary !
+ [2280] Binary = 
+ [2284] x31
+ [2284] x32
+ [2272] Unary !
+ [2276] Binary = 
+ [2280] x31
+ [2280] x33
+ [2268] Unary !
+ [2272] Binary = 
+ [2276] x31
+ [2276] x34
+ [2264] Unary !
+ [2268] Binary = 
+ [2272] x31
+ [2272] x35
+ [2260] Unary !
+ [2264] Binary = 
+ [2268] x31
+ [2268] x36
+ [2256] Unary !
+ [2260] Binary = 
+ [2264] x31
+ [2264] x37
+ [2252] Unary !
+ [2256] Binary = 
+ [2260] x31
+ [2260] x38
+ [2248] Unary !
+ [2252] Binary = 
+ [2256] x31
+ [2256] x39
+ [2244] Unary !
+ [2248] Binary = 
+ [2252] x31
+ [2252] x41
+ [2240] Unary !
+ [2244] Binary = 
+ [2248] x31
+ [2248] x51
+ [2236] Unary !
+ [2240] Binary = 
+ [2244] x31
+ [2244] x61
+ [2232] Unary !
+ [2236] Binary = 
+ [2240] x31
+ [2240] x71
+ [2228] Unary !
+ [2232] Binary = 
+ [2236] x31
+ [2236] x81
+ [2224] Unary !
+ [2228] Binary = 
+ [2232] x31
+ [2232] x91
+ [2220] Unary !
+ [2224] Binary = 
+ [2228] x32
+ [2228] x33
+ [2216] Unary !
+ [2220] Binary = 
+ [2224] x32
+ [2224] x34
+ [2212] Unary !
+ [2216] Binary = 
+ [2220] x32
+ [2220] x35
+ [2208] Unary !
+ [2212] Binary = 
+ [2216] x32
+ [2216] x36
+ [2204] Unary !
+ [2208] Binary = 
+ [2212] x32
+ [2212] x37
+ [2200] Unary !
+ [2204] Binary = 
+ [2208] x32
+ [2208] x38
+ [2196] Unary !
+ [2200] Binary = 
+ [2204] x32
+ [2204] x39
+ [2192] Unary !
+ [2196] Binary = 
+ [2200] x32
+ [2200] x42
+ [2188] Unary !
+ [2192] Binary = 
+ [2196] x32
+ [2196] x52
+ [2184] Unary !
+ [2188] Binary = 
+ [2192] x32
+ [2192] x62
+ [2180] Unary !
+ [2184] Binary = 
+ [2188] x32
+ [2188] x72
+ [2176] Unary !
+ [2180] Binary = 
+ [2184] x32
+ [2184] x82
+ [2172] Unary !
+ [2176] Binary = 
+ [2180] x32
+ [2180] x92
+ [2168] Unary !
+ [2172] Binary = 
+ [2176] x33
+ [2176] x34
+ [2164] Unary !
+ [2168] Binary = 
+ [2172] x33
+ [2172] x35
+ [2160] Unary !
+ [2164] Binary = 
+ [2168] x33
+ [2168] x36
+ [2156] Unary !
+ [2160] Binary = 
+ [2164] x33
+ [2164] x37
+ [2152] Unary !
+ [2156] Binary = 
+ [2160] x33
+ [2160] x38
+ [2148] Unary !
+ [2152] Binary = 
+ [2156] x33
+ [2156] x39
+ [2144] Unary !
+ [2148] Binary = 
+ [2152] x33
+ [2152] x43
+ [2140] Unary !
+ [2144] Binary = 
+ [2148] x33
+ [2148] x53
+ [2136] Unary !
+ [2140] Binary = 
+ [2144] x33
+ [2144] x63
+ [2132] Unary !
+ [2136] Binary = 
+ [2140] x33
+ [2140] x73
+ [2128] Unary !
+ [2132] Binary = 
+ [2136] x33
+ [2136] x83
+ [2124] Unary !
+ [2128] Binary = 
+ [2132] x33
+ [2132] x93
+ [2120] Unary !
+ [2124] Binary = 
+ [2128] x34
+ [2128] x35
+ [2116] Unary !
+ [2120] Binary = 
+ [2124] x34
+ [2124] x36
+ [2112] Unary !
+ [2116] Binary = 
+ [2120] x34
+ [2120] x37
+ [2108] Unary !
+ [2112] Binary = 
+ [2116] x34
+ [2116] x38
+ [2104] Unary !
+ [2108] Binary = 
+ [2112] x34
+ [2112] x39
+ [2100] Unary !
+ [2104] Binary = 
+ [2108] x34
+ [2108] x44
+ [2096] Unary !
+ [2100] Binary = 
+ [2104] x34
+ [2104] x54
+ [2092] Unary !
+ [2096] Binary = 
+ [2100] x34
+ [2100] x64
+ [2088] Unary !
+ [2092] Binary = 
+ [2096] x34
+ [2096] x74
+ [2084] Unary !
+ [2088] Binary = 
+ [2092] x34
+ [2092] x84
+ [2080] Unary !
+ [2084] Binary = 
+ [2088] x34
+ [2088] x94
+ [2076] Unary !
+ [2080] Binary = 
+ [2084] x35
+ [2084] x36
+ [2072] Unary !
+ [2076] Binary = 
+ [2080] x35
+ [2080] x37
+ [2068] Unary !
+ [2072] Binary = 
+ [2076] x35
+ [2076] x38
+ [2064] Unary !
+ [2068] Binary = 
+ [2072] x35
+ [2072] x39
+ [2060] Unary !
+ [2064] Binary = 
+ [2068] x35
+ [2068] x45
+ [2056] Unary !
+ [2060] Binary = 
+ [2064] x35
+ [2064] x55
+ [2052] Unary !
+ [2056] Binary = 
+ [2060] x35
+ [2060] x65
+ [2048] Unary !
+ [2052] Binary = 
+ [2056] x35
+ [2056] x75
+ [2044] Unary !
+ [2048] Binary = 
+ [2052] x35
+ [2052] x85
+ [2040] Unary !
+ [2044] Binary = 
+ [2048] x35
+ [2048] x95
+ [2036] Unary !
+ [2040] Binary = 
+ [2044] x36
+ [2044] x37
+ [2032] Unary !
+ [2036] Binary = 
+ [2040] x36
+ [2040] x38
+ [2028] Unary !
+ [2032] Binary = 
+ [2036] x36
+ [2036] x39
+ [2024] Unary !
+ [2028] Binary = 
+ [2032] x36
+ [2032] x46
+ [2020] Unary !
+ [2024] Binary = 
+ [2028] x36
+ [2028] x56
+ [2016] Unary !
+ [2020] Binary = 
+ [2024] x36
+ [2024] x66
+ [2012] Unary !
+ [2016] Binary = 
+ [2020] x36
+ [2020] x76
+ [2008] Unary !
+ [2012] Binary = 
+ [2016] x36
+ [2016] x86
+ [2004] Unary !
+ [2008] Binary = 
+ [2012] x36
+ [2012] x96
+ [2000] Unary !
+ [2004] Binary = 
+ [2008] x37
+ [2008] x38
+ [1996] Unary !
+ [2000] Binary = 
+ [2004] x37
+ [2004] x39
+ [1992] Unary !
+ [1996] Binary = 
+ [2000] x37
+ [2000] x47
+ [1988] Unary !
+ [1992] Binary = 
+ [1996] x37
+ [1996] x57
+ [1984] Unary !
+ [1988] Binary = 
+ [1992] x37
+ [1992] x67
+ [1980] Unary !
+ [1984] Binary = 
+ [1988] x37
+ [1988] x77
+ [1976] Unary !
+ [1980] Binary = 
+ [1984] x37
+ [1984] x87
+ [1972] Unary !
+ [1976] Binary = 
+ [1980] x37
+ [1980] x97
+ [1968] Unary !
+ [1972] Binary = 
+ [1976] x38
+ [1976] x39
+ [1964] Unary !
+ [1968] Binary = 
+ [1972] x38
+ [1972] x48
+ [1960] Unary !
+ [1964] Binary = 
+ [1968] x38
+ [1968] x58
+ [1956] Unary !
+ [1960] Binary = 
+ [1964] x38
+ [1964] x68
+ [1952] Unary !
+ [1956] Binary = 
+ [1960] x38
+ [1960] x78
+ [1948] Unary !
+ [1952] Binary = 
+ [1956] x38
+ [1956] x88
+ [1944] Unary !
+ [1948] Binary = 
+ [1952] x38
+ [1952] x98
+ [1940] Unary !
+ [1944] Binary = 
+ [1948] x39
+ [1948] x49
+ [1936] Unary !
+ [1940] Binary = 
+ [1944] x39
+ [1944] x59
+ [1932] Unary !
+ [1936] Binary = 
+ [1940] x39
+ [1940] x69
+ [1928] Unary !
+ [1932] Binary = 
+ [1936] x39
+ [1936] x79
+ [1924] Unary !
+ [1928] Binary = 
+ [1932] x39
+ [1932] x89
+ [1920] Unary !
+ [1924] Binary = 
+ [1928] x39
+ [1928] x99
+ [1916] Unary !
+ [1920] Binary = 
+ [1924] x41
+ [1924] x42
+ [1912] Unary !
+ [1916] Binary = 
+ [1920] x41
+ [1920] x43
+ [1908] Unary !
+ [1912] Binary = 
+ [1916] x41
+ [1916] x44
+ [1904] Unary !
+ [1908] Binary = 
+ [1912] x41
+ [1912] x45
+ [1900] Unary !
+ [1904] Binary = 
+ [1908] x41
+ [1908] x46
+ [1896] Unary !
+ [1900] Binary = 
+ [1904] x41
+ [1904] x47
+ [1892] Unary !
+ [1896] Binary = 
+ [1900] x41
+ [1900] x48
+ [1888] Unary !
+ [1892] Binary = 
+ [1896] x41
+ [1896] x49
+ [1884] Unary !
+ [1888] Binary = 
+ [1892] x41
+ [1892] x51
+ [1880] Unary !
+ [1884] Binary = 
+ [1888] x41
+ [1888] x52
+ [1876] Unary !
+ [1880] Binary = 
+ [1884] x41
+ [1884] x53
+ [1872] Unary !
+ [1876] Binary = 
+ [1880] x41
+ [1880] x61
+ [1868] Unary !
+ [1872] Binary = 
+ [1876] x41
+ [1876] x62
+ [1864] Unary !
+ [1868] Binary = 
+ [1872] x41
+ [1872] x63
+ [1860] Unary !
+ [1864] Binary = 
+ [1868] x41
+ [1868] x71
+ [1856] Unary !
+ [1860] Binary = 
+ [1864] x41
+ [1864] x81
+ [1852] Unary !
+ [1856] Binary = 
+ [1860] x41
+ [1860] x91
+ [1848] Unary !
+ [1852] Binary = 
+ [1856] x42
+ [1856] x43
+ [1844] Unary !
+ [1848] Binary = 
+ [1852] x42
+ [1852] x44
+ [1840] Unary !
+ [1844] Binary = 
+ [1848] x42
+ [1848] x45
+ [1836] Unary !
+ [1840] Binary = 
+ [1844] x42
+ [1844] x46
+ [1832] Unary !
+ [1836] Binary = 
+ [1840] x42
+ [1840] x47
+ [1828] Unary !
+ [1832] Binary = 
+ [1836] x42
+ [1836] x48
+ [1824] Unary !
+ [1828] Binary = 
+ [1832] x42
+ [1832] x49
+ [1820] Unary !
+ [1824] Binary = 
+ [1828] x42
+ [1828] x51
+ [1816] Unary !
+ [1820] Binary = 
+ [1824] x42
+ [1824] x52
+ [1812] Unary !
+ [1816] Binary = 
+ [1820] x42
+ [1820] x53
+ [1808] Unary !
+ [1812] Binary = 
+ [1816] x42
+ [1816] x61
+ [1804] Unary !
+ [1808] Binary = 
+ [1812] x42
+ [1812] x62
+ [1800] Unary !
+ [1804] Binary = 
+ [1808] x42
+ [1808] x63
+ [1796] Unary !
+ [1800] Binary = 
+ [1804] x42
+ [1804] x72
+ [1792] Unary !
+ [1796] Binary = 
+ [1800] x42
+ [1800] x82
+ [1788] Unary !
+ [1792] Binary = 
+ [1796] x42
+ [1796] x92
+ [1784] Unary !
+ [1788] Binary = 
+ [1792] x43
+ [1792] x44
+ [1780] Unary !
+ [1784] Binary = 
+ [1788] x43
+ [1788] x45
+ [1776] Unary !
+ [1780] Binary = 
+ [1784] x43
+ [1784] x46
+ [1772] Unary !
+ [1776] Binary = 
+ [1780] x43
+ [1780] x47
+ [1768] Unary !
+ [1772] Binary = 
+ [1776] x43
+ [1776] x48
+ [1764] Unary !
+ [1768] Binary = 
+ [1772] x43
+ [1772] x49
+ [1760] Unary !
+ [1764] Binary = 
+ [1768] x43
+ [1768] x51
+ [1756] Unary !
+ [1760] Binary = 
+ [1764] x43
+ [1764] x52
+ [1752] Unary !
+ [1756] Binary = 
+ [1760] x43
+ [1760] x53
+ [1748] Unary !
+ [1752] Binary = 
+ [1756] x43
+ [1756] x61
+ [1744] Unary !
+ [1748] Binary = 
+ [1752] x43
+ [1752] x62
+ [1740] Unary !
+ [1744] Binary = 
+ [1748] x43
+ [1748] x63
+ [1736] Unary !
+ [1740] Binary = 
+ [1744] x43
+ [1744] x73
+ [1732] Unary !
+ [1736] Binary = 
+ [1740] x43
+ [1740] x83
+ [1728] Unary !
+ [1732] Binary = 
+ [1736] x43
+ [1736] x93
+ [1724] Unary !
+ [1728] Binary = 
+ [1732] x44
+ [1732] x45
+ [1720] Unary !
+ [1724] Binary = 
+ [1728] x44
+ [1728] x46
+ [1716] Unary !
+ [1720] Binary = 
+ [1724] x44
+ [1724] x47
+ [1712] Unary !
+ [1716] Binary = 
+ [1720] x44
+ [1720] x48
+ [1708] Unary !
+ [1712] Binary = 
+ [1716] x44
+ [1716] x49
+ [1704] Unary !
+ [1708] Binary = 
+ [1712] x44
+ [1712] x54
+ [1700] Unary !
+ [1704] Binary = 
+ [1708] x44
+ [1708] x55
+ [1696] Unary !
+ [1700] Binary = 
+ [1704] x44
+ [1704] x56
+ [1692] Unary !
+ [1696] Binary = 
+ [1700] x44
+ [1700] x64
+ [1688] Unary !
+ [1692] Binary = 
+ [1696] x44
+ [1696] x65
+ [1684] Unary !
+ [1688] Binary = 
+ [1692] x44
+ [1692] x66
+ [1680] Unary !
+ [1684] Binary = 
+ [1688] x44
+ [1688] x74
+ [1676] Unary !
+ [1680] Binary = 
+ [1684] x44
+ [1684] x84
+ [1672] Unary !
+ [1676] Binary = 
+ [1680] x44
+ [1680] x94
+ [1668] Unary !
+ [1672] Binary = 
+ [1676] x45
+ [1676] x46
+ [1664] Unary !
+ [1668] Binary = 
+ [1672] x45
+ [1672] x47
+ [1660] Unary !
+ [1664] Binary = 
+ [1668] x45
+ [1668] x48
+ [1656] Unary !
+ [1660] Binary = 
+ [1664] x45
+ [1664] x49
+ [1652] Unary !
+ [1656] Binary = 
+ [1660] x45
+ [1660] x54
+ [1648] Unary !
+ [1652] Binary = 
+ [1656] x45
+ [1656] x55
+ [1644] Unary !
+ [1648] Binary = 
+ [1652] x45
+ [1652] x56
+ [1640] Unary !
+ [1644] Binary = 
+ [1648] x45
+ [1648] x64
+ [1636] Unary !
+ [1640] Binary = 
+ [1644] x45
+ [1644] x65
+ [1632] Unary !
+ [1636] Binary = 
+ [1640] x45
+ [1640] x66
+ [1628] Unary !
+ [1632] Binary = 
+ [1636] x45
+ [1636] x75
+ [1624] Unary !
+ [1628] Binary = 
+ [1632] x45
+ [1632] x85
+ [1620] Unary !
+ [1624] Binary = 
+ [1628] x45
+ [1628] x95
+ [1616] Unary !
+ [1620] Binary = 
+ [1624] x46
+ [1624] x47
+ [1612] Unary !
+ [1616] Binary = 
+ [1620] x46
+ [1620] x48
+ [1608] Unary !
+ [1612] Binary = 
+ [1616] x46
+ [1616] x49
+ [1604] Unary !
+ [1608] Binary = 
+ [1612] x46
+ [1612] x54
+ [1600] Unary !
+ [1604] Binary = 
+ [1608] x46
+ [1608] x55
+ [1596] Unary !
+ [1600] Binary = 
+ [1604] x46
+ [1604] x56
+ [1592] Unary !
+ [1596] Binary = 
+ [1600] x46
+ [1600] x64
+ [1588] Unary !
+ [1592] Binary = 
+ [1596] x46
+ [1596] x65
+ [1584] Unary !
+ [1588] Binary = 
+ [1592] x46
+ [1592] x66
+ [1580] Unary !
+ [1584] Binary = 
+ [1588] x46
+ [1588] x76
+ [1576] Unary !
+ [1580] Binary = 
+ [1584] x46
+ [1584] x86
+ [1572] Unary !
+ [1576] Binary = 
+ [1580] x46
+ [1580] x96
+ [1568] Unary !
+ [1572] Binary = 
+ [1576] x47
+ [1576] x48
+ [1564] Unary !
+ [1568] Binary = 
+ [1572] x47
+ [1572] x49
+ [1560] Unary !
+ [1564] Binary = 
+ [1568] x47
+ [1568] x57
+ [1556] Unary !
+ [1560] Binary = 
+ [1564] x47
+ [1564] x58
+ [1552] Unary !
+ [1556] Binary = 
+ [1560] x47
+ [1560] x59
+ [1548] Unary !
+ [1552] Binary = 
+ [1556] x47
+ [1556] x67
+ [1544] Unary !
+ [1548] Binary = 
+ [1552] x47
+ [1552] x68
+ [1540] Unary !
+ [1544] Binary = 
+ [1548] x47
+ [1548] x69
+ [1536] Unary !
+ [1540] Binary = 
+ [1544] x47
+ [1544] x77
+ [1532] Unary !
+ [1536] Binary = 
+ [1540] x47
+ [1540] x87
+ [1528] Unary !
+ [1532] Binary = 
+ [1536] x47
+ [1536] x97
+ [1524] Unary !
+ [1528] Binary = 
+ [1532] x48
+ [1532] x49
+ [1520] Unary !
+ [1524] Binary = 
+ [1528] x48
+ [1528] x57
+ [1516] Unary !
+ [1520] Binary = 
+ [1524] x48
+ [1524] x58
+ [1512] Unary !
+ [1516] Binary = 
+ [1520] x48
+ [1520] x59
+ [1508] Unary !
+ [1512] Binary = 
+ [1516] x48
+ [1516] x67
+ [1504] Unary !
+ [1508] Binary = 
+ [1512] x48
+ [1512] x68
+ [1500] Unary !
+ [1504] Binary = 
+ [1508] x48
+ [1508] x69
+ [1496] Unary !
+ [1500] Binary = 
+ [1504] x48
+ [1504] x78
+ [1492] Unary !
+ [1496] Binary = 
+ [1500] x48
+ [1500] x88
+ [1488] Unary !
+ [1492] Binary = 
+ [1496] x48
+ [1496] x98
+ [1484] Unary !
+ [1488] Binary = 
+ [1492] x49
+ [1492] x57
+ [1480] Unary !
+ [1484] Binary = 
+ [1488] x49
+ [1488] x58
+ [1476] Unary !
+ [1480] Binary = 
+ [1484] x49
+ [1484] x59
+ [1472] Unary !
+ [1476] Binary = 
+ [1480] x49
+ [1480] x67
+ [1468] Unary !
+ [1472] Binary = 
+ [1476] x49
+ [1476] x68
+ [1464] Unary !
+ [1468] Binary = 
+ [1472] x49
+ [1472] x69
+ [1460] Unary !
+ [1464] Binary = 
+ [1468] x49
+ [1468] x79
+ [1456] Unary !
+ [1460] Binary = 
+ [1464] x49
+ [1464] x89
+ [1452] Unary !
+ [1456] Binary = 
+ [1460] x49
+ [1460] x99
+ [1448] Unary !
+ [1452] Binary = 
+ [1456] x51
+ [1456] x52
+ [1444] Unary !
+ [1448] Binary = 
+ [1452] x51
+ [1452] x53
+ [1440] Unary !
+ [1444] Binary = 
+ [1448] x51
+ [1448] x54
+ [1436] Unary !
+ [1440] Binary = 
+ [1444] x51
+ [1444] x55
+ [1432] Unary !
+ [1436] Binary = 
+ [1440] x51
+ [1440] x56
+ [1428] Unary !
+ [1432] Binary = 
+ [1436] x51
+ [1436] x57
+ [1424] Unary !
+ [1428] Binary = 
+ [1432] x51
+ [1432] x58
+ [1420] Unary !
+ [1424] Binary = 
+ [1428] x51
+ [1428] x59
+ [1416] Unary !
+ [1420] Binary = 
+ [1424] x51
+ [1424] x61
+ [1412] Unary !
+ [1416] Binary = 
+ [1420] x51
+ [1420] x62
+ [1408] Unary !
+ [1412] Binary = 
+ [1416] x51
+ [1416] x63
+ [1404] Unary !
+ [1408] Binary = 
+ [1412] x51
+ [1412] x71
+ [1400] Unary !
+ [1404] Binary = 
+ [1408] x51
+ [1408] x81
+ [1396] Unary !
+ [1400] Binary = 
+ [1404] x51
+ [1404] x91
+ [1392] Unary !
+ [1396] Binary = 
+ [1400] x52
+ [1400] x53
+ [1388] Unary !
+ [1392] Binary = 
+ [1396] x52
+ [1396] x54
+ [1384] Unary !
+ [1388] Binary = 
+ [1392] x52
+ [1392] x55
+ [1380] Unary !
+ [1384] Binary = 
+ [1388] x52
+ [1388] x56
+ [1376] Unary !
+ [1380] Binary = 
+ [1384] x52
+ [1384] x57
+ [1372] Unary !
+ [1376] Binary = 
+ [1380] x52
+ [1380] x58
+ [1368] Unary !
+ [1372] Binary = 
+ [1376] x52
+ [1376] x59
+ [1364] Unary !
+ [1368] Binary = 
+ [1372] x52
+ [1372] x61
+ [1360] Unary !
+ [1364] Binary = 
+ [1368] x52
+ [1368] x62
+ [1356] Unary !
+ [1360] Binary = 
+ [1364] x52
+ [1364] x63
+ [1352] Unary !
+ [1356] Binary = 
+ [1360] x52
+ [1360] x72
+ [1348] Unary !
+ [1352] Binary = 
+ [1356] x52
+ [1356] x82
+ [1344] Unary !
+ [1348] Binary = 
+ [1352] x52
+ [1352] x92
+ [1340] Unary !
+ [1344] Binary = 
+ [1348] x53
+ [1348] x54
+ [1336] Unary !
+ [1340] Binary = 
+ [1344] x53
+ [1344] x55
+ [1332] Unary !
+ [1336] Binary = 
+ [1340] x53
+ [1340] x56
+ [1328] Unary !
+ [1332] Binary = 
+ [1336] x53
+ [1336] x57
+ [1324] Unary !
+ [1328] Binary = 
+ [1332] x53
+ [1332] x58
+ [1320] Unary !
+ [1324] Binary = 
+ [1328] x53
+ [1328] x59
+ [1316] Unary !
+ [1320] Binary = 
+ [1324] x53
+ [1324] x61
+ [1312] Unary !
+ [1316] Binary = 
+ [1320] x53
+ [1320] x62
+ [1308] Unary !
+ [1312] Binary = 
+ [1316] x53
+ [1316] x63
+ [1304] Unary !
+ [1308] Binary = 
+ [1312] x53
+ [1312] x73
+ [1300] Unary !
+ [1304] Binary = 
+ [1308] x53
+ [1308] x83
+ [1296] Unary !
+ [1300] Binary = 
+ [1304] x53
+ [1304] x93
+ [1292] Unary !
+ [1296] Binary = 
+ [1300] x54
+ [1300] x55
+ [1288] Unary !
+ [1292] Binary = 
+ [1296] x54
+ [1296] x56
+ [1284] Unary !
+ [1288] Binary = 
+ [1292] x54
+ [1292] x57
+ [1280] Unary !
+ [1284] Binary = 
+ [1288] x54
+ [1288] x58
+ [1276] Unary !
+ [1280] Binary = 
+ [1284] x54
+ [1284] x59
+ [1272] Unary !
+ [1276] Binary = 
+ [1280] x54
+ [1280] x64
+ [1268] Unary !
+ [1272] Binary = 
+ [1276] x54
+ [1276] x65
+ [1264] Unary !
+ [1268] Binary = 
+ [1272] x54
+ [1272] x66
+ [1260] Unary !
+ [1264] Binary = 
+ [1268] x54
+ [1268] x74
+ [1256] Unary !
+ [1260] Binary = 
+ [1264] x54
+ [1264] x84
+ [1252] Unary !
+ [1256] Binary = 
+ [1260] x54
+ [1260] x94
+ [1248] Unary !
+ [1252] Binary = 
+ [1256] x55
+ [1256] x56
+ [1244] Unary !
+ [1248] Binary = 
+ [1252] x55
+ [1252] x57
+ [1240] Unary !
+ [1244] Binary = 
+ [1248] x55
+ [1248] x58
+ [1236] Unary !
+ [1240] Binary = 
+ [1244] x55
+ [1244] x59
+ [1232] Unary !
+ [1236] Binary = 
+ [1240] x55
+ [1240] x64
+ [1228] Unary !
+ [1232] Binary = 
+ [1236] x55
+ [1236] x65
+ [1224] Unary !
+ [1228] Binary = 
+ [1232] x55
+ [1232] x66
+ [1220] Unary !
+ [1224] Binary = 
+ [1228] x55
+ [1228] x75
+ [1216] Unary !
+ [1220] Binary = 
+ [1224] x55
+ [1224] x85
+ [1212] Unary !
+ [1216] Binary = 
+ [1220] x55
+ [1220] x95
+ [1208] Unary !
+ [1212] Binary = 
+ [1216] x56
+ [1216] x57
+ [1204] Unary !
+ [1208] Binary = 
+ [1212] x56
+ [1212] x58
+ [1200] Unary !
+ [1204] Binary = 
+ [1208] x56
+ [1208] x59
+ [1196] Unary !
+ [1200] Binary = 
+ [1204] x56
+ [1204] x64
+ [1192] Unary !
+ [1196] Binary = 
+ [1200] x56
+ [1200] x65
+ [1188] Unary !
+ [1192] Binary = 
+ [1196] x56
+ [1196] x66
+ [1184] Unary !
+ [1188] Binary = 
+ [1192] x56
+ [1192] x76
+ [1180] Unary !
+ [1184] Binary = 
+ [1188] x56
+ [1188] x86
+ [1176] Unary !
+ [1180] Binary = 
+ [1184] x56
+ [1184] x96
+ [1172] Unary !
+ [1176] Binary = 
+ [1180] x57
+ [1180] x58
+ [1168] Unary !
+ [1172] Binary = 
+ [1176] x57
+ [1176] x59
+ [1164] Unary !
+ [1168] Binary = 
+ [1172] x57
+ [1172] x67
+ [1160] Unary !
+ [1164] Binary = 
+ [1168] x57
+ [1168] x68
+ [1156] Unary !
+ [1160] Binary = 
+ [1164] x57
+ [1164] x69
+ [1152] Unary !
+ [1156] Binary = 
+ [1160] x57
+ [1160] x77
+ [1148] Unary !
+ [1152] Binary = 
+ [1156] x57
+ [1156] x87
+ [1144] Unary !
+ [1148] Binary = 
+ [1152] x57
+ [1152] x97
+ [1140] Unary !
+ [1144] Binary = 
+ [1148] x58
+ [1148] x59
+ [1136] Unary !
+ [1140] Binary = 
+ [1144] x58
+ [1144] x67
+ [1132] Unary !
+ [1136] Binary = 
+ [1140] x58
+ [1140] x68
+ [1128] Unary !
+ [1132] Binary = 
+ [1136] x58
+ [1136] x69
+ [1124] Unary !
+ [1128] Binary = 
+ [1132] x58
+ [1132] x78
+ [1120] Unary !
+ [1124] Binary = 
+ [1128] x58
+ [1128] x88
+ [1116] Unary !
+ [1120] Binary = 
+ [1124] x58
+ [1124] x98
+ [1112] Unary !
+ [1116] Binary = 
+ [1120] x59
+ [1120] x67
+ [1108] Unary !
+ [1112] Binary = 
+ [1116] x59
+ [1116] x68
+ [1104] Unary !
+ [1108] Binary = 
+ [1112] x59
+ [1112] x69
+ [1100] Unary !
+ [1104] Binary = 
+ [1108] x59
+ [1108] x79
+ [1096] Unary !
+ [1100] Binary = 
+ [1104] x59
+ [1104] x89
+ [1092] Unary !
+ [1096] Binary = 
+ [1100] x59
+ [1100] x99
+ [1088] Unary !
+ [1092] Binary = 
+ [1096] x61
+ [1096] x62
+ [1084] Unary !
+ [1088] Binary = 
+ [1092] x61
+ [1092] x63
+ [1080] Unary !
+ [1084] Binary = 
+ [1088] x61
+ [1088] x64
+ [1076] Unary !
+ [1080] Binary = 
+ [1084] x61
+ [1084] x65
+ [1072] Unary !
+ [1076] Binary = 
+ [1080] x61
+ [1080] x66
+ [1068] Unary !
+ [1072] Binary = 
+ [1076] x61
+ [1076] x67
+ [1064] Unary !
+ [1068] Binary = 
+ [1072] x61
+ [1072] x68
+ [1060] Unary !
+ [1064] Binary = 
+ [1068] x61
+ [1068] x69
+ [1056] Unary !
+ [1060] Binary = 
+ [1064] x61
+ [1064] x71
+ [1052] Unary !
+ [1056] Binary = 
+ [1060] x61
+ [1060] x81
+ [1048] Unary !
+ [1052] Binary = 
+ [1056] x61
+ [1056] x91
+ [1044] Unary !
+ [1048] Binary = 
+ [1052] x62
+ [1052] x63
+ [1040] Unary !
+ [1044] Binary = 
+ [1048] x62
+ [1048] x64
+ [1036] Unary !
+ [1040] Binary = 
+ [1044] x62
+ [1044] x65
+ [1032] Unary !
+ [1036] Binary = 
+ [1040] x62
+ [1040] x66
+ [1028] Unary !
+ [1032] Binary = 
+ [1036] x62
+ [1036] x67
+ [1024] Unary !
+ [1028] Binary = 
+ [1032] x62
+ [1032] x68
+ [1020] Unary !
+ [1024] Binary = 
+ [1028] x62
+ [1028] x69
+ [1016] Unary !
+ [1020] Binary = 
+ [1024] x62
+ [1024] x72
+ [1012] Unary !
+ [1016] Binary = 
+ [1020] x62
+ [1020] x82
+ [1008] Unary !
+ [1012] Binary = 
+ [1016] x62
+ [1016] x92
+ [1004] Unary !
+ [1008] Binary = 
+ [1012] x63
+ [1012] x64
+ [1000] Unary !
+ [1004] Binary = 
+ [1008] x63
+ [1008] x65
+ [996] Unary !
+ [1000] Binary = 
+ [1004] x63
+ [1004] x66
+ [992] Unary !
+ [996] Binary = 
+ [1000] x63
+ [1000] x67
+ [988] Unary !
+ [992] Binary = 
+ [996] x63
+ [996] x68
+ [984] Unary !
+ [988] Binary = 
+ [992] x63
+ [992] x69
+ [980] Unary !
+ [984] Binary = 
+ [988] x63
+ [988] x73
+ [976] Unary !
+ [980] Binary = 
+ [984] x63
+ [984] x83
+ [972] Unary !
+ [976] Binary = 
+ [980] x63
+ [980] x93
+ [968] Unary !
+ [972] Binary = 
+ [976] x64
+ [976] x65
+ [964] Unary !
+ [968] Binary = 
+ [972] x64
+ [972] x66
+ [960] Unary !
+ [964] Binary = 
+ [968] x64
+ [968] x67
+ [956] Unary !
+ [960] Binary = 
+ [964] x64
+ [964] x68
+ [952] Unary !
+ [956] Binary = 
+ [960] x64
+ [960] x69
+ [948] Unary !
+ [952] Binary = 
+ [956] x64
+ [956] x74
+ [944] Unary !
+ [948] Binary = 
+ [952] x64
+ [952] x84
+ [940] Unary !
+ [944] Binary = 
+ [948] x64
+ [948] x94
+ [936] Unary !
+ [940] Binary = 
+ [944] x65
+ [944] x66
+ [932] Unary !
+ [936] Binary = 
+ [940] x65
+ [940] x67
+ [928] Unary !
+ [932] Binary = 
+ [936] x65
+ [936] x68
+ [924] Unary !
+ [928] Binary = 
+ [932] x65
+ [932] x69
+ [920] Unary !
+ [924] Binary = 
+ [928] x65
+ [928] x75
+ [916] Unary !
+ [920] Binary = 
+ [924] x65
+ [924] x85
+ [912] Unary !
+ [916] Binary = 
+ [920] x65
+ [920] x95
+ [908] Unary !
+ [912] Binary = 
+ [916] x66
+ [916] x67
+ [904] Unary !
+ [908] Binary = 
+ [912] x66
+ [912] x68
+ [900] Unary !
+ [904] Binary = 
+ [908] x66
+ [908] x69
+ [896] Unary !
+ [900] Binary = 
+ [904] x66
+ [904] x76
+ [892] Unary !
+ [896] Binary = 
+ [900] x66
+ [900] x86
+ [888] Unary !
+ [892] Binary = 
+ [896] x66
+ [896] x96
+ [884] Unary !
+ [888] Binary = 
+ [892] x67
+ [892] x68
+ [880] Unary !
+ [884] Binary = 
+ [888] x67
+ [888] x69
+ [876] Unary !
+ [880] Binary = 
+ [884] x67
+ [884] x77
+ [872] Unary !
+ [876] Binary = 
+ [880] x67
+ [880] x87
+ [868] Unary !
+ [872] Binary = 
+ [876] x67
+ [876] x97
+ [864] Unary !
+ [868] Binary = 
+ [872] x68
+ [872] x69
+ [860] Unary !
+ [864] Binary = 
+ [868] x68
+ [868] x78
+ [856] Unary !
+ [860] Binary = 
+ [864] x68
+ [864] x88
+ [852] Unary !
+ [856] Binary = 
+ [860] x68
+ [860] x98
+ [848] Unary !
+ [852] Binary = 
+ [856] x69
+ [856] x79
+ [844] Unary !
+ [848] Binary = 
+ [852] x69
+ [852] x89
+ [840] Unary !
+ [844] Binary = 
+ [848] x69
+ [848] x99
+ [836] Unary !
+ [840] Binary = 
+ [844] x71
+ [844] x72
+ [832] Unary !
+ [836] Binary = 
+ [840] x71
+ [840] x73
+ [828] Unary !
+ [832] Binary = 
+ [836] x71
+ [836] x74
+ [824] Unary !
+ [828] Binary = 
+ [832] x71
+ [832] x75
+ [820] Unary !
+ [824] Binary = 
+ [828] x71
+ [828] x76
+ [816] Unary !
+ [820] Binary = 
+ [824] x71
+ [824] x77
+ [812] Unary !
+ [816] Binary = 
+ [820] x71
+ [820] x78
+ [808] Unary !
+ [812] Binary = 
+ [816] x71
+ [816] x79
+ [804] Unary !
+ [808] Binary = 
+ [812] x71
+ [812] x81
+ [800] Unary !
+ [804] Binary = 
+ [808] x71
+ [808] x82
+ [796] Unary !
+ [800] Binary = 
+ [804] x71
+ [804] x83
+ [792] Unary !
+ [796] Binary = 
+ [800] x71
+ [800] x91
+ [788] Unary !
+ [792] Binary = 
+ [796] x71
+ [796] x92
+ [784] Unary !
+ [788] Binary = 
+ [792] x71
+ [792] x93
+ [780] Unary !
+ [784] Binary = 
+ [788] x72
+ [788] x73
+ [776] Unary !
+ [780] Binary = 
+ [784] x72
+ [784] x74
+ [772] Unary !
+ [776] Binary = 
+ [780] x72
+ [780] x75
+ [768] Unary !
+ [772] Binary = 
+ [776] x72
+ [776] x76
+ [764] Unary !
+ [768] Binary = 
+ [772] x72
+ [772] x77
+ [760] Unary !
+ [764] Binary = 
+ [768] x72
+ [768] x78
+ [756] Unary !
+ [760] Binary = 
+ [764] x72
+ [764] x79
+ [752] Unary !
+ [756] Binary = 
+ [760] x72
+ [760] x81
+ [748] Unary !
+ [752] Binary = 
+ [756] x72
+ [756] x82
+ [744] Unary !
+ [748] Binary = 
+ [752] x72
+ [752] x83
+ [740] Unary !
+ [744] Binary = 
+ [748] x72
+ [748] x91
+ [736] Unary !
+ [740] Binary = 
+ [744] x72
+ [744] x92
+ [732] Unary !
+ [736] Binary = 
+ [740] x72
+ [740] x93
+ [728] Unary !
+ [732] Binary = 
+ [736] x73
+ [736] x74
+ [724] Unary !
+ [728] Binary = 
+ [732] x73
+ [732] x75
+ [720] Unary !
+ [724] Binary = 
+ [728] x73
+ [728] x76
+ [716] Unary !
+ [720] Binary = 
+ [724] x73
+ [724] x77
+ [712] Unary !
+ [716] Binary = 
+ [720] x73
+ [720] x78
+ [708] Unary !
+ [712] Binary = 
+ [716] x73
+ [716] x79
+ [704] Unary !
+ [708] Binary = 
+ [712] x73
+ [712] x81
+ [700] Unary !
+ [704] Binary = 
+ [708] x73
+ [708] x82
+ [696] Unary !
+ [700] Binary = 
+ [704] x73
+ [704] x83
+ [692] Unary !
+ [696] Binary = 
+ [700] x73
+ [700] x91
+ [688] Unary !
+ [692] Binary = 
+ [696] x73
+ [696] x92
+ [684] Unary !
+ [688] Binary = 
+ [692] x73
+ [692] x93
+ [680] Unary !
+ [684] Binary = 
+ [688] x74
+ [688] x75
+ [676] Unary !
+ [680] Binary = 
+ [684] x74
+ [684] x76
+ [672] Unary !
+ [676] Binary = 
+ [680] x74
+ [680] x77
+ [668] Unary !
+ [672] Binary = 
+ [676] x74
+ [676] x78
+ [664] Unary !
+ [668] Binary = 
+ [672] x74
+ [672] x79
+ [660] Unary !
+ [664] Binary = 
+ [668] x74
+ [668] x84
+ [656] Unary !
+ [660] Binary = 
+ [664] x74
+ [664] x85
+ [652] Unary !
+ [656] Binary = 
+ [660] x74
+ [660] x86
+ [648] Unary !
+ [652] Binary = 
+ [656] x74
+ [656] x94
+ [644] Unary !
+ [648] Binary = 
+ [652] x74
+ [652] x95
+ [640] Unary !
+ [644] Binary = 
+ [648] x74
+ [648] x96
+ [636] Unary !
+ [640] Binary = 
+ [644] x75
+ [644] x76
+ [632] Unary !
+ [636] Binary = 
+ [640] x75
+ [640] x77
+ [628] Unary !
+ [632] Binary = 
+ [636] x75
+ [636] x78
+ [624] Unary !
+ [628] Binary = 
+ [632] x75
+ [632] x79
+ [620] Unary !
+ [624] Binary = 
+ [628] x75
+ [628] x84
+ [616] Unary !
+ [620] Binary = 
+ [624] x75
+ [624] x85
+ [612] Unary !
+ [616] Binary = 
+ [620] x75
+ [620] x86
+ [608] Unary !
+ [612] Binary = 
+ [616] x75
+ [616] x94
+ [604] Unary !
+ [608] Binary = 
+ [612] x75
+ [612] x95
+ [600] Unary !
+ [604] Binary = 
+ [608] x75
+ [608] x96
+ [596] Unary !
+ [600] Binary = 
+ [604] x76
+ [604] x77
+ [592] Unary !
+ [596] Binary = 
+ [600] x76
+ [600] x78
+ [588] Unary !
+ [592] Binary = 
+ [596] x76
+ [596] x79
+ [584] Unary !
+ [588] Binary = 
+ [592] x76
+ [592] x84
+ [580] Unary !
+ [584] Binary = 
+ [588] x76
+ [588] x85
+ [576] Unary !
+ [580] Binary = 
+ [584] x76
+ [584] x86
+ [572] Unary !
+ [576] Binary = 
+ [580] x76
+ [580] x94
+ [568] Unary !
+ [572] Binary = 
+ [576] x76
+ [576] x95
+ [564] Unary !
+ [568] Binary = 
+ [572] x76
+ [572] x96
+ [560] Unary !
+ [564] Binary = 
+ [568] x77
+ [568] x78
+ [556] Unary !
+ [560] Binary = 
+ [564] x77
+ [564] x79
+ [552] Unary !
+ [556] Binary = 
+ [560] x77
+ [560] x87
+ [548] Unary !
+ [552] Binary = 
+ [556] x77
+ [556] x88
+ [544] Unary !
+ [548] Binary = 
+ [552] x77
+ [552] x89
+ [540] Unary !
+ [544] Binary = 
+ [548] x77
+ [548] x97
+ [536] Unary !
+ [540] Binary = 
+ [544] x77
+ [544] x98
+ [532] Unary !
+ [536] Binary = 
+ [540] x77
+ [540] x99
+ [528] Unary !
+ [532] Binary = 
+ [536] x78
+ [536] x79
+ [524] Unary !
+ [528] Binary = 
+ [532] x78
+ [532] x87
+ [520] Unary !
+ [524] Binary = 
+ [528] x78
+ [528] x88
+ [516] Unary !
+ [520] Binary = 
+ [524] x78
+ [524] x89
+ [512] Unary !
+ [516] Binary = 
+ [520] x78
+ [520] x97
+ [508] Unary !
+ [512] Binary = 
+ [516] x78
+ [516] x98
+ [504] Unary !
+ [508] Binary = 
+ [512] x78
+ [512] x99
+ [500] Unary !
+ [504] Binary = 
+ [508] x79
+ [508] x87
+ [496] Unary !
+ [500] Binary = 
+ [504] x79
+ [504] x88
+ [492] Unary !
+ [496] Binary = 
+ [500] x79
+ [500] x89
+ [488] Unary !
+ [492] Binary = 
+ [496] x79
+ [496] x97
+ [484] Unary !
+ [488] Binary = 
+ [492] x79
+ [492] x98
+ [480] Unary !
+ [484] Binary = 
+ [488] x79
+ [488] x99
+ [476] Unary !
+ [480] Binary = 
+ [484] x81
+ [484] x82
+ [472] Unary !
+ [476] Binary = 
+ [480] x81
+ [480] x83
+ [468] Unary !
+ [472] Binary = 
+ [476] x81
+ [476] x84
+ [464] Unary !
+ [468] Binary = 
+ [472] x81
+ [472] x85
+ [460] Unary !
+ [464] Binary = 
+ [468] x81
+ [468] x86
+ [456] Unary !
+ [460] Binary = 
+ [464] x81
+ [464] x87
+ [452] Unary !
+ [456] Binary = 
+ [460] x81
+ [460] x88
+ [448] Unary !
+ [452] Binary = 
+ [456] x81
+ [456] x89
+ [444] Unary !
+ [448] Binary = 
+ [452] x81
+ [452] x91
+ [440] Unary !
+ [444] Binary = 
+ [448] x81
+ [448] x92
+ [436] Unary !
+ [440] Binary = 
+ [444] x81
+ [444] x93
+ [432] Unary !
+ [436] Binary = 
+ [440] x82
+ [440] x83
+ [428] Unary !
+ [432] Binary = 
+ [436] x82
+ [436] x84
+ [424] Unary !
+ [428] Binary = 
+ [432] x82
+ [432] x85
+ [420] Unary !
+ [424] Binary = 
+ [428] x82
+ [428] x86
+ [416] Unary !
+ [420] Binary = 
+ [424] x82
+ [424] x87
+ [412] Unary !
+ [416] Binary = 
+ [420] x82
+ [420] x88
+ [408] Unary !
+ [412] Binary = 
+ [416] x82
+ [416] x89
+ [404] Unary !
+ [408] Binary = 
+ [412] x82
+ [412] x91
+ [400] Unary !
+ [404] Binary = 
+ [408] x82
+ [408] x92
+ [396] Unary !
+ [400] Binary = 
+ [404] x82
+ [404] x93
+ [392] Unary !
+ [396] Binary = 
+ [400] x83
+ [400] x84
+ [388] Unary !
+ [392] Binary = 
+ [396] x83
+ [396] x85
+ [384] Unary !
+ [388] Binary = 
+ [392] x83
+ [392] x86
+ [380] Unary !
+ [384] Binary = 
+ [388] x83
+ [388] x87
+ [376] Unary !
+ [380] Binary = 
+ [384] x83
+ [384] x88
+ [372] Unary !
+ [376] Binary = 
+ [380] x83
+ [380] x89
+ [368] Unary !
+ [372] Binary = 
+ [376] x83
+ [376] x91
+ [364] Unary !
+ [368] Binary = 
+ [372] x83
+ [372] x92
+ [360] Unary !
+ [364] Binary = 
+ [368] x83
+ [368] x93
+ [356] Unary !
+ [360] Binary = 
+ [364] x84
+ [364] x85
+ [352] Unary !
+ [356] Binary = 
+ [360] x84
+ [360] x86
+ [348] Unary !
+ [352] Binary = 
+ [356] x84
+ [356] x87
+ [344] Unary !
+ [348] Binary = 
+ [352] x84
+ [352] x88
+ [340] Unary !
+ [344] Binary = 
+ [348] x84
+ [348] x89
+ [336] Unary !
+ [340] Binary = 
+ [344] x84
+ [344] x94
+ [332] Unary !
+ [336] Binary = 
+ [340] x84
+ [340] x95
+ [328] Unary !
+ [332] Binary = 
+ [336] x84
+ [336] x96
+ [324] Unary !
+ [328] Binary = 
+ [332] x85
+ [332] x86
+ [320] Unary !
+ [324] Binary = 
+ [328] x85
+ [328] x87
+ [316] Unary !
+ [320] Binary = 
+ [324] x85
+ [324] x88
+ [312] Unary !
+ [316] Binary = 
+ [320] x85
+ [320] x89
+ [308] Unary !
+ [312] Binary = 
+ [316] x85
+ [316] x94
+ [304] Unary !
+ [308] Binary = 
+ [312] x85
+ [312] x95
+ [300] Unary !
+ [304] Binary = 
+ [308] x85
+ [308] x96
+ [296] Unary !
+ [300] Binary = 
+ [304] x86
+ [304] x87
+ [292] Unary !
+ [296] Binary = 
+ [300] x86
+ [300] x88
+ [288] Unary !
+ [292] Binary = 
+ [296] x86
+ [296] x89
+ [284] Unary !
+ [288] Binary = 
+ [292] x86
+ [292] x94
+ [280] Unary !
+ [284] Binary = 
+ [288] x86
+ [288] x95
+ [276] Unary !
+ [280] Binary = 
+ [284] x86
+ [284] x96
+ [272] Unary !
+ [276] Binary = 
+ [280] x87
+ [280] x88
+ [268] Unary !
+ [272] Binary = 
+ [276] x87
+ [276] x89
+ [264] Unary !
+ [268] Binary = 
+ [272] x87
+ [272] x97
+ [260] Unary !
+ [264] Binary = 
+ [268] x87
+ [268] x98
+ [256] Unary !
+ [260] Binary = 
+ [264] x87
+ [264] x99
+ [252] Unary !
+ [256] Binary = 
+ [260] x88
+ [260] x89
+ [248] Unary !
+ [252] Binary = 
+ [256] x88
+ [256] x97
+ [244] Unary !
+ [248] Binary = 
+ [252] x88
+ [252] x98
+ [240] Unary !
+ [244] Binary = 
+ [248] x88
+ [248] x99
+ [236] Unary !
+ [240] Binary = 
+ [244] x89
+ [244] x97
+ [232] Unary !
+ [236] Binary = 
+ [240] x89
+ [240] x98
+ [228] Unary !
+ [232] Binary = 
+ [236] x89
+ [236] x99
+ [224] Unary !
+ [228] Binary = 
+ [232] x91
+ [232] x92
+ [220] Unary !
+ [224] Binary = 
+ [228] x91
+ [228] x93
+ [216] Unary !
+ [220] Binary = 
+ [224] x91
+ [224] x94
+ [212] Unary !
+ [216] Binary = 
+ [220] x91
+ [220] x95
+ [208] Unary !
+ [212] Binary = 
+ [216] x91
+ [216] x96
+ [204] Unary !
+ [208] Binary = 
+ [212] x91
+ [212] x97
+ [200] Unary !
+ [204] Binary = 
+ [208] x91
+ [208] x98
+ [196] Unary !
+ [200] Binary = 
+ [204] x91
+ [204] x99
+ [192] Unary !
+ [196] Binary = 
+ [200] x92
+ [200] x93
+ [188] Unary !
+ [192] Binary = 
+ [196] x92
+ [196] x94
+ [184] Unary !
+ [188] Binary = 
+ [192] x92
+ [192] x95
+ [180] Unary !
+ [184] Binary = 
+ [188] x92
+ [188] x96
+ [176] Unary !
+ [180] Binary = 
+ [184] x92
+ [184] x97
+ [172] Unary !
+ [176] Binary = 
+ [180] x92
+ [180] x98
+ [168] Unary !
+ [172] Binary = 
+ [176] x92
+ [176] x99
+ [164] Unary !
+ [168] Binary = 
+ [172] x93
+ [172] x94
+ [160] Unary !
+ [164] Binary = 
+ [168] x93
+ [168] x95
+ [156] Unary !
+ [160] Binary = 
+ [164] x93
+ [164] x96
+ [152] Unary !
+ [156] Binary = 
+ [160] x93
+ [160] x97
+ [148] Unary !
+ [152] Binary = 
+ [156] x93
+ [156] x98
+ [144] Unary !
+ [148] Binary = 
+ [152] x93
+ [152] x99
+ [140] Unary !
+ [144] Binary = 
+ [148] x94
+ [148] x95
+ [136] Unary !
+ [140] Binary = 
+ [144] x94
+ [144] x96
+ [132] Unary !
+ [136] Binary = 
+ [140] x94
+ [140] x97
+ [128] Unary !
+ [132] Binary = 
+ [136] x94
+ [136] x98
+ [124] Unary !
+ [128] Binary = 
+ [132] x94
+ [132] x99
+ [120] Unary !
+ [124] Binary = 
+ [128] x95
+ [128] x96
+ [116] Unary !
+ [120] Binary = 
+ [124] x95
+ [124] x97
+ [112] Unary !
+ [116] Binary = 
+ [120] x95
+ [120] x98
+ [108] Unary !
+ [112] Binary = 
+ [116] x95
+ [116] x99
+ [104] Unary !
+ [108] Binary = 
+ [112] x96
+ [112] x97
+ [100] Unary !
+ [104] Binary = 
+ [108] x96
+ [108] x98
+ [96] Unary !
+ [100] Binary = 
+ [104] x96
+ [104] x99
+ [92] Unary !
+ [96] Binary = 
+ [100] x97
+ [100] x98
+ [88] Unary !
+ [92] Binary = 
+ [96] x97
+ [96] x99
+ [84] Unary !
+ [88] Binary = 
+ [92] x98
+ [92] x99
+ [80] Binary = 
+ [84] x12
+ [84] Integer(6)
+ [76] Binary = 
+ [80] x13
+ [80] Integer(4)
+ [72] Binary = 
+ [76] x17
+ [76] Integer(7)
+ [68] Binary = 
+ [72] x25
+ [72] Integer(2)
+ [64] Binary = 
+ [68] x28
+ [68] Integer(3)
+ [60] Binary = 
+ [64] x29
+ [64] Integer(6)
+ [56] Binary = 
+ [60] x33
+ [60] Integer(1)
+ [52] Binary = 
+ [56] x41
+ [56] Integer(2)
+ [48] Binary = 
+ [52] x42
+ [52] Integer(3)
+ [44] Binary = 
+ [48] x45
+ [48] Integer(8)
+ [40] Binary = 
+ [44] x54
+ [44] Integer(7)
+ [36] Binary = 
+ [40] x57
+ [40] Integer(1)
+ [32] Binary = 
+ [36] x59
+ [36] Integer(4)
+ [28] Binary = 
+ [32] x71
+ [32] Integer(9)
+ [24] Binary = 
+ [28] x81
+ [28] Integer(8)
+ [20] Binary = 
+ [24] x88
+ [24] Integer(2)
+ [16] Binary = 
+ [20] x94
+ [20] Integer(4)
+ [12] x1
+ [12] String("f84")
+ [4] Binary + 
+ [8] Integer(1)
+ [8] Binary % 
+ [12] Binary / 
+ [16] x1
+ [16] Integer(1)
+ [12] Integer(9)
+
+>>> f84: 
+ [0] Binary $ 
+ [4] x2
+ [4] Binary + 
+ [8] x1
+ [8] Integer(1)
+
+Full example:
+ [0] Binary $ 
+ [4] Binary $ 
+ [8] Lambda x1
+ [12] Binary $ 
+ [16] Lambda x2
+ [20] Binary $ 
+ [24] x1
+ [24] Binary $ 
+ [28] x2
+ [28] x2
+ [16] Lambda x2
+ [20] Binary $ 
+ [24] x1
+ [24] Binary $ 
+ [28] x2
+ [28] x2
+ [8] Lambda x2
+ [12] Lambda x1
+ [16] Binary $ 
+ [20] Lambda x11
+ [24] Binary $ 
+ [28] Lambda x12
+ [32] Binary $ 
+ [36] Lambda x13
+ [40] Binary $ 
+ [44] Lambda x14
+ [48] Binary $ 
+ [52] Lambda x15
+ [56] Binary $ 
+ [60] Lambda x16
+ [64] Binary $ 
+ [68] Lambda x17
+ [72] Binary $ 
+ [76] Lambda x18
+ [80] Binary $ 
+ [84] Lambda x19
+ [88] Binary $ 
+ [92] Lambda x21
+ [96] Binary $ 
+ [100] Lambda x22
+ [104] Binary $ 
+ [108] Lambda x23
+ [112] Binary $ 
+ [116] Lambda x24
+ [120] Binary $ 
+ [124] Lambda x25
+ [128] Binary $ 
+ [132] Lambda x26
+ [136] Binary $ 
+ [140] Lambda x27
+ [144] Binary $ 
+ [148] Lambda x28
+ [152] Binary $ 
+ [156] Lambda x29
+ [160] Binary $ 
+ [164] Lambda x31
+ [168] Binary $ 
+ [172] Lambda x32
+ [176] Binary $ 
+ [180] Lambda x33
+ [184] Binary $ 
+ [188] Lambda x34
+ [192] Binary $ 
+ [196] Lambda x35
+ [200] Binary $ 
+ [204] Lambda x36
+ [208] Binary $ 
+ [212] Lambda x37
+ [216] Binary $ 
+ [220] Lambda x38
+ [224] Binary $ 
+ [228] Lambda x39
+ [232] Binary $ 
+ [236] Lambda x41
+ [240] Binary $ 
+ [244] Lambda x42
+ [248] Binary $ 
+ [252] Lambda x43
+ [256] Binary $ 
+ [260] Lambda x44
+ [264] Binary $ 
+ [268] Lambda x45
+ [272] Binary $ 
+ [276] Lambda x46
+ [280] Binary $ 
+ [284] Lambda x47
+ [288] Binary $ 
+ [292] Lambda x48
+ [296] Binary $ 
+ [300] Lambda x49
+ [304] Binary $ 
+ [308] Lambda x51
+ [312] Binary $ 
+ [316] Lambda x52
+ [320] Binary $ 
+ [324] Lambda x53
+ [328] Binary $ 
+ [332] Lambda x54
+ [336] Binary $ 
+ [340] Lambda x55
+ [344] Binary $ 
+ [348] Lambda x56
+ [352] Binary $ 
+ [356] Lambda x57
+ [360] Binary $ 
+ [364] Lambda x58
+ [368] Binary $ 
+ [372] Lambda x59
+ [376] Binary $ 
+ [380] Lambda x61
+ [384] Binary $ 
+ [388] Lambda x62
+ [392] Binary $ 
+ [396] Lambda x63
+ [400] Binary $ 
+ [404] Lambda x64
+ [408] Binary $ 
+ [412] Lambda x65
+ [416] Binary $ 
+ [420] Lambda x66
+ [424] Binary $ 
+ [428] Lambda x67
+ [432] Binary $ 
+ [436] Lambda x68
+ [440] Binary $ 
+ [444] Lambda x69
+ [448] Binary $ 
+ [452] Lambda x71
+ [456] Binary $ 
+ [460] Lambda x72
+ [464] Binary $ 
+ [468] Lambda x73
+ [472] Binary $ 
+ [476] Lambda x74
+ [480] Binary $ 
+ [484] Lambda x75
+ [488] Binary $ 
+ [492] Lambda x76
+ [496] Binary $ 
+ [500] Lambda x77
+ [504] Binary $ 
+ [508] Lambda x78
+ [512] Binary $ 
+ [516] Lambda x79
+ [520] Binary $ 
+ [524] Lambda x81
+ [528] Binary $ 
+ [532] Lambda x82
+ [536] Binary $ 
+ [540] Lambda x83
+ [544] Binary $ 
+ [548] Lambda x84
+ [552] Binary $ 
+ [556] Lambda x85
+ [560] Binary $ 
+ [564] Lambda x86
+ [568] Binary $ 
+ [572] Lambda x87
+ [576] Binary $ 
+ [580] Lambda x88
+ [584] Binary $ 
+ [588] Lambda x89
+ [592] Binary $ 
+ [596] Lambda x91
+ [600] Binary $ 
+ [604] Lambda x92
+ [608] Binary $ 
+ [612] Lambda x93
+ [616] Binary $ 
+ [620] Lambda x94
+ [624] Binary $ 
+ [628] Lambda x95
+ [632] Binary $ 
+ [636] Lambda x96
+ [640] Binary $ 
+ [644] Lambda x97
+ [648] Binary $ 
+ [652] Lambda x98
+ [656] Binary $ 
+ [660] Lambda x99
+ [664] If
+ [668] Binary & 
+ [672] Binary & 
+ [676] Binary & 
+ [680] Binary & 
+ [684] Binary & 
+ [688] Binary & 
+ [692] Binary & 
+ [696] Binary & 
+ [700] Binary & 
+ [704] Binary & 
+ [708] Binary & 
+ [712] Binary & 
+ [716] Binary & 
+ [720] Binary & 
+ [724] Binary & 
+ [728] Binary & 
+ [732] Binary & 
+ [736] Binary & 
+ [740] Binary & 
+ [744] Binary & 
+ [748] Binary & 
+ [752] Binary & 
+ [756] Binary & 
+ [760] Binary & 
+ [764] Binary & 
+ [768] Binary & 
+ [772] Binary & 
+ [776] Binary & 
+ [780] Binary & 
+ [784] Binary & 
+ [788] Binary & 
+ [792] Binary & 
+ [796] Binary & 
+ [800] Binary & 
+ [804] Binary & 
+ [808] Binary & 
+ [812] Binary & 
+ [816] Binary & 
+ [820] Binary & 
+ [824] Binary & 
+ [828] Binary & 
+ [832] Binary & 
+ [836] Binary & 
+ [840] Binary & 
+ [844] Binary & 
+ [848] Binary & 
+ [852] Binary & 
+ [856] Binary & 
+ [860] Binary & 
+ [864] Binary & 
+ [868] Binary & 
+ [872] Binary & 
+ [876] Binary & 
+ [880] Binary & 
+ [884] Binary & 
+ [888] Binary & 
+ [892] Binary & 
+ [896] Binary & 
+ [900] Binary & 
+ [904] Binary & 
+ [908] Binary & 
+ [912] Binary & 
+ [916] Binary & 
+ [920] Binary & 
+ [924] Binary & 
+ [928] Binary & 
+ [932] Binary & 
+ [936] Binary & 
+ [940] Binary & 
+ [944] Binary & 
+ [948] Binary & 
+ [952] Binary & 
+ [956] Binary & 
+ [960] Binary & 
+ [964] Binary & 
+ [968] Binary & 
+ [972] Binary & 
+ [976] Binary & 
+ [980] Binary & 
+ [984] Binary & 
+ [988] Binary & 
+ [992] Binary & 
+ [996] Binary & 
+ [1000] Binary & 
+ [1004] Binary & 
+ [1008] Binary & 
+ [1012] Binary & 
+ [1016] Binary & 
+ [1020] Binary & 
+ [1024] Binary & 
+ [1028] Binary & 
+ [1032] Binary & 
+ [1036] Binary & 
+ [1040] Binary & 
+ [1044] Binary & 
+ [1048] Binary & 
+ [1052] Binary & 
+ [1056] Binary & 
+ [1060] Binary & 
+ [1064] Binary & 
+ [1068] Binary & 
+ [1072] Binary & 
+ [1076] Binary & 
+ [1080] Binary & 
+ [1084] Binary & 
+ [1088] Binary & 
+ [1092] Binary & 
+ [1096] Binary & 
+ [1100] Binary & 
+ [1104] Binary & 
+ [1108] Binary & 
+ [1112] Binary & 
+ [1116] Binary & 
+ [1120] Binary & 
+ [1124] Binary & 
+ [1128] Binary & 
+ [1132] Binary & 
+ [1136] Binary & 
+ [1140] Binary & 
+ [1144] Binary & 
+ [1148] Binary & 
+ [1152] Binary & 
+ [1156] Binary & 
+ [1160] Binary & 
+ [1164] Binary & 
+ [1168] Binary & 
+ [1172] Binary & 
+ [1176] Binary & 
+ [1180] Binary & 
+ [1184] Binary & 
+ [1188] Binary & 
+ [1192] Binary & 
+ [1196] Binary & 
+ [1200] Binary & 
+ [1204] Binary & 
+ [1208] Binary & 
+ [1212] Binary & 
+ [1216] Binary & 
+ [1220] Binary & 
+ [1224] Binary & 
+ [1228] Binary & 
+ [1232] Binary & 
+ [1236] Binary & 
+ [1240] Binary & 
+ [1244] Binary & 
+ [1248] Binary & 
+ [1252] Binary & 
+ [1256] Binary & 
+ [1260] Binary & 
+ [1264] Binary & 
+ [1268] Binary & 
+ [1272] Binary & 
+ [1276] Binary & 
+ [1280] Binary & 
+ [1284] Binary & 
+ [1288] Binary & 
+ [1292] Binary & 
+ [1296] Binary & 
+ [1300] Binary & 
+ [1304] Binary & 
+ [1308] Binary & 
+ [1312] Binary & 
+ [1316] Binary & 
+ [1320] Binary & 
+ [1324] Binary & 
+ [1328] Binary & 
+ [1332] Binary & 
+ [1336] Binary & 
+ [1340] Binary & 
+ [1344] Binary & 
+ [1348] Binary & 
+ [1352] Binary & 
+ [1356] Binary & 
+ [1360] Binary & 
+ [1364] Binary & 
+ [1368] Binary & 
+ [1372] Binary & 
+ [1376] Binary & 
+ [1380] Binary & 
+ [1384] Binary & 
+ [1388] Binary & 
+ [1392] Binary & 
+ [1396] Binary & 
+ [1400] Binary & 
+ [1404] Binary & 
+ [1408] Binary & 
+ [1412] Binary & 
+ [1416] Binary & 
+ [1420] Binary & 
+ [1424] Binary & 
+ [1428] Binary & 
+ [1432] Binary & 
+ [1436] Binary & 
+ [1440] Binary & 
+ [1444] Binary & 
+ [1448] Binary & 
+ [1452] Binary & 
+ [1456] Binary & 
+ [1460] Binary & 
+ [1464] Binary & 
+ [1468] Binary & 
+ [1472] Binary & 
+ [1476] Binary & 
+ [1480] Binary & 
+ [1484] Binary & 
+ [1488] Binary & 
+ [1492] Binary & 
+ [1496] Binary & 
+ [1500] Binary & 
+ [1504] Binary & 
+ [1508] Binary & 
+ [1512] Binary & 
+ [1516] Binary & 
+ [1520] Binary & 
+ [1524] Binary & 
+ [1528] Binary & 
+ [1532] Binary & 
+ [1536] Binary & 
+ [1540] Binary & 
+ [1544] Binary & 
+ [1548] Binary & 
+ [1552] Binary & 
+ [1556] Binary & 
+ [1560] Binary & 
+ [1564] Binary & 
+ [1568] Binary & 
+ [1572] Binary & 
+ [1576] Binary & 
+ [1580] Binary & 
+ [1584] Binary & 
+ [1588] Binary & 
+ [1592] Binary & 
+ [1596] Binary & 
+ [1600] Binary & 
+ [1604] Binary & 
+ [1608] Binary & 
+ [1612] Binary & 
+ [1616] Binary & 
+ [1620] Binary & 
+ [1624] Binary & 
+ [1628] Binary & 
+ [1632] Binary & 
+ [1636] Binary & 
+ [1640] Binary & 
+ [1644] Binary & 
+ [1648] Binary & 
+ [1652] Binary & 
+ [1656] Binary & 
+ [1660] Binary & 
+ [1664] Binary & 
+ [1668] Binary & 
+ [1672] Binary & 
+ [1676] Binary & 
+ [1680] Binary & 
+ [1684] Binary & 
+ [1688] Binary & 
+ [1692] Binary & 
+ [1696] Binary & 
+ [1700] Binary & 
+ [1704] Binary & 
+ [1708] Binary & 
+ [1712] Binary & 
+ [1716] Binary & 
+ [1720] Binary & 
+ [1724] Binary & 
+ [1728] Binary & 
+ [1732] Binary & 
+ [1736] Binary & 
+ [1740] Binary & 
+ [1744] Binary & 
+ [1748] Binary & 
+ [1752] Binary & 
+ [1756] Binary & 
+ [1760] Binary & 
+ [1764] Binary & 
+ [1768] Binary & 
+ [1772] Binary & 
+ [1776] Binary & 
+ [1780] Binary & 
+ [1784] Binary & 
+ [1788] Binary & 
+ [1792] Binary & 
+ [1796] Binary & 
+ [1800] Binary & 
+ [1804] Binary & 
+ [1808] Binary & 
+ [1812] Binary & 
+ [1816] Binary & 
+ [1820] Binary & 
+ [1824] Binary & 
+ [1828] Binary & 
+ [1832] Binary & 
+ [1836] Binary & 
+ [1840] Binary & 
+ [1844] Binary & 
+ [1848] Binary & 
+ [1852] Binary & 
+ [1856] Binary & 
+ [1860] Binary & 
+ [1864] Binary & 
+ [1868] Binary & 
+ [1872] Binary & 
+ [1876] Binary & 
+ [1880] Binary & 
+ [1884] Binary & 
+ [1888] Binary & 
+ [1892] Binary & 
+ [1896] Binary & 
+ [1900] Binary & 
+ [1904] Binary & 
+ [1908] Binary & 
+ [1912] Binary & 
+ [1916] Binary & 
+ [1920] Binary & 
+ [1924] Binary & 
+ [1928] Binary & 
+ [1932] Binary & 
+ [1936] Binary & 
+ [1940] Binary & 
+ [1944] Binary & 
+ [1948] Binary & 
+ [1952] Binary & 
+ [1956] Binary & 
+ [1960] Binary & 
+ [1964] Binary & 
+ [1968] Binary & 
+ [1972] Binary & 
+ [1976] Binary & 
+ [1980] Binary & 
+ [1984] Binary & 
+ [1988] Binary & 
+ [1992] Binary & 
+ [1996] Binary & 
+ [2000] Binary & 
+ [2004] Binary & 
+ [2008] Binary & 
+ [2012] Binary & 
+ [2016] Binary & 
+ [2020] Binary & 
+ [2024] Binary & 
+ [2028] Binary & 
+ [2032] Binary & 
+ [2036] Binary & 
+ [2040] Binary & 
+ [2044] Binary & 
+ [2048] Binary & 
+ [2052] Binary & 
+ [2056] Binary & 
+ [2060] Binary & 
+ [2064] Binary & 
+ [2068] Binary & 
+ [2072] Binary & 
+ [2076] Binary & 
+ [2080] Binary & 
+ [2084] Binary & 
+ [2088] Binary & 
+ [2092] Binary & 
+ [2096] Binary & 
+ [2100] Binary & 
+ [2104] Binary & 
+ [2108] Binary & 
+ [2112] Binary & 
+ [2116] Binary & 
+ [2120] Binary & 
+ [2124] Binary & 
+ [2128] Binary & 
+ [2132] Binary & 
+ [2136] Binary & 
+ [2140] Binary & 
+ [2144] Binary & 
+ [2148] Binary & 
+ [2152] Binary & 
+ [2156] Binary & 
+ [2160] Binary & 
+ [2164] Binary & 
+ [2168] Binary & 
+ [2172] Binary & 
+ [2176] Binary & 
+ [2180] Binary & 
+ [2184] Binary & 
+ [2188] Binary & 
+ [2192] Binary & 
+ [2196] Binary & 
+ [2200] Binary & 
+ [2204] Binary & 
+ [2208] Binary & 
+ [2212] Binary & 
+ [2216] Binary & 
+ [2220] Binary & 
+ [2224] Binary & 
+ [2228] Binary & 
+ [2232] Binary & 
+ [2236] Binary & 
+ [2240] Binary & 
+ [2244] Binary & 
+ [2248] Binary & 
+ [2252] Binary & 
+ [2256] Binary & 
+ [2260] Binary & 
+ [2264] Binary & 
+ [2268] Binary & 
+ [2272] Binary & 
+ [2276] Binary & 
+ [2280] Binary & 
+ [2284] Binary & 
+ [2288] Binary & 
+ [2292] Binary & 
+ [2296] Binary & 
+ [2300] Binary & 
+ [2304] Binary & 
+ [2308] Binary & 
+ [2312] Binary & 
+ [2316] Binary & 
+ [2320] Binary & 
+ [2324] Binary & 
+ [2328] Binary & 
+ [2332] Binary & 
+ [2336] Binary & 
+ [2340] Binary & 
+ [2344] Binary & 
+ [2348] Binary & 
+ [2352] Binary & 
+ [2356] Binary & 
+ [2360] Binary & 
+ [2364] Binary & 
+ [2368] Binary & 
+ [2372] Binary & 
+ [2376] Binary & 
+ [2380] Binary & 
+ [2384] Binary & 
+ [2388] Binary & 
+ [2392] Binary & 
+ [2396] Binary & 
+ [2400] Binary & 
+ [2404] Binary & 
+ [2408] Binary & 
+ [2412] Binary & 
+ [2416] Binary & 
+ [2420] Binary & 
+ [2424] Binary & 
+ [2428] Binary & 
+ [2432] Binary & 
+ [2436] Binary & 
+ [2440] Binary & 
+ [2444] Binary & 
+ [2448] Binary & 
+ [2452] Binary & 
+ [2456] Binary & 
+ [2460] Binary & 
+ [2464] Binary & 
+ [2468] Binary & 
+ [2472] Binary & 
+ [2476] Binary & 
+ [2480] Binary & 
+ [2484] Binary & 
+ [2488] Binary & 
+ [2492] Binary & 
+ [2496] Binary & 
+ [2500] Binary & 
+ [2504] Binary & 
+ [2508] Binary & 
+ [2512] Binary & 
+ [2516] Binary & 
+ [2520] Binary & 
+ [2524] Binary & 
+ [2528] Binary & 
+ [2532] Binary & 
+ [2536] Binary & 
+ [2540] Binary & 
+ [2544] Binary & 
+ [2548] Binary & 
+ [2552] Binary & 
+ [2556] Binary & 
+ [2560] Binary & 
+ [2564] Binary & 
+ [2568] Binary & 
+ [2572] Binary & 
+ [2576] Binary & 
+ [2580] Binary & 
+ [2584] Binary & 
+ [2588] Binary & 
+ [2592] Binary & 
+ [2596] Binary & 
+ [2600] Binary & 
+ [2604] Binary & 
+ [2608] Binary & 
+ [2612] Binary & 
+ [2616] Binary & 
+ [2620] Binary & 
+ [2624] Binary & 
+ [2628] Binary & 
+ [2632] Binary & 
+ [2636] Binary & 
+ [2640] Binary & 
+ [2644] Binary & 
+ [2648] Binary & 
+ [2652] Binary & 
+ [2656] Binary & 
+ [2660] Binary & 
+ [2664] Binary & 
+ [2668] Binary & 
+ [2672] Binary & 
+ [2676] Binary & 
+ [2680] Binary & 
+ [2684] Binary & 
+ [2688] Binary & 
+ [2692] Binary & 
+ [2696] Binary & 
+ [2700] Binary & 
+ [2704] Binary & 
+ [2708] Binary & 
+ [2712] Binary & 
+ [2716] Binary & 
+ [2720] Binary & 
+ [2724] Binary & 
+ [2728] Binary & 
+ [2732] Binary & 
+ [2736] Binary & 
+ [2740] Binary & 
+ [2744] Binary & 
+ [2748] Binary & 
+ [2752] Binary & 
+ [2756] Binary & 
+ [2760] Binary & 
+ [2764] Binary & 
+ [2768] Binary & 
+ [2772] Binary & 
+ [2776] Binary & 
+ [2780] Binary & 
+ [2784] Binary & 
+ [2788] Binary & 
+ [2792] Binary & 
+ [2796] Binary & 
+ [2800] Binary & 
+ [2804] Binary & 
+ [2808] Binary & 
+ [2812] Binary & 
+ [2816] Binary & 
+ [2820] Binary & 
+ [2824] Binary & 
+ [2828] Binary & 
+ [2832] Binary & 
+ [2836] Binary & 
+ [2840] Binary & 
+ [2844] Binary & 
+ [2848] Binary & 
+ [2852] Binary & 
+ [2856] Binary & 
+ [2860] Binary & 
+ [2864] Binary & 
+ [2868] Binary & 
+ [2872] Binary & 
+ [2876] Binary & 
+ [2880] Binary & 
+ [2884] Binary & 
+ [2888] Binary & 
+ [2892] Binary & 
+ [2896] Binary & 
+ [2900] Binary & 
+ [2904] Binary & 
+ [2908] Binary & 
+ [2912] Binary & 
+ [2916] Binary & 
+ [2920] Binary & 
+ [2924] Binary & 
+ [2928] Binary & 
+ [2932] Binary & 
+ [2936] Binary & 
+ [2940] Binary & 
+ [2944] Binary & 
+ [2948] Binary & 
+ [2952] Binary & 
+ [2956] Binary & 
+ [2960] Binary & 
+ [2964] Binary & 
+ [2968] Binary & 
+ [2972] Binary & 
+ [2976] Binary & 
+ [2980] Binary & 
+ [2984] Binary & 
+ [2988] Binary & 
+ [2992] Binary & 
+ [2996] Binary & 
+ [3000] Binary & 
+ [3004] Binary & 
+ [3008] Binary & 
+ [3012] Binary & 
+ [3016] Binary & 
+ [3020] Binary & 
+ [3024] Binary & 
+ [3028] Binary & 
+ [3032] Binary & 
+ [3036] Binary & 
+ [3040] Binary & 
+ [3044] Binary & 
+ [3048] Binary & 
+ [3052] Binary & 
+ [3056] Binary & 
+ [3060] Binary & 
+ [3064] Binary & 
+ [3068] Binary & 
+ [3072] Binary & 
+ [3076] Binary & 
+ [3080] Binary & 
+ [3084] Binary & 
+ [3088] Binary & 
+ [3092] Binary & 
+ [3096] Binary & 
+ [3100] Binary & 
+ [3104] Binary & 
+ [3108] Binary & 
+ [3112] Binary & 
+ [3116] Binary & 
+ [3120] Binary & 
+ [3124] Binary & 
+ [3128] Binary & 
+ [3132] Binary & 
+ [3136] Binary & 
+ [3140] Binary & 
+ [3144] Binary & 
+ [3148] Binary & 
+ [3152] Binary & 
+ [3156] Binary & 
+ [3160] Binary & 
+ [3164] Binary & 
+ [3168] Binary & 
+ [3172] Binary & 
+ [3176] Binary & 
+ [3180] Binary & 
+ [3184] Binary & 
+ [3188] Binary & 
+ [3192] Binary & 
+ [3196] Binary & 
+ [3200] Binary & 
+ [3204] Binary & 
+ [3208] Binary & 
+ [3212] Binary & 
+ [3216] Binary & 
+ [3220] Binary & 
+ [3224] Binary & 
+ [3228] Binary & 
+ [3232] Binary & 
+ [3236] Binary & 
+ [3240] Binary & 
+ [3244] Binary & 
+ [3248] Binary & 
+ [3252] Binary & 
+ [3256] Binary & 
+ [3260] Binary & 
+ [3264] Binary & 
+ [3268] Binary & 
+ [3272] Binary & 
+ [3276] Binary & 
+ [3280] Binary & 
+ [3284] Binary & 
+ [3288] Binary & 
+ [3292] Binary & 
+ [3296] Binary & 
+ [3300] Binary & 
+ [3304] Binary & 
+ [3308] Binary & 
+ [3312] Binary & 
+ [3316] Binary & 
+ [3320] Binary & 
+ [3324] Binary & 
+ [3328] Binary & 
+ [3332] Binary & 
+ [3336] Binary & 
+ [3340] Binary & 
+ [3344] Binary & 
+ [3348] Binary & 
+ [3352] Binary & 
+ [3356] Binary & 
+ [3360] Binary & 
+ [3364] Binary & 
+ [3368] Binary & 
+ [3372] Binary & 
+ [3376] Binary & 
+ [3380] Binary & 
+ [3384] Binary & 
+ [3388] Binary & 
+ [3392] Binary & 
+ [3396] Binary & 
+ [3400] Binary & 
+ [3404] Binary & 
+ [3408] Binary & 
+ [3412] Binary & 
+ [3416] Binary & 
+ [3420] Binary & 
+ [3424] Binary & 
+ [3428] Binary & 
+ [3432] Binary & 
+ [3436] Binary & 
+ [3440] Binary & 
+ [3444] Binary & 
+ [3448] Binary & 
+ [3452] Binary & 
+ [3456] Binary & 
+ [3460] Binary & 
+ [3464] Binary & 
+ [3468] Binary & 
+ [3472] Binary & 
+ [3476] Binary & 
+ [3480] Binary & 
+ [3484] Binary & 
+ [3488] Binary & 
+ [3492] Binary & 
+ [3496] Binary & 
+ [3500] Binary & 
+ [3504] Binary & 
+ [3508] Binary & 
+ [3512] Binary & 
+ [3516] Binary & 
+ [3520] Binary & 
+ [3524] Binary & 
+ [3528] Binary & 
+ [3532] Binary & 
+ [3536] Binary & 
+ [3540] Binary & 
+ [3544] Binary & 
+ [3548] Binary & 
+ [3552] Binary & 
+ [3556] Binary & 
+ [3560] Binary & 
+ [3564] Binary & 
+ [3568] Binary & 
+ [3572] Binary & 
+ [3576] Binary & 
+ [3580] Binary & 
+ [3584] Binary & 
+ [3588] Binary & 
+ [3592] Binary & 
+ [3596] Binary & 
+ [3600] Binary & 
+ [3604] Binary & 
+ [3608] Binary & 
+ [3612] Binary & 
+ [3616] Binary & 
+ [3620] Binary & 
+ [3624] Binary & 
+ [3628] Binary & 
+ [3632] Binary & 
+ [3636] Binary & 
+ [3640] Binary & 
+ [3644] Binary & 
+ [3648] Binary & 
+ [3652] Binary & 
+ [3656] Binary & 
+ [3660] Binary & 
+ [3664] Binary & 
+ [3668] Binary & 
+ [3672] Binary & 
+ [3676] Binary & 
+ [3680] Binary & 
+ [3684] Binary & 
+ [3688] Binary & 
+ [3692] Binary & 
+ [3696] Binary & 
+ [3700] Binary & 
+ [3704] Binary & 
+ [3708] Binary & 
+ [3712] Binary & 
+ [3716] Binary & 
+ [3720] Binary & 
+ [3724] Binary & 
+ [3728] Binary & 
+ [3732] Binary & 
+ [3736] Binary & 
+ [3740] Binary & 
+ [3744] Binary & 
+ [3748] Binary & 
+ [3752] Binary & 
+ [3756] Binary & 
+ [3760] Binary & 
+ [3764] Binary & 
+ [3768] Binary & 
+ [3772] Binary & 
+ [3776] Binary & 
+ [3780] Binary & 
+ [3784] Binary & 
+ [3788] Binary & 
+ [3792] Binary & 
+ [3796] Binary & 
+ [3800] Binary & 
+ [3804] Binary & 
+ [3808] Binary & 
+ [3812] Binary & 
+ [3816] Binary & 
+ [3820] Binary & 
+ [3824] Binary & 
+ [3828] Binary & 
+ [3832] Binary & 
+ [3836] Binary & 
+ [3840] Binary & 
+ [3844] Binary & 
+ [3848] Binary & 
+ [3852] Binary & 
+ [3856] Binary & 
+ [3860] Binary & 
+ [3864] Binary & 
+ [3868] Binary & 
+ [3872] Binary & 
+ [3876] Binary & 
+ [3880] Binary & 
+ [3884] Binary & 
+ [3888] Binary & 
+ [3892] Binary & 
+ [3896] Binary & 
+ [3900] Binary & 
+ [3904] Binary & 
+ [3908] Binary & 
+ [3912] Binary & 
+ [3916] Binary & 
+ [3920] Binary & 
+ [3924] Binary & 
+ [3928] Binary & 
+ [3932] Binary & 
+ [3936] Binary & 
+ [3940] Binary & 
+ [3944] Binary & 
+ [3948] Binary & 
+ [3952] Binary & 
+ [3956] Binary & 
+ [3960] Binary & 
+ [3964] Binary & 
+ [3968] Binary & 
+ [3972] Unary !
+ [3976] Binary = 
+ [3980] x11
+ [3980] x12
+ [3972] Unary !
+ [3976] Binary = 
+ [3980] x11
+ [3980] x13
+ [3968] Unary !
+ [3972] Binary = 
+ [3976] x11
+ [3976] x14
+ [3964] Unary !
+ [3968] Binary = 
+ [3972] x11
+ [3972] x15
+ [3960] Unary !
+ [3964] Binary = 
+ [3968] x11
+ [3968] x16
+ [3956] Unary !
+ [3960] Binary = 
+ [3964] x11
+ [3964] x17
+ [3952] Unary !
+ [3956] Binary = 
+ [3960] x11
+ [3960] x18
+ [3948] Unary !
+ [3952] Binary = 
+ [3956] x11
+ [3956] x19
+ [3944] Unary !
+ [3948] Binary = 
+ [3952] x11
+ [3952] x21
+ [3940] Unary !
+ [3944] Binary = 
+ [3948] x11
+ [3948] x22
+ [3936] Unary !
+ [3940] Binary = 
+ [3944] x11
+ [3944] x23
+ [3932] Unary !
+ [3936] Binary = 
+ [3940] x11
+ [3940] x31
+ [3928] Unary !
+ [3932] Binary = 
+ [3936] x11
+ [3936] x32
+ [3924] Unary !
+ [3928] Binary = 
+ [3932] x11
+ [3932] x33
+ [3920] Unary !
+ [3924] Binary = 
+ [3928] x11
+ [3928] x41
+ [3916] Unary !
+ [3920] Binary = 
+ [3924] x11
+ [3924] x51
+ [3912] Unary !
+ [3916] Binary = 
+ [3920] x11
+ [3920] x61
+ [3908] Unary !
+ [3912] Binary = 
+ [3916] x11
+ [3916] x71
+ [3904] Unary !
+ [3908] Binary = 
+ [3912] x11
+ [3912] x81
+ [3900] Unary !
+ [3904] Binary = 
+ [3908] x11
+ [3908] x91
+ [3896] Unary !
+ [3900] Binary = 
+ [3904] x12
+ [3904] x13
+ [3892] Unary !
+ [3896] Binary = 
+ [3900] x12
+ [3900] x14
+ [3888] Unary !
+ [3892] Binary = 
+ [3896] x12
+ [3896] x15
+ [3884] Unary !
+ [3888] Binary = 
+ [3892] x12
+ [3892] x16
+ [3880] Unary !
+ [3884] Binary = 
+ [3888] x12
+ [3888] x17
+ [3876] Unary !
+ [3880] Binary = 
+ [3884] x12
+ [3884] x18
+ [3872] Unary !
+ [3876] Binary = 
+ [3880] x12
+ [3880] x19
+ [3868] Unary !
+ [3872] Binary = 
+ [3876] x12
+ [3876] x21
+ [3864] Unary !
+ [3868] Binary = 
+ [3872] x12
+ [3872] x22
+ [3860] Unary !
+ [3864] Binary = 
+ [3868] x12
+ [3868] x23
+ [3856] Unary !
+ [3860] Binary = 
+ [3864] x12
+ [3864] x31
+ [3852] Unary !
+ [3856] Binary = 
+ [3860] x12
+ [3860] x32
+ [3848] Unary !
+ [3852] Binary = 
+ [3856] x12
+ [3856] x33
+ [3844] Unary !
+ [3848] Binary = 
+ [3852] x12
+ [3852] x42
+ [3840] Unary !
+ [3844] Binary = 
+ [3848] x12
+ [3848] x52
+ [3836] Unary !
+ [3840] Binary = 
+ [3844] x12
+ [3844] x62
+ [3832] Unary !
+ [3836] Binary = 
+ [3840] x12
+ [3840] x72
+ [3828] Unary !
+ [3832] Binary = 
+ [3836] x12
+ [3836] x82
+ [3824] Unary !
+ [3828] Binary = 
+ [3832] x12
+ [3832] x92
+ [3820] Unary !
+ [3824] Binary = 
+ [3828] x13
+ [3828] x14
+ [3816] Unary !
+ [3820] Binary = 
+ [3824] x13
+ [3824] x15
+ [3812] Unary !
+ [3816] Binary = 
+ [3820] x13
+ [3820] x16
+ [3808] Unary !
+ [3812] Binary = 
+ [3816] x13
+ [3816] x17
+ [3804] Unary !
+ [3808] Binary = 
+ [3812] x13
+ [3812] x18
+ [3800] Unary !
+ [3804] Binary = 
+ [3808] x13
+ [3808] x19
+ [3796] Unary !
+ [3800] Binary = 
+ [3804] x13
+ [3804] x21
+ [3792] Unary !
+ [3796] Binary = 
+ [3800] x13
+ [3800] x22
+ [3788] Unary !
+ [3792] Binary = 
+ [3796] x13
+ [3796] x23
+ [3784] Unary !
+ [3788] Binary = 
+ [3792] x13
+ [3792] x31
+ [3780] Unary !
+ [3784] Binary = 
+ [3788] x13
+ [3788] x32
+ [3776] Unary !
+ [3780] Binary = 
+ [3784] x13
+ [3784] x33
+ [3772] Unary !
+ [3776] Binary = 
+ [3780] x13
+ [3780] x43
+ [3768] Unary !
+ [3772] Binary = 
+ [3776] x13
+ [3776] x53
+ [3764] Unary !
+ [3768] Binary = 
+ [3772] x13
+ [3772] x63
+ [3760] Unary !
+ [3764] Binary = 
+ [3768] x13
+ [3768] x73
+ [3756] Unary !
+ [3760] Binary = 
+ [3764] x13
+ [3764] x83
+ [3752] Unary !
+ [3756] Binary = 
+ [3760] x13
+ [3760] x93
+ [3748] Unary !
+ [3752] Binary = 
+ [3756] x14
+ [3756] x15
+ [3744] Unary !
+ [3748] Binary = 
+ [3752] x14
+ [3752] x16
+ [3740] Unary !
+ [3744] Binary = 
+ [3748] x14
+ [3748] x17
+ [3736] Unary !
+ [3740] Binary = 
+ [3744] x14
+ [3744] x18
+ [3732] Unary !
+ [3736] Binary = 
+ [3740] x14
+ [3740] x19
+ [3728] Unary !
+ [3732] Binary = 
+ [3736] x14
+ [3736] x24
+ [3724] Unary !
+ [3728] Binary = 
+ [3732] x14
+ [3732] x25
+ [3720] Unary !
+ [3724] Binary = 
+ [3728] x14
+ [3728] x26
+ [3716] Unary !
+ [3720] Binary = 
+ [3724] x14
+ [3724] x34
+ [3712] Unary !
+ [3716] Binary = 
+ [3720] x14
+ [3720] x35
+ [3708] Unary !
+ [3712] Binary = 
+ [3716] x14
+ [3716] x36
+ [3704] Unary !
+ [3708] Binary = 
+ [3712] x14
+ [3712] x44
+ [3700] Unary !
+ [3704] Binary = 
+ [3708] x14
+ [3708] x54
+ [3696] Unary !
+ [3700] Binary = 
+ [3704] x14
+ [3704] x64
+ [3692] Unary !
+ [3696] Binary = 
+ [3700] x14
+ [3700] x74
+ [3688] Unary !
+ [3692] Binary = 
+ [3696] x14
+ [3696] x84
+ [3684] Unary !
+ [3688] Binary = 
+ [3692] x14
+ [3692] x94
+ [3680] Unary !
+ [3684] Binary = 
+ [3688] x15
+ [3688] x16
+ [3676] Unary !
+ [3680] Binary = 
+ [3684] x15
+ [3684] x17
+ [3672] Unary !
+ [3676] Binary = 
+ [3680] x15
+ [3680] x18
+ [3668] Unary !
+ [3672] Binary = 
+ [3676] x15
+ [3676] x19
+ [3664] Unary !
+ [3668] Binary = 
+ [3672] x15
+ [3672] x24
+ [3660] Unary !
+ [3664] Binary = 
+ [3668] x15
+ [3668] x25
+ [3656] Unary !
+ [3660] Binary = 
+ [3664] x15
+ [3664] x26
+ [3652] Unary !
+ [3656] Binary = 
+ [3660] x15
+ [3660] x34
+ [3648] Unary !
+ [3652] Binary = 
+ [3656] x15
+ [3656] x35
+ [3644] Unary !
+ [3648] Binary = 
+ [3652] x15
+ [3652] x36
+ [3640] Unary !
+ [3644] Binary = 
+ [3648] x15
+ [3648] x45
+ [3636] Unary !
+ [3640] Binary = 
+ [3644] x15
+ [3644] x55
+ [3632] Unary !
+ [3636] Binary = 
+ [3640] x15
+ [3640] x65
+ [3628] Unary !
+ [3632] Binary = 
+ [3636] x15
+ [3636] x75
+ [3624] Unary !
+ [3628] Binary = 
+ [3632] x15
+ [3632] x85
+ [3620] Unary !
+ [3624] Binary = 
+ [3628] x15
+ [3628] x95
+ [3616] Unary !
+ [3620] Binary = 
+ [3624] x16
+ [3624] x17
+ [3612] Unary !
+ [3616] Binary = 
+ [3620] x16
+ [3620] x18
+ [3608] Unary !
+ [3612] Binary = 
+ [3616] x16
+ [3616] x19
+ [3604] Unary !
+ [3608] Binary = 
+ [3612] x16
+ [3612] x24
+ [3600] Unary !
+ [3604] Binary = 
+ [3608] x16
+ [3608] x25
+ [3596] Unary !
+ [3600] Binary = 
+ [3604] x16
+ [3604] x26
+ [3592] Unary !
+ [3596] Binary = 
+ [3600] x16
+ [3600] x34
+ [3588] Unary !
+ [3592] Binary = 
+ [3596] x16
+ [3596] x35
+ [3584] Unary !
+ [3588] Binary = 
+ [3592] x16
+ [3592] x36
+ [3580] Unary !
+ [3584] Binary = 
+ [3588] x16
+ [3588] x46
+ [3576] Unary !
+ [3580] Binary = 
+ [3584] x16
+ [3584] x56
+ [3572] Unary !
+ [3576] Binary = 
+ [3580] x16
+ [3580] x66
+ [3568] Unary !
+ [3572] Binary = 
+ [3576] x16
+ [3576] x76
+ [3564] Unary !
+ [3568] Binary = 
+ [3572] x16
+ [3572] x86
+ [3560] Unary !
+ [3564] Binary = 
+ [3568] x16
+ [3568] x96
+ [3556] Unary !
+ [3560] Binary = 
+ [3564] x17
+ [3564] x18
+ [3552] Unary !
+ [3556] Binary = 
+ [3560] x17
+ [3560] x19
+ [3548] Unary !
+ [3552] Binary = 
+ [3556] x17
+ [3556] x27
+ [3544] Unary !
+ [3548] Binary = 
+ [3552] x17
+ [3552] x28
+ [3540] Unary !
+ [3544] Binary = 
+ [3548] x17
+ [3548] x29
+ [3536] Unary !
+ [3540] Binary = 
+ [3544] x17
+ [3544] x37
+ [3532] Unary !
+ [3536] Binary = 
+ [3540] x17
+ [3540] x38
+ [3528] Unary !
+ [3532] Binary = 
+ [3536] x17
+ [3536] x39
+ [3524] Unary !
+ [3528] Binary = 
+ [3532] x17
+ [3532] x47
+ [3520] Unary !
+ [3524] Binary = 
+ [3528] x17
+ [3528] x57
+ [3516] Unary !
+ [3520] Binary = 
+ [3524] x17
+ [3524] x67
+ [3512] Unary !
+ [3516] Binary = 
+ [3520] x17
+ [3520] x77
+ [3508] Unary !
+ [3512] Binary = 
+ [3516] x17
+ [3516] x87
+ [3504] Unary !
+ [3508] Binary = 
+ [3512] x17
+ [3512] x97
+ [3500] Unary !
+ [3504] Binary = 
+ [3508] x18
+ [3508] x19
+ [3496] Unary !
+ [3500] Binary = 
+ [3504] x18
+ [3504] x27
+ [3492] Unary !
+ [3496] Binary = 
+ [3500] x18
+ [3500] x28
+ [3488] Unary !
+ [3492] Binary = 
+ [3496] x18
+ [3496] x29
+ [3484] Unary !
+ [3488] Binary = 
+ [3492] x18
+ [3492] x37
+ [3480] Unary !
+ [3484] Binary = 
+ [3488] x18
+ [3488] x38
+ [3476] Unary !
+ [3480] Binary = 
+ [3484] x18
+ [3484] x39
+ [3472] Unary !
+ [3476] Binary = 
+ [3480] x18
+ [3480] x48
+ [3468] Unary !
+ [3472] Binary = 
+ [3476] x18
+ [3476] x58
+ [3464] Unary !
+ [3468] Binary = 
+ [3472] x18
+ [3472] x68
+ [3460] Unary !
+ [3464] Binary = 
+ [3468] x18
+ [3468] x78
+ [3456] Unary !
+ [3460] Binary = 
+ [3464] x18
+ [3464] x88
+ [3452] Unary !
+ [3456] Binary = 
+ [3460] x18
+ [3460] x98
+ [3448] Unary !
+ [3452] Binary = 
+ [3456] x19
+ [3456] x27
+ [3444] Unary !
+ [3448] Binary = 
+ [3452] x19
+ [3452] x28
+ [3440] Unary !
+ [3444] Binary = 
+ [3448] x19
+ [3448] x29
+ [3436] Unary !
+ [3440] Binary = 
+ [3444] x19
+ [3444] x37
+ [3432] Unary !
+ [3436] Binary = 
+ [3440] x19
+ [3440] x38
+ [3428] Unary !
+ [3432] Binary = 
+ [3436] x19
+ [3436] x39
+ [3424] Unary !
+ [3428] Binary = 
+ [3432] x19
+ [3432] x49
+ [3420] Unary !
+ [3424] Binary = 
+ [3428] x19
+ [3428] x59
+ [3416] Unary !
+ [3420] Binary = 
+ [3424] x19
+ [3424] x69
+ [3412] Unary !
+ [3416] Binary = 
+ [3420] x19
+ [3420] x79
+ [3408] Unary !
+ [3412] Binary = 
+ [3416] x19
+ [3416] x89
+ [3404] Unary !
+ [3408] Binary = 
+ [3412] x19
+ [3412] x99
+ [3400] Unary !
+ [3404] Binary = 
+ [3408] x21
+ [3408] x22
+ [3396] Unary !
+ [3400] Binary = 
+ [3404] x21
+ [3404] x23
+ [3392] Unary !
+ [3396] Binary = 
+ [3400] x21
+ [3400] x24
+ [3388] Unary !
+ [3392] Binary = 
+ [3396] x21
+ [3396] x25
+ [3384] Unary !
+ [3388] Binary = 
+ [3392] x21
+ [3392] x26
+ [3380] Unary !
+ [3384] Binary = 
+ [3388] x21
+ [3388] x27
+ [3376] Unary !
+ [3380] Binary = 
+ [3384] x21
+ [3384] x28
+ [3372] Unary !
+ [3376] Binary = 
+ [3380] x21
+ [3380] x29
+ [3368] Unary !
+ [3372] Binary = 
+ [3376] x21
+ [3376] x31
+ [3364] Unary !
+ [3368] Binary = 
+ [3372] x21
+ [3372] x32
+ [3360] Unary !
+ [3364] Binary = 
+ [3368] x21
+ [3368] x33
+ [3356] Unary !
+ [3360] Binary = 
+ [3364] x21
+ [3364] x41
+ [3352] Unary !
+ [3356] Binary = 
+ [3360] x21
+ [3360] x51
+ [3348] Unary !
+ [3352] Binary = 
+ [3356] x21
+ [3356] x61
+ [3344] Unary !
+ [3348] Binary = 
+ [3352] x21
+ [3352] x71
+ [3340] Unary !
+ [3344] Binary = 
+ [3348] x21
+ [3348] x81
+ [3336] Unary !
+ [3340] Binary = 
+ [3344] x21
+ [3344] x91
+ [3332] Unary !
+ [3336] Binary = 
+ [3340] x22
+ [3340] x23
+ [3328] Unary !
+ [3332] Binary = 
+ [3336] x22
+ [3336] x24
+ [3324] Unary !
+ [3328] Binary = 
+ [3332] x22
+ [3332] x25
+ [3320] Unary !
+ [3324] Binary = 
+ [3328] x22
+ [3328] x26
+ [3316] Unary !
+ [3320] Binary = 
+ [3324] x22
+ [3324] x27
+ [3312] Unary !
+ [3316] Binary = 
+ [3320] x22
+ [3320] x28
+ [3308] Unary !
+ [3312] Binary = 
+ [3316] x22
+ [3316] x29
+ [3304] Unary !
+ [3308] Binary = 
+ [3312] x22
+ [3312] x31
+ [3300] Unary !
+ [3304] Binary = 
+ [3308] x22
+ [3308] x32
+ [3296] Unary !
+ [3300] Binary = 
+ [3304] x22
+ [3304] x33
+ [3292] Unary !
+ [3296] Binary = 
+ [3300] x22
+ [3300] x42
+ [3288] Unary !
+ [3292] Binary = 
+ [3296] x22
+ [3296] x52
+ [3284] Unary !
+ [3288] Binary = 
+ [3292] x22
+ [3292] x62
+ [3280] Unary !
+ [3284] Binary = 
+ [3288] x22
+ [3288] x72
+ [3276] Unary !
+ [3280] Binary = 
+ [3284] x22
+ [3284] x82
+ [3272] Unary !
+ [3276] Binary = 
+ [3280] x22
+ [3280] x92
+ [3268] Unary !
+ [3272] Binary = 
+ [3276] x23
+ [3276] x24
+ [3264] Unary !
+ [3268] Binary = 
+ [3272] x23
+ [3272] x25
+ [3260] Unary !
+ [3264] Binary = 
+ [3268] x23
+ [3268] x26
+ [3256] Unary !
+ [3260] Binary = 
+ [3264] x23
+ [3264] x27
+ [3252] Unary !
+ [3256] Binary = 
+ [3260] x23
+ [3260] x28
+ [3248] Unary !
+ [3252] Binary = 
+ [3256] x23
+ [3256] x29
+ [3244] Unary !
+ [3248] Binary = 
+ [3252] x23
+ [3252] x31
+ [3240] Unary !
+ [3244] Binary = 
+ [3248] x23
+ [3248] x32
+ [3236] Unary !
+ [3240] Binary = 
+ [3244] x23
+ [3244] x33
+ [3232] Unary !
+ [3236] Binary = 
+ [3240] x23
+ [3240] x43
+ [3228] Unary !
+ [3232] Binary = 
+ [3236] x23
+ [3236] x53
+ [3224] Unary !
+ [3228] Binary = 
+ [3232] x23
+ [3232] x63
+ [3220] Unary !
+ [3224] Binary = 
+ [3228] x23
+ [3228] x73
+ [3216] Unary !
+ [3220] Binary = 
+ [3224] x23
+ [3224] x83
+ [3212] Unary !
+ [3216] Binary = 
+ [3220] x23
+ [3220] x93
+ [3208] Unary !
+ [3212] Binary = 
+ [3216] x24
+ [3216] x25
+ [3204] Unary !
+ [3208] Binary = 
+ [3212] x24
+ [3212] x26
+ [3200] Unary !
+ [3204] Binary = 
+ [3208] x24
+ [3208] x27
+ [3196] Unary !
+ [3200] Binary = 
+ [3204] x24
+ [3204] x28
+ [3192] Unary !
+ [3196] Binary = 
+ [3200] x24
+ [3200] x29
+ [3188] Unary !
+ [3192] Binary = 
+ [3196] x24
+ [3196] x34
+ [3184] Unary !
+ [3188] Binary = 
+ [3192] x24
+ [3192] x35
+ [3180] Unary !
+ [3184] Binary = 
+ [3188] x24
+ [3188] x36
+ [3176] Unary !
+ [3180] Binary = 
+ [3184] x24
+ [3184] x44
+ [3172] Unary !
+ [3176] Binary = 
+ [3180] x24
+ [3180] x54
+ [3168] Unary !
+ [3172] Binary = 
+ [3176] x24
+ [3176] x64
+ [3164] Unary !
+ [3168] Binary = 
+ [3172] x24
+ [3172] x74
+ [3160] Unary !
+ [3164] Binary = 
+ [3168] x24
+ [3168] x84
+ [3156] Unary !
+ [3160] Binary = 
+ [3164] x24
+ [3164] x94
+ [3152] Unary !
+ [3156] Binary = 
+ [3160] x25
+ [3160] x26
+ [3148] Unary !
+ [3152] Binary = 
+ [3156] x25
+ [3156] x27
+ [3144] Unary !
+ [3148] Binary = 
+ [3152] x25
+ [3152] x28
+ [3140] Unary !
+ [3144] Binary = 
+ [3148] x25
+ [3148] x29
+ [3136] Unary !
+ [3140] Binary = 
+ [3144] x25
+ [3144] x34
+ [3132] Unary !
+ [3136] Binary = 
+ [3140] x25
+ [3140] x35
+ [3128] Unary !
+ [3132] Binary = 
+ [3136] x25
+ [3136] x36
+ [3124] Unary !
+ [3128] Binary = 
+ [3132] x25
+ [3132] x45
+ [3120] Unary !
+ [3124] Binary = 
+ [3128] x25
+ [3128] x55
+ [3116] Unary !
+ [3120] Binary = 
+ [3124] x25
+ [3124] x65
+ [3112] Unary !
+ [3116] Binary = 
+ [3120] x25
+ [3120] x75
+ [3108] Unary !
+ [3112] Binary = 
+ [3116] x25
+ [3116] x85
+ [3104] Unary !
+ [3108] Binary = 
+ [3112] x25
+ [3112] x95
+ [3100] Unary !
+ [3104] Binary = 
+ [3108] x26
+ [3108] x27
+ [3096] Unary !
+ [3100] Binary = 
+ [3104] x26
+ [3104] x28
+ [3092] Unary !
+ [3096] Binary = 
+ [3100] x26
+ [3100] x29
+ [3088] Unary !
+ [3092] Binary = 
+ [3096] x26
+ [3096] x34
+ [3084] Unary !
+ [3088] Binary = 
+ [3092] x26
+ [3092] x35
+ [3080] Unary !
+ [3084] Binary = 
+ [3088] x26
+ [3088] x36
+ [3076] Unary !
+ [3080] Binary = 
+ [3084] x26
+ [3084] x46
+ [3072] Unary !
+ [3076] Binary = 
+ [3080] x26
+ [3080] x56
+ [3068] Unary !
+ [3072] Binary = 
+ [3076] x26
+ [3076] x66
+ [3064] Unary !
+ [3068] Binary = 
+ [3072] x26
+ [3072] x76
+ [3060] Unary !
+ [3064] Binary = 
+ [3068] x26
+ [3068] x86
+ [3056] Unary !
+ [3060] Binary = 
+ [3064] x26
+ [3064] x96
+ [3052] Unary !
+ [3056] Binary = 
+ [3060] x27
+ [3060] x28
+ [3048] Unary !
+ [3052] Binary = 
+ [3056] x27
+ [3056] x29
+ [3044] Unary !
+ [3048] Binary = 
+ [3052] x27
+ [3052] x37
+ [3040] Unary !
+ [3044] Binary = 
+ [3048] x27
+ [3048] x38
+ [3036] Unary !
+ [3040] Binary = 
+ [3044] x27
+ [3044] x39
+ [3032] Unary !
+ [3036] Binary = 
+ [3040] x27
+ [3040] x47
+ [3028] Unary !
+ [3032] Binary = 
+ [3036] x27
+ [3036] x57
+ [3024] Unary !
+ [3028] Binary = 
+ [3032] x27
+ [3032] x67
+ [3020] Unary !
+ [3024] Binary = 
+ [3028] x27
+ [3028] x77
+ [3016] Unary !
+ [3020] Binary = 
+ [3024] x27
+ [3024] x87
+ [3012] Unary !
+ [3016] Binary = 
+ [3020] x27
+ [3020] x97
+ [3008] Unary !
+ [3012] Binary = 
+ [3016] x28
+ [3016] x29
+ [3004] Unary !
+ [3008] Binary = 
+ [3012] x28
+ [3012] x37
+ [3000] Unary !
+ [3004] Binary = 
+ [3008] x28
+ [3008] x38
+ [2996] Unary !
+ [3000] Binary = 
+ [3004] x28
+ [3004] x39
+ [2992] Unary !
+ [2996] Binary = 
+ [3000] x28
+ [3000] x48
+ [2988] Unary !
+ [2992] Binary = 
+ [2996] x28
+ [2996] x58
+ [2984] Unary !
+ [2988] Binary = 
+ [2992] x28
+ [2992] x68
+ [2980] Unary !
+ [2984] Binary = 
+ [2988] x28
+ [2988] x78
+ [2976] Unary !
+ [2980] Binary = 
+ [2984] x28
+ [2984] x88
+ [2972] Unary !
+ [2976] Binary = 
+ [2980] x28
+ [2980] x98
+ [2968] Unary !
+ [2972] Binary = 
+ [2976] x29
+ [2976] x37
+ [2964] Unary !
+ [2968] Binary = 
+ [2972] x29
+ [2972] x38
+ [2960] Unary !
+ [2964] Binary = 
+ [2968] x29
+ [2968] x39
+ [2956] Unary !
+ [2960] Binary = 
+ [2964] x29
+ [2964] x49
+ [2952] Unary !
+ [2956] Binary = 
+ [2960] x29
+ [2960] x59
+ [2948] Unary !
+ [2952] Binary = 
+ [2956] x29
+ [2956] x69
+ [2944] Unary !
+ [2948] Binary = 
+ [2952] x29
+ [2952] x79
+ [2940] Unary !
+ [2944] Binary = 
+ [2948] x29
+ [2948] x89
+ [2936] Unary !
+ [2940] Binary = 
+ [2944] x29
+ [2944] x99
+ [2932] Unary !
+ [2936] Binary = 
+ [2940] x31
+ [2940] x32
+ [2928] Unary !
+ [2932] Binary = 
+ [2936] x31
+ [2936] x33
+ [2924] Unary !
+ [2928] Binary = 
+ [2932] x31
+ [2932] x34
+ [2920] Unary !
+ [2924] Binary = 
+ [2928] x31
+ [2928] x35
+ [2916] Unary !
+ [2920] Binary = 
+ [2924] x31
+ [2924] x36
+ [2912] Unary !
+ [2916] Binary = 
+ [2920] x31
+ [2920] x37
+ [2908] Unary !
+ [2912] Binary = 
+ [2916] x31
+ [2916] x38
+ [2904] Unary !
+ [2908] Binary = 
+ [2912] x31
+ [2912] x39
+ [2900] Unary !
+ [2904] Binary = 
+ [2908] x31
+ [2908] x41
+ [2896] Unary !
+ [2900] Binary = 
+ [2904] x31
+ [2904] x51
+ [2892] Unary !
+ [2896] Binary = 
+ [2900] x31
+ [2900] x61
+ [2888] Unary !
+ [2892] Binary = 
+ [2896] x31
+ [2896] x71
+ [2884] Unary !
+ [2888] Binary = 
+ [2892] x31
+ [2892] x81
+ [2880] Unary !
+ [2884] Binary = 
+ [2888] x31
+ [2888] x91
+ [2876] Unary !
+ [2880] Binary = 
+ [2884] x32
+ [2884] x33
+ [2872] Unary !
+ [2876] Binary = 
+ [2880] x32
+ [2880] x34
+ [2868] Unary !
+ [2872] Binary = 
+ [2876] x32
+ [2876] x35
+ [2864] Unary !
+ [2868] Binary = 
+ [2872] x32
+ [2872] x36
+ [2860] Unary !
+ [2864] Binary = 
+ [2868] x32
+ [2868] x37
+ [2856] Unary !
+ [2860] Binary = 
+ [2864] x32
+ [2864] x38
+ [2852] Unary !
+ [2856] Binary = 
+ [2860] x32
+ [2860] x39
+ [2848] Unary !
+ [2852] Binary = 
+ [2856] x32
+ [2856] x42
+ [2844] Unary !
+ [2848] Binary = 
+ [2852] x32
+ [2852] x52
+ [2840] Unary !
+ [2844] Binary = 
+ [2848] x32
+ [2848] x62
+ [2836] Unary !
+ [2840] Binary = 
+ [2844] x32
+ [2844] x72
+ [2832] Unary !
+ [2836] Binary = 
+ [2840] x32
+ [2840] x82
+ [2828] Unary !
+ [2832] Binary = 
+ [2836] x32
+ [2836] x92
+ [2824] Unary !
+ [2828] Binary = 
+ [2832] x33
+ [2832] x34
+ [2820] Unary !
+ [2824] Binary = 
+ [2828] x33
+ [2828] x35
+ [2816] Unary !
+ [2820] Binary = 
+ [2824] x33
+ [2824] x36
+ [2812] Unary !
+ [2816] Binary = 
+ [2820] x33
+ [2820] x37
+ [2808] Unary !
+ [2812] Binary = 
+ [2816] x33
+ [2816] x38
+ [2804] Unary !
+ [2808] Binary = 
+ [2812] x33
+ [2812] x39
+ [2800] Unary !
+ [2804] Binary = 
+ [2808] x33
+ [2808] x43
+ [2796] Unary !
+ [2800] Binary = 
+ [2804] x33
+ [2804] x53
+ [2792] Unary !
+ [2796] Binary = 
+ [2800] x33
+ [2800] x63
+ [2788] Unary !
+ [2792] Binary = 
+ [2796] x33
+ [2796] x73
+ [2784] Unary !
+ [2788] Binary = 
+ [2792] x33
+ [2792] x83
+ [2780] Unary !
+ [2784] Binary = 
+ [2788] x33
+ [2788] x93
+ [2776] Unary !
+ [2780] Binary = 
+ [2784] x34
+ [2784] x35
+ [2772] Unary !
+ [2776] Binary = 
+ [2780] x34
+ [2780] x36
+ [2768] Unary !
+ [2772] Binary = 
+ [2776] x34
+ [2776] x37
+ [2764] Unary !
+ [2768] Binary = 
+ [2772] x34
+ [2772] x38
+ [2760] Unary !
+ [2764] Binary = 
+ [2768] x34
+ [2768] x39
+ [2756] Unary !
+ [2760] Binary = 
+ [2764] x34
+ [2764] x44
+ [2752] Unary !
+ [2756] Binary = 
+ [2760] x34
+ [2760] x54
+ [2748] Unary !
+ [2752] Binary = 
+ [2756] x34
+ [2756] x64
+ [2744] Unary !
+ [2748] Binary = 
+ [2752] x34
+ [2752] x74
+ [2740] Unary !
+ [2744] Binary = 
+ [2748] x34
+ [2748] x84
+ [2736] Unary !
+ [2740] Binary = 
+ [2744] x34
+ [2744] x94
+ [2732] Unary !
+ [2736] Binary = 
+ [2740] x35
+ [2740] x36
+ [2728] Unary !
+ [2732] Binary = 
+ [2736] x35
+ [2736] x37
+ [2724] Unary !
+ [2728] Binary = 
+ [2732] x35
+ [2732] x38
+ [2720] Unary !
+ [2724] Binary = 
+ [2728] x35
+ [2728] x39
+ [2716] Unary !
+ [2720] Binary = 
+ [2724] x35
+ [2724] x45
+ [2712] Unary !
+ [2716] Binary = 
+ [2720] x35
+ [2720] x55
+ [2708] Unary !
+ [2712] Binary = 
+ [2716] x35
+ [2716] x65
+ [2704] Unary !
+ [2708] Binary = 
+ [2712] x35
+ [2712] x75
+ [2700] Unary !
+ [2704] Binary = 
+ [2708] x35
+ [2708] x85
+ [2696] Unary !
+ [2700] Binary = 
+ [2704] x35
+ [2704] x95
+ [2692] Unary !
+ [2696] Binary = 
+ [2700] x36
+ [2700] x37
+ [2688] Unary !
+ [2692] Binary = 
+ [2696] x36
+ [2696] x38
+ [2684] Unary !
+ [2688] Binary = 
+ [2692] x36
+ [2692] x39
+ [2680] Unary !
+ [2684] Binary = 
+ [2688] x36
+ [2688] x46
+ [2676] Unary !
+ [2680] Binary = 
+ [2684] x36
+ [2684] x56
+ [2672] Unary !
+ [2676] Binary = 
+ [2680] x36
+ [2680] x66
+ [2668] Unary !
+ [2672] Binary = 
+ [2676] x36
+ [2676] x76
+ [2664] Unary !
+ [2668] Binary = 
+ [2672] x36
+ [2672] x86
+ [2660] Unary !
+ [2664] Binary = 
+ [2668] x36
+ [2668] x96
+ [2656] Unary !
+ [2660] Binary = 
+ [2664] x37
+ [2664] x38
+ [2652] Unary !
+ [2656] Binary = 
+ [2660] x37
+ [2660] x39
+ [2648] Unary !
+ [2652] Binary = 
+ [2656] x37
+ [2656] x47
+ [2644] Unary !
+ [2648] Binary = 
+ [2652] x37
+ [2652] x57
+ [2640] Unary !
+ [2644] Binary = 
+ [2648] x37
+ [2648] x67
+ [2636] Unary !
+ [2640] Binary = 
+ [2644] x37
+ [2644] x77
+ [2632] Unary !
+ [2636] Binary = 
+ [2640] x37
+ [2640] x87
+ [2628] Unary !
+ [2632] Binary = 
+ [2636] x37
+ [2636] x97
+ [2624] Unary !
+ [2628] Binary = 
+ [2632] x38
+ [2632] x39
+ [2620] Unary !
+ [2624] Binary = 
+ [2628] x38
+ [2628] x48
+ [2616] Unary !
+ [2620] Binary = 
+ [2624] x38
+ [2624] x58
+ [2612] Unary !
+ [2616] Binary = 
+ [2620] x38
+ [2620] x68
+ [2608] Unary !
+ [2612] Binary = 
+ [2616] x38
+ [2616] x78
+ [2604] Unary !
+ [2608] Binary = 
+ [2612] x38
+ [2612] x88
+ [2600] Unary !
+ [2604] Binary = 
+ [2608] x38
+ [2608] x98
+ [2596] Unary !
+ [2600] Binary = 
+ [2604] x39
+ [2604] x49
+ [2592] Unary !
+ [2596] Binary = 
+ [2600] x39
+ [2600] x59
+ [2588] Unary !
+ [2592] Binary = 
+ [2596] x39
+ [2596] x69
+ [2584] Unary !
+ [2588] Binary = 
+ [2592] x39
+ [2592] x79
+ [2580] Unary !
+ [2584] Binary = 
+ [2588] x39
+ [2588] x89
+ [2576] Unary !
+ [2580] Binary = 
+ [2584] x39
+ [2584] x99
+ [2572] Unary !
+ [2576] Binary = 
+ [2580] x41
+ [2580] x42
+ [2568] Unary !
+ [2572] Binary = 
+ [2576] x41
+ [2576] x43
+ [2564] Unary !
+ [2568] Binary = 
+ [2572] x41
+ [2572] x44
+ [2560] Unary !
+ [2564] Binary = 
+ [2568] x41
+ [2568] x45
+ [2556] Unary !
+ [2560] Binary = 
+ [2564] x41
+ [2564] x46
+ [2552] Unary !
+ [2556] Binary = 
+ [2560] x41
+ [2560] x47
+ [2548] Unary !
+ [2552] Binary = 
+ [2556] x41
+ [2556] x48
+ [2544] Unary !
+ [2548] Binary = 
+ [2552] x41
+ [2552] x49
+ [2540] Unary !
+ [2544] Binary = 
+ [2548] x41
+ [2548] x51
+ [2536] Unary !
+ [2540] Binary = 
+ [2544] x41
+ [2544] x52
+ [2532] Unary !
+ [2536] Binary = 
+ [2540] x41
+ [2540] x53
+ [2528] Unary !
+ [2532] Binary = 
+ [2536] x41
+ [2536] x61
+ [2524] Unary !
+ [2528] Binary = 
+ [2532] x41
+ [2532] x62
+ [2520] Unary !
+ [2524] Binary = 
+ [2528] x41
+ [2528] x63
+ [2516] Unary !
+ [2520] Binary = 
+ [2524] x41
+ [2524] x71
+ [2512] Unary !
+ [2516] Binary = 
+ [2520] x41
+ [2520] x81
+ [2508] Unary !
+ [2512] Binary = 
+ [2516] x41
+ [2516] x91
+ [2504] Unary !
+ [2508] Binary = 
+ [2512] x42
+ [2512] x43
+ [2500] Unary !
+ [2504] Binary = 
+ [2508] x42
+ [2508] x44
+ [2496] Unary !
+ [2500] Binary = 
+ [2504] x42
+ [2504] x45
+ [2492] Unary !
+ [2496] Binary = 
+ [2500] x42
+ [2500] x46
+ [2488] Unary !
+ [2492] Binary = 
+ [2496] x42
+ [2496] x47
+ [2484] Unary !
+ [2488] Binary = 
+ [2492] x42
+ [2492] x48
+ [2480] Unary !
+ [2484] Binary = 
+ [2488] x42
+ [2488] x49
+ [2476] Unary !
+ [2480] Binary = 
+ [2484] x42
+ [2484] x51
+ [2472] Unary !
+ [2476] Binary = 
+ [2480] x42
+ [2480] x52
+ [2468] Unary !
+ [2472] Binary = 
+ [2476] x42
+ [2476] x53
+ [2464] Unary !
+ [2468] Binary = 
+ [2472] x42
+ [2472] x61
+ [2460] Unary !
+ [2464] Binary = 
+ [2468] x42
+ [2468] x62
+ [2456] Unary !
+ [2460] Binary = 
+ [2464] x42
+ [2464] x63
+ [2452] Unary !
+ [2456] Binary = 
+ [2460] x42
+ [2460] x72
+ [2448] Unary !
+ [2452] Binary = 
+ [2456] x42
+ [2456] x82
+ [2444] Unary !
+ [2448] Binary = 
+ [2452] x42
+ [2452] x92
+ [2440] Unary !
+ [2444] Binary = 
+ [2448] x43
+ [2448] x44
+ [2436] Unary !
+ [2440] Binary = 
+ [2444] x43
+ [2444] x45
+ [2432] Unary !
+ [2436] Binary = 
+ [2440] x43
+ [2440] x46
+ [2428] Unary !
+ [2432] Binary = 
+ [2436] x43
+ [2436] x47
+ [2424] Unary !
+ [2428] Binary = 
+ [2432] x43
+ [2432] x48
+ [2420] Unary !
+ [2424] Binary = 
+ [2428] x43
+ [2428] x49
+ [2416] Unary !
+ [2420] Binary = 
+ [2424] x43
+ [2424] x51
+ [2412] Unary !
+ [2416] Binary = 
+ [2420] x43
+ [2420] x52
+ [2408] Unary !
+ [2412] Binary = 
+ [2416] x43
+ [2416] x53
+ [2404] Unary !
+ [2408] Binary = 
+ [2412] x43
+ [2412] x61
+ [2400] Unary !
+ [2404] Binary = 
+ [2408] x43
+ [2408] x62
+ [2396] Unary !
+ [2400] Binary = 
+ [2404] x43
+ [2404] x63
+ [2392] Unary !
+ [2396] Binary = 
+ [2400] x43
+ [2400] x73
+ [2388] Unary !
+ [2392] Binary = 
+ [2396] x43
+ [2396] x83
+ [2384] Unary !
+ [2388] Binary = 
+ [2392] x43
+ [2392] x93
+ [2380] Unary !
+ [2384] Binary = 
+ [2388] x44
+ [2388] x45
+ [2376] Unary !
+ [2380] Binary = 
+ [2384] x44
+ [2384] x46
+ [2372] Unary !
+ [2376] Binary = 
+ [2380] x44
+ [2380] x47
+ [2368] Unary !
+ [2372] Binary = 
+ [2376] x44
+ [2376] x48
+ [2364] Unary !
+ [2368] Binary = 
+ [2372] x44
+ [2372] x49
+ [2360] Unary !
+ [2364] Binary = 
+ [2368] x44
+ [2368] x54
+ [2356] Unary !
+ [2360] Binary = 
+ [2364] x44
+ [2364] x55
+ [2352] Unary !
+ [2356] Binary = 
+ [2360] x44
+ [2360] x56
+ [2348] Unary !
+ [2352] Binary = 
+ [2356] x44
+ [2356] x64
+ [2344] Unary !
+ [2348] Binary = 
+ [2352] x44
+ [2352] x65
+ [2340] Unary !
+ [2344] Binary = 
+ [2348] x44
+ [2348] x66
+ [2336] Unary !
+ [2340] Binary = 
+ [2344] x44
+ [2344] x74
+ [2332] Unary !
+ [2336] Binary = 
+ [2340] x44
+ [2340] x84
+ [2328] Unary !
+ [2332] Binary = 
+ [2336] x44
+ [2336] x94
+ [2324] Unary !
+ [2328] Binary = 
+ [2332] x45
+ [2332] x46
+ [2320] Unary !
+ [2324] Binary = 
+ [2328] x45
+ [2328] x47
+ [2316] Unary !
+ [2320] Binary = 
+ [2324] x45
+ [2324] x48
+ [2312] Unary !
+ [2316] Binary = 
+ [2320] x45
+ [2320] x49
+ [2308] Unary !
+ [2312] Binary = 
+ [2316] x45
+ [2316] x54
+ [2304] Unary !
+ [2308] Binary = 
+ [2312] x45
+ [2312] x55
+ [2300] Unary !
+ [2304] Binary = 
+ [2308] x45
+ [2308] x56
+ [2296] Unary !
+ [2300] Binary = 
+ [2304] x45
+ [2304] x64
+ [2292] Unary !
+ [2296] Binary = 
+ [2300] x45
+ [2300] x65
+ [2288] Unary !
+ [2292] Binary = 
+ [2296] x45
+ [2296] x66
+ [2284] Unary !
+ [2288] Binary = 
+ [2292] x45
+ [2292] x75
+ [2280] Unary !
+ [2284] Binary = 
+ [2288] x45
+ [2288] x85
+ [2276] Unary !
+ [2280] Binary = 
+ [2284] x45
+ [2284] x95
+ [2272] Unary !
+ [2276] Binary = 
+ [2280] x46
+ [2280] x47
+ [2268] Unary !
+ [2272] Binary = 
+ [2276] x46
+ [2276] x48
+ [2264] Unary !
+ [2268] Binary = 
+ [2272] x46
+ [2272] x49
+ [2260] Unary !
+ [2264] Binary = 
+ [2268] x46
+ [2268] x54
+ [2256] Unary !
+ [2260] Binary = 
+ [2264] x46
+ [2264] x55
+ [2252] Unary !
+ [2256] Binary = 
+ [2260] x46
+ [2260] x56
+ [2248] Unary !
+ [2252] Binary = 
+ [2256] x46
+ [2256] x64
+ [2244] Unary !
+ [2248] Binary = 
+ [2252] x46
+ [2252] x65
+ [2240] Unary !
+ [2244] Binary = 
+ [2248] x46
+ [2248] x66
+ [2236] Unary !
+ [2240] Binary = 
+ [2244] x46
+ [2244] x76
+ [2232] Unary !
+ [2236] Binary = 
+ [2240] x46
+ [2240] x86
+ [2228] Unary !
+ [2232] Binary = 
+ [2236] x46
+ [2236] x96
+ [2224] Unary !
+ [2228] Binary = 
+ [2232] x47
+ [2232] x48
+ [2220] Unary !
+ [2224] Binary = 
+ [2228] x47
+ [2228] x49
+ [2216] Unary !
+ [2220] Binary = 
+ [2224] x47
+ [2224] x57
+ [2212] Unary !
+ [2216] Binary = 
+ [2220] x47
+ [2220] x58
+ [2208] Unary !
+ [2212] Binary = 
+ [2216] x47
+ [2216] x59
+ [2204] Unary !
+ [2208] Binary = 
+ [2212] x47
+ [2212] x67
+ [2200] Unary !
+ [2204] Binary = 
+ [2208] x47
+ [2208] x68
+ [2196] Unary !
+ [2200] Binary = 
+ [2204] x47
+ [2204] x69
+ [2192] Unary !
+ [2196] Binary = 
+ [2200] x47
+ [2200] x77
+ [2188] Unary !
+ [2192] Binary = 
+ [2196] x47
+ [2196] x87
+ [2184] Unary !
+ [2188] Binary = 
+ [2192] x47
+ [2192] x97
+ [2180] Unary !
+ [2184] Binary = 
+ [2188] x48
+ [2188] x49
+ [2176] Unary !
+ [2180] Binary = 
+ [2184] x48
+ [2184] x57
+ [2172] Unary !
+ [2176] Binary = 
+ [2180] x48
+ [2180] x58
+ [2168] Unary !
+ [2172] Binary = 
+ [2176] x48
+ [2176] x59
+ [2164] Unary !
+ [2168] Binary = 
+ [2172] x48
+ [2172] x67
+ [2160] Unary !
+ [2164] Binary = 
+ [2168] x48
+ [2168] x68
+ [2156] Unary !
+ [2160] Binary = 
+ [2164] x48
+ [2164] x69
+ [2152] Unary !
+ [2156] Binary = 
+ [2160] x48
+ [2160] x78
+ [2148] Unary !
+ [2152] Binary = 
+ [2156] x48
+ [2156] x88
+ [2144] Unary !
+ [2148] Binary = 
+ [2152] x48
+ [2152] x98
+ [2140] Unary !
+ [2144] Binary = 
+ [2148] x49
+ [2148] x57
+ [2136] Unary !
+ [2140] Binary = 
+ [2144] x49
+ [2144] x58
+ [2132] Unary !
+ [2136] Binary = 
+ [2140] x49
+ [2140] x59
+ [2128] Unary !
+ [2132] Binary = 
+ [2136] x49
+ [2136] x67
+ [2124] Unary !
+ [2128] Binary = 
+ [2132] x49
+ [2132] x68
+ [2120] Unary !
+ [2124] Binary = 
+ [2128] x49
+ [2128] x69
+ [2116] Unary !
+ [2120] Binary = 
+ [2124] x49
+ [2124] x79
+ [2112] Unary !
+ [2116] Binary = 
+ [2120] x49
+ [2120] x89
+ [2108] Unary !
+ [2112] Binary = 
+ [2116] x49
+ [2116] x99
+ [2104] Unary !
+ [2108] Binary = 
+ [2112] x51
+ [2112] x52
+ [2100] Unary !
+ [2104] Binary = 
+ [2108] x51
+ [2108] x53
+ [2096] Unary !
+ [2100] Binary = 
+ [2104] x51
+ [2104] x54
+ [2092] Unary !
+ [2096] Binary = 
+ [2100] x51
+ [2100] x55
+ [2088] Unary !
+ [2092] Binary = 
+ [2096] x51
+ [2096] x56
+ [2084] Unary !
+ [2088] Binary = 
+ [2092] x51
+ [2092] x57
+ [2080] Unary !
+ [2084] Binary = 
+ [2088] x51
+ [2088] x58
+ [2076] Unary !
+ [2080] Binary = 
+ [2084] x51
+ [2084] x59
+ [2072] Unary !
+ [2076] Binary = 
+ [2080] x51
+ [2080] x61
+ [2068] Unary !
+ [2072] Binary = 
+ [2076] x51
+ [2076] x62
+ [2064] Unary !
+ [2068] Binary = 
+ [2072] x51
+ [2072] x63
+ [2060] Unary !
+ [2064] Binary = 
+ [2068] x51
+ [2068] x71
+ [2056] Unary !
+ [2060] Binary = 
+ [2064] x51
+ [2064] x81
+ [2052] Unary !
+ [2056] Binary = 
+ [2060] x51
+ [2060] x91
+ [2048] Unary !
+ [2052] Binary = 
+ [2056] x52
+ [2056] x53
+ [2044] Unary !
+ [2048] Binary = 
+ [2052] x52
+ [2052] x54
+ [2040] Unary !
+ [2044] Binary = 
+ [2048] x52
+ [2048] x55
+ [2036] Unary !
+ [2040] Binary = 
+ [2044] x52
+ [2044] x56
+ [2032] Unary !
+ [2036] Binary = 
+ [2040] x52
+ [2040] x57
+ [2028] Unary !
+ [2032] Binary = 
+ [2036] x52
+ [2036] x58
+ [2024] Unary !
+ [2028] Binary = 
+ [2032] x52
+ [2032] x59
+ [2020] Unary !
+ [2024] Binary = 
+ [2028] x52
+ [2028] x61
+ [2016] Unary !
+ [2020] Binary = 
+ [2024] x52
+ [2024] x62
+ [2012] Unary !
+ [2016] Binary = 
+ [2020] x52
+ [2020] x63
+ [2008] Unary !
+ [2012] Binary = 
+ [2016] x52
+ [2016] x72
+ [2004] Unary !
+ [2008] Binary = 
+ [2012] x52
+ [2012] x82
+ [2000] Unary !
+ [2004] Binary = 
+ [2008] x52
+ [2008] x92
+ [1996] Unary !
+ [2000] Binary = 
+ [2004] x53
+ [2004] x54
+ [1992] Unary !
+ [1996] Binary = 
+ [2000] x53
+ [2000] x55
+ [1988] Unary !
+ [1992] Binary = 
+ [1996] x53
+ [1996] x56
+ [1984] Unary !
+ [1988] Binary = 
+ [1992] x53
+ [1992] x57
+ [1980] Unary !
+ [1984] Binary = 
+ [1988] x53
+ [1988] x58
+ [1976] Unary !
+ [1980] Binary = 
+ [1984] x53
+ [1984] x59
+ [1972] Unary !
+ [1976] Binary = 
+ [1980] x53
+ [1980] x61
+ [1968] Unary !
+ [1972] Binary = 
+ [1976] x53
+ [1976] x62
+ [1964] Unary !
+ [1968] Binary = 
+ [1972] x53
+ [1972] x63
+ [1960] Unary !
+ [1964] Binary = 
+ [1968] x53
+ [1968] x73
+ [1956] Unary !
+ [1960] Binary = 
+ [1964] x53
+ [1964] x83
+ [1952] Unary !
+ [1956] Binary = 
+ [1960] x53
+ [1960] x93
+ [1948] Unary !
+ [1952] Binary = 
+ [1956] x54
+ [1956] x55
+ [1944] Unary !
+ [1948] Binary = 
+ [1952] x54
+ [1952] x56
+ [1940] Unary !
+ [1944] Binary = 
+ [1948] x54
+ [1948] x57
+ [1936] Unary !
+ [1940] Binary = 
+ [1944] x54
+ [1944] x58
+ [1932] Unary !
+ [1936] Binary = 
+ [1940] x54
+ [1940] x59
+ [1928] Unary !
+ [1932] Binary = 
+ [1936] x54
+ [1936] x64
+ [1924] Unary !
+ [1928] Binary = 
+ [1932] x54
+ [1932] x65
+ [1920] Unary !
+ [1924] Binary = 
+ [1928] x54
+ [1928] x66
+ [1916] Unary !
+ [1920] Binary = 
+ [1924] x54
+ [1924] x74
+ [1912] Unary !
+ [1916] Binary = 
+ [1920] x54
+ [1920] x84
+ [1908] Unary !
+ [1912] Binary = 
+ [1916] x54
+ [1916] x94
+ [1904] Unary !
+ [1908] Binary = 
+ [1912] x55
+ [1912] x56
+ [1900] Unary !
+ [1904] Binary = 
+ [1908] x55
+ [1908] x57
+ [1896] Unary !
+ [1900] Binary = 
+ [1904] x55
+ [1904] x58
+ [1892] Unary !
+ [1896] Binary = 
+ [1900] x55
+ [1900] x59
+ [1888] Unary !
+ [1892] Binary = 
+ [1896] x55
+ [1896] x64
+ [1884] Unary !
+ [1888] Binary = 
+ [1892] x55
+ [1892] x65
+ [1880] Unary !
+ [1884] Binary = 
+ [1888] x55
+ [1888] x66
+ [1876] Unary !
+ [1880] Binary = 
+ [1884] x55
+ [1884] x75
+ [1872] Unary !
+ [1876] Binary = 
+ [1880] x55
+ [1880] x85
+ [1868] Unary !
+ [1872] Binary = 
+ [1876] x55
+ [1876] x95
+ [1864] Unary !
+ [1868] Binary = 
+ [1872] x56
+ [1872] x57
+ [1860] Unary !
+ [1864] Binary = 
+ [1868] x56
+ [1868] x58
+ [1856] Unary !
+ [1860] Binary = 
+ [1864] x56
+ [1864] x59
+ [1852] Unary !
+ [1856] Binary = 
+ [1860] x56
+ [1860] x64
+ [1848] Unary !
+ [1852] Binary = 
+ [1856] x56
+ [1856] x65
+ [1844] Unary !
+ [1848] Binary = 
+ [1852] x56
+ [1852] x66
+ [1840] Unary !
+ [1844] Binary = 
+ [1848] x56
+ [1848] x76
+ [1836] Unary !
+ [1840] Binary = 
+ [1844] x56
+ [1844] x86
+ [1832] Unary !
+ [1836] Binary = 
+ [1840] x56
+ [1840] x96
+ [1828] Unary !
+ [1832] Binary = 
+ [1836] x57
+ [1836] x58
+ [1824] Unary !
+ [1828] Binary = 
+ [1832] x57
+ [1832] x59
+ [1820] Unary !
+ [1824] Binary = 
+ [1828] x57
+ [1828] x67
+ [1816] Unary !
+ [1820] Binary = 
+ [1824] x57
+ [1824] x68
+ [1812] Unary !
+ [1816] Binary = 
+ [1820] x57
+ [1820] x69
+ [1808] Unary !
+ [1812] Binary = 
+ [1816] x57
+ [1816] x77
+ [1804] Unary !
+ [1808] Binary = 
+ [1812] x57
+ [1812] x87
+ [1800] Unary !
+ [1804] Binary = 
+ [1808] x57
+ [1808] x97
+ [1796] Unary !
+ [1800] Binary = 
+ [1804] x58
+ [1804] x59
+ [1792] Unary !
+ [1796] Binary = 
+ [1800] x58
+ [1800] x67
+ [1788] Unary !
+ [1792] Binary = 
+ [1796] x58
+ [1796] x68
+ [1784] Unary !
+ [1788] Binary = 
+ [1792] x58
+ [1792] x69
+ [1780] Unary !
+ [1784] Binary = 
+ [1788] x58
+ [1788] x78
+ [1776] Unary !
+ [1780] Binary = 
+ [1784] x58
+ [1784] x88
+ [1772] Unary !
+ [1776] Binary = 
+ [1780] x58
+ [1780] x98
+ [1768] Unary !
+ [1772] Binary = 
+ [1776] x59
+ [1776] x67
+ [1764] Unary !
+ [1768] Binary = 
+ [1772] x59
+ [1772] x68
+ [1760] Unary !
+ [1764] Binary = 
+ [1768] x59
+ [1768] x69
+ [1756] Unary !
+ [1760] Binary = 
+ [1764] x59
+ [1764] x79
+ [1752] Unary !
+ [1756] Binary = 
+ [1760] x59
+ [1760] x89
+ [1748] Unary !
+ [1752] Binary = 
+ [1756] x59
+ [1756] x99
+ [1744] Unary !
+ [1748] Binary = 
+ [1752] x61
+ [1752] x62
+ [1740] Unary !
+ [1744] Binary = 
+ [1748] x61
+ [1748] x63
+ [1736] Unary !
+ [1740] Binary = 
+ [1744] x61
+ [1744] x64
+ [1732] Unary !
+ [1736] Binary = 
+ [1740] x61
+ [1740] x65
+ [1728] Unary !
+ [1732] Binary = 
+ [1736] x61
+ [1736] x66
+ [1724] Unary !
+ [1728] Binary = 
+ [1732] x61
+ [1732] x67
+ [1720] Unary !
+ [1724] Binary = 
+ [1728] x61
+ [1728] x68
+ [1716] Unary !
+ [1720] Binary = 
+ [1724] x61
+ [1724] x69
+ [1712] Unary !
+ [1716] Binary = 
+ [1720] x61
+ [1720] x71
+ [1708] Unary !
+ [1712] Binary = 
+ [1716] x61
+ [1716] x81
+ [1704] Unary !
+ [1708] Binary = 
+ [1712] x61
+ [1712] x91
+ [1700] Unary !
+ [1704] Binary = 
+ [1708] x62
+ [1708] x63
+ [1696] Unary !
+ [1700] Binary = 
+ [1704] x62
+ [1704] x64
+ [1692] Unary !
+ [1696] Binary = 
+ [1700] x62
+ [1700] x65
+ [1688] Unary !
+ [1692] Binary = 
+ [1696] x62
+ [1696] x66
+ [1684] Unary !
+ [1688] Binary = 
+ [1692] x62
+ [1692] x67
+ [1680] Unary !
+ [1684] Binary = 
+ [1688] x62
+ [1688] x68
+ [1676] Unary !
+ [1680] Binary = 
+ [1684] x62
+ [1684] x69
+ [1672] Unary !
+ [1676] Binary = 
+ [1680] x62
+ [1680] x72
+ [1668] Unary !
+ [1672] Binary = 
+ [1676] x62
+ [1676] x82
+ [1664] Unary !
+ [1668] Binary = 
+ [1672] x62
+ [1672] x92
+ [1660] Unary !
+ [1664] Binary = 
+ [1668] x63
+ [1668] x64
+ [1656] Unary !
+ [1660] Binary = 
+ [1664] x63
+ [1664] x65
+ [1652] Unary !
+ [1656] Binary = 
+ [1660] x63
+ [1660] x66
+ [1648] Unary !
+ [1652] Binary = 
+ [1656] x63
+ [1656] x67
+ [1644] Unary !
+ [1648] Binary = 
+ [1652] x63
+ [1652] x68
+ [1640] Unary !
+ [1644] Binary = 
+ [1648] x63
+ [1648] x69
+ [1636] Unary !
+ [1640] Binary = 
+ [1644] x63
+ [1644] x73
+ [1632] Unary !
+ [1636] Binary = 
+ [1640] x63
+ [1640] x83
+ [1628] Unary !
+ [1632] Binary = 
+ [1636] x63
+ [1636] x93
+ [1624] Unary !
+ [1628] Binary = 
+ [1632] x64
+ [1632] x65
+ [1620] Unary !
+ [1624] Binary = 
+ [1628] x64
+ [1628] x66
+ [1616] Unary !
+ [1620] Binary = 
+ [1624] x64
+ [1624] x67
+ [1612] Unary !
+ [1616] Binary = 
+ [1620] x64
+ [1620] x68
+ [1608] Unary !
+ [1612] Binary = 
+ [1616] x64
+ [1616] x69
+ [1604] Unary !
+ [1608] Binary = 
+ [1612] x64
+ [1612] x74
+ [1600] Unary !
+ [1604] Binary = 
+ [1608] x64
+ [1608] x84
+ [1596] Unary !
+ [1600] Binary = 
+ [1604] x64
+ [1604] x94
+ [1592] Unary !
+ [1596] Binary = 
+ [1600] x65
+ [1600] x66
+ [1588] Unary !
+ [1592] Binary = 
+ [1596] x65
+ [1596] x67
+ [1584] Unary !
+ [1588] Binary = 
+ [1592] x65
+ [1592] x68
+ [1580] Unary !
+ [1584] Binary = 
+ [1588] x65
+ [1588] x69
+ [1576] Unary !
+ [1580] Binary = 
+ [1584] x65
+ [1584] x75
+ [1572] Unary !
+ [1576] Binary = 
+ [1580] x65
+ [1580] x85
+ [1568] Unary !
+ [1572] Binary = 
+ [1576] x65
+ [1576] x95
+ [1564] Unary !
+ [1568] Binary = 
+ [1572] x66
+ [1572] x67
+ [1560] Unary !
+ [1564] Binary = 
+ [1568] x66
+ [1568] x68
+ [1556] Unary !
+ [1560] Binary = 
+ [1564] x66
+ [1564] x69
+ [1552] Unary !
+ [1556] Binary = 
+ [1560] x66
+ [1560] x76
+ [1548] Unary !
+ [1552] Binary = 
+ [1556] x66
+ [1556] x86
+ [1544] Unary !
+ [1548] Binary = 
+ [1552] x66
+ [1552] x96
+ [1540] Unary !
+ [1544] Binary = 
+ [1548] x67
+ [1548] x68
+ [1536] Unary !
+ [1540] Binary = 
+ [1544] x67
+ [1544] x69
+ [1532] Unary !
+ [1536] Binary = 
+ [1540] x67
+ [1540] x77
+ [1528] Unary !
+ [1532] Binary = 
+ [1536] x67
+ [1536] x87
+ [1524] Unary !
+ [1528] Binary = 
+ [1532] x67
+ [1532] x97
+ [1520] Unary !
+ [1524] Binary = 
+ [1528] x68
+ [1528] x69
+ [1516] Unary !
+ [1520] Binary = 
+ [1524] x68
+ [1524] x78
+ [1512] Unary !
+ [1516] Binary = 
+ [1520] x68
+ [1520] x88
+ [1508] Unary !
+ [1512] Binary = 
+ [1516] x68
+ [1516] x98
+ [1504] Unary !
+ [1508] Binary = 
+ [1512] x69
+ [1512] x79
+ [1500] Unary !
+ [1504] Binary = 
+ [1508] x69
+ [1508] x89
+ [1496] Unary !
+ [1500] Binary = 
+ [1504] x69
+ [1504] x99
+ [1492] Unary !
+ [1496] Binary = 
+ [1500] x71
+ [1500] x72
+ [1488] Unary !
+ [1492] Binary = 
+ [1496] x71
+ [1496] x73
+ [1484] Unary !
+ [1488] Binary = 
+ [1492] x71
+ [1492] x74
+ [1480] Unary !
+ [1484] Binary = 
+ [1488] x71
+ [1488] x75
+ [1476] Unary !
+ [1480] Binary = 
+ [1484] x71
+ [1484] x76
+ [1472] Unary !
+ [1476] Binary = 
+ [1480] x71
+ [1480] x77
+ [1468] Unary !
+ [1472] Binary = 
+ [1476] x71
+ [1476] x78
+ [1464] Unary !
+ [1468] Binary = 
+ [1472] x71
+ [1472] x79
+ [1460] Unary !
+ [1464] Binary = 
+ [1468] x71
+ [1468] x81
+ [1456] Unary !
+ [1460] Binary = 
+ [1464] x71
+ [1464] x82
+ [1452] Unary !
+ [1456] Binary = 
+ [1460] x71
+ [1460] x83
+ [1448] Unary !
+ [1452] Binary = 
+ [1456] x71
+ [1456] x91
+ [1444] Unary !
+ [1448] Binary = 
+ [1452] x71
+ [1452] x92
+ [1440] Unary !
+ [1444] Binary = 
+ [1448] x71
+ [1448] x93
+ [1436] Unary !
+ [1440] Binary = 
+ [1444] x72
+ [1444] x73
+ [1432] Unary !
+ [1436] Binary = 
+ [1440] x72
+ [1440] x74
+ [1428] Unary !
+ [1432] Binary = 
+ [1436] x72
+ [1436] x75
+ [1424] Unary !
+ [1428] Binary = 
+ [1432] x72
+ [1432] x76
+ [1420] Unary !
+ [1424] Binary = 
+ [1428] x72
+ [1428] x77
+ [1416] Unary !
+ [1420] Binary = 
+ [1424] x72
+ [1424] x78
+ [1412] Unary !
+ [1416] Binary = 
+ [1420] x72
+ [1420] x79
+ [1408] Unary !
+ [1412] Binary = 
+ [1416] x72
+ [1416] x81
+ [1404] Unary !
+ [1408] Binary = 
+ [1412] x72
+ [1412] x82
+ [1400] Unary !
+ [1404] Binary = 
+ [1408] x72
+ [1408] x83
+ [1396] Unary !
+ [1400] Binary = 
+ [1404] x72
+ [1404] x91
+ [1392] Unary !
+ [1396] Binary = 
+ [1400] x72
+ [1400] x92
+ [1388] Unary !
+ [1392] Binary = 
+ [1396] x72
+ [1396] x93
+ [1384] Unary !
+ [1388] Binary = 
+ [1392] x73
+ [1392] x74
+ [1380] Unary !
+ [1384] Binary = 
+ [1388] x73
+ [1388] x75
+ [1376] Unary !
+ [1380] Binary = 
+ [1384] x73
+ [1384] x76
+ [1372] Unary !
+ [1376] Binary = 
+ [1380] x73
+ [1380] x77
+ [1368] Unary !
+ [1372] Binary = 
+ [1376] x73
+ [1376] x78
+ [1364] Unary !
+ [1368] Binary = 
+ [1372] x73
+ [1372] x79
+ [1360] Unary !
+ [1364] Binary = 
+ [1368] x73
+ [1368] x81
+ [1356] Unary !
+ [1360] Binary = 
+ [1364] x73
+ [1364] x82
+ [1352] Unary !
+ [1356] Binary = 
+ [1360] x73
+ [1360] x83
+ [1348] Unary !
+ [1352] Binary = 
+ [1356] x73
+ [1356] x91
+ [1344] Unary !
+ [1348] Binary = 
+ [1352] x73
+ [1352] x92
+ [1340] Unary !
+ [1344] Binary = 
+ [1348] x73
+ [1348] x93
+ [1336] Unary !
+ [1340] Binary = 
+ [1344] x74
+ [1344] x75
+ [1332] Unary !
+ [1336] Binary = 
+ [1340] x74
+ [1340] x76
+ [1328] Unary !
+ [1332] Binary = 
+ [1336] x74
+ [1336] x77
+ [1324] Unary !
+ [1328] Binary = 
+ [1332] x74
+ [1332] x78
+ [1320] Unary !
+ [1324] Binary = 
+ [1328] x74
+ [1328] x79
+ [1316] Unary !
+ [1320] Binary = 
+ [1324] x74
+ [1324] x84
+ [1312] Unary !
+ [1316] Binary = 
+ [1320] x74
+ [1320] x85
+ [1308] Unary !
+ [1312] Binary = 
+ [1316] x74
+ [1316] x86
+ [1304] Unary !
+ [1308] Binary = 
+ [1312] x74
+ [1312] x94
+ [1300] Unary !
+ [1304] Binary = 
+ [1308] x74
+ [1308] x95
+ [1296] Unary !
+ [1300] Binary = 
+ [1304] x74
+ [1304] x96
+ [1292] Unary !
+ [1296] Binary = 
+ [1300] x75
+ [1300] x76
+ [1288] Unary !
+ [1292] Binary = 
+ [1296] x75
+ [1296] x77
+ [1284] Unary !
+ [1288] Binary = 
+ [1292] x75
+ [1292] x78
+ [1280] Unary !
+ [1284] Binary = 
+ [1288] x75
+ [1288] x79
+ [1276] Unary !
+ [1280] Binary = 
+ [1284] x75
+ [1284] x84
+ [1272] Unary !
+ [1276] Binary = 
+ [1280] x75
+ [1280] x85
+ [1268] Unary !
+ [1272] Binary = 
+ [1276] x75
+ [1276] x86
+ [1264] Unary !
+ [1268] Binary = 
+ [1272] x75
+ [1272] x94
+ [1260] Unary !
+ [1264] Binary = 
+ [1268] x75
+ [1268] x95
+ [1256] Unary !
+ [1260] Binary = 
+ [1264] x75
+ [1264] x96
+ [1252] Unary !
+ [1256] Binary = 
+ [1260] x76
+ [1260] x77
+ [1248] Unary !
+ [1252] Binary = 
+ [1256] x76
+ [1256] x78
+ [1244] Unary !
+ [1248] Binary = 
+ [1252] x76
+ [1252] x79
+ [1240] Unary !
+ [1244] Binary = 
+ [1248] x76
+ [1248] x84
+ [1236] Unary !
+ [1240] Binary = 
+ [1244] x76
+ [1244] x85
+ [1232] Unary !
+ [1236] Binary = 
+ [1240] x76
+ [1240] x86
+ [1228] Unary !
+ [1232] Binary = 
+ [1236] x76
+ [1236] x94
+ [1224] Unary !
+ [1228] Binary = 
+ [1232] x76
+ [1232] x95
+ [1220] Unary !
+ [1224] Binary = 
+ [1228] x76
+ [1228] x96
+ [1216] Unary !
+ [1220] Binary = 
+ [1224] x77
+ [1224] x78
+ [1212] Unary !
+ [1216] Binary = 
+ [1220] x77
+ [1220] x79
+ [1208] Unary !
+ [1212] Binary = 
+ [1216] x77
+ [1216] x87
+ [1204] Unary !
+ [1208] Binary = 
+ [1212] x77
+ [1212] x88
+ [1200] Unary !
+ [1204] Binary = 
+ [1208] x77
+ [1208] x89
+ [1196] Unary !
+ [1200] Binary = 
+ [1204] x77
+ [1204] x97
+ [1192] Unary !
+ [1196] Binary = 
+ [1200] x77
+ [1200] x98
+ [1188] Unary !
+ [1192] Binary = 
+ [1196] x77
+ [1196] x99
+ [1184] Unary !
+ [1188] Binary = 
+ [1192] x78
+ [1192] x79
+ [1180] Unary !
+ [1184] Binary = 
+ [1188] x78
+ [1188] x87
+ [1176] Unary !
+ [1180] Binary = 
+ [1184] x78
+ [1184] x88
+ [1172] Unary !
+ [1176] Binary = 
+ [1180] x78
+ [1180] x89
+ [1168] Unary !
+ [1172] Binary = 
+ [1176] x78
+ [1176] x97
+ [1164] Unary !
+ [1168] Binary = 
+ [1172] x78
+ [1172] x98
+ [1160] Unary !
+ [1164] Binary = 
+ [1168] x78
+ [1168] x99
+ [1156] Unary !
+ [1160] Binary = 
+ [1164] x79
+ [1164] x87
+ [1152] Unary !
+ [1156] Binary = 
+ [1160] x79
+ [1160] x88
+ [1148] Unary !
+ [1152] Binary = 
+ [1156] x79
+ [1156] x89
+ [1144] Unary !
+ [1148] Binary = 
+ [1152] x79
+ [1152] x97
+ [1140] Unary !
+ [1144] Binary = 
+ [1148] x79
+ [1148] x98
+ [1136] Unary !
+ [1140] Binary = 
+ [1144] x79
+ [1144] x99
+ [1132] Unary !
+ [1136] Binary = 
+ [1140] x81
+ [1140] x82
+ [1128] Unary !
+ [1132] Binary = 
+ [1136] x81
+ [1136] x83
+ [1124] Unary !
+ [1128] Binary = 
+ [1132] x81
+ [1132] x84
+ [1120] Unary !
+ [1124] Binary = 
+ [1128] x81
+ [1128] x85
+ [1116] Unary !
+ [1120] Binary = 
+ [1124] x81
+ [1124] x86
+ [1112] Unary !
+ [1116] Binary = 
+ [1120] x81
+ [1120] x87
+ [1108] Unary !
+ [1112] Binary = 
+ [1116] x81
+ [1116] x88
+ [1104] Unary !
+ [1108] Binary = 
+ [1112] x81
+ [1112] x89
+ [1100] Unary !
+ [1104] Binary = 
+ [1108] x81
+ [1108] x91
+ [1096] Unary !
+ [1100] Binary = 
+ [1104] x81
+ [1104] x92
+ [1092] Unary !
+ [1096] Binary = 
+ [1100] x81
+ [1100] x93
+ [1088] Unary !
+ [1092] Binary = 
+ [1096] x82
+ [1096] x83
+ [1084] Unary !
+ [1088] Binary = 
+ [1092] x82
+ [1092] x84
+ [1080] Unary !
+ [1084] Binary = 
+ [1088] x82
+ [1088] x85
+ [1076] Unary !
+ [1080] Binary = 
+ [1084] x82
+ [1084] x86
+ [1072] Unary !
+ [1076] Binary = 
+ [1080] x82
+ [1080] x87
+ [1068] Unary !
+ [1072] Binary = 
+ [1076] x82
+ [1076] x88
+ [1064] Unary !
+ [1068] Binary = 
+ [1072] x82
+ [1072] x89
+ [1060] Unary !
+ [1064] Binary = 
+ [1068] x82
+ [1068] x91
+ [1056] Unary !
+ [1060] Binary = 
+ [1064] x82
+ [1064] x92
+ [1052] Unary !
+ [1056] Binary = 
+ [1060] x82
+ [1060] x93
+ [1048] Unary !
+ [1052] Binary = 
+ [1056] x83
+ [1056] x84
+ [1044] Unary !
+ [1048] Binary = 
+ [1052] x83
+ [1052] x85
+ [1040] Unary !
+ [1044] Binary = 
+ [1048] x83
+ [1048] x86
+ [1036] Unary !
+ [1040] Binary = 
+ [1044] x83
+ [1044] x87
+ [1032] Unary !
+ [1036] Binary = 
+ [1040] x83
+ [1040] x88
+ [1028] Unary !
+ [1032] Binary = 
+ [1036] x83
+ [1036] x89
+ [1024] Unary !
+ [1028] Binary = 
+ [1032] x83
+ [1032] x91
+ [1020] Unary !
+ [1024] Binary = 
+ [1028] x83
+ [1028] x92
+ [1016] Unary !
+ [1020] Binary = 
+ [1024] x83
+ [1024] x93
+ [1012] Unary !
+ [1016] Binary = 
+ [1020] x84
+ [1020] x85
+ [1008] Unary !
+ [1012] Binary = 
+ [1016] x84
+ [1016] x86
+ [1004] Unary !
+ [1008] Binary = 
+ [1012] x84
+ [1012] x87
+ [1000] Unary !
+ [1004] Binary = 
+ [1008] x84
+ [1008] x88
+ [996] Unary !
+ [1000] Binary = 
+ [1004] x84
+ [1004] x89
+ [992] Unary !
+ [996] Binary = 
+ [1000] x84
+ [1000] x94
+ [988] Unary !
+ [992] Binary = 
+ [996] x84
+ [996] x95
+ [984] Unary !
+ [988] Binary = 
+ [992] x84
+ [992] x96
+ [980] Unary !
+ [984] Binary = 
+ [988] x85
+ [988] x86
+ [976] Unary !
+ [980] Binary = 
+ [984] x85
+ [984] x87
+ [972] Unary !
+ [976] Binary = 
+ [980] x85
+ [980] x88
+ [968] Unary !
+ [972] Binary = 
+ [976] x85
+ [976] x89
+ [964] Unary !
+ [968] Binary = 
+ [972] x85
+ [972] x94
+ [960] Unary !
+ [964] Binary = 
+ [968] x85
+ [968] x95
+ [956] Unary !
+ [960] Binary = 
+ [964] x85
+ [964] x96
+ [952] Unary !
+ [956] Binary = 
+ [960] x86
+ [960] x87
+ [948] Unary !
+ [952] Binary = 
+ [956] x86
+ [956] x88
+ [944] Unary !
+ [948] Binary = 
+ [952] x86
+ [952] x89
+ [940] Unary !
+ [944] Binary = 
+ [948] x86
+ [948] x94
+ [936] Unary !
+ [940] Binary = 
+ [944] x86
+ [944] x95
+ [932] Unary !
+ [936] Binary = 
+ [940] x86
+ [940] x96
+ [928] Unary !
+ [932] Binary = 
+ [936] x87
+ [936] x88
+ [924] Unary !
+ [928] Binary = 
+ [932] x87
+ [932] x89
+ [920] Unary !
+ [924] Binary = 
+ [928] x87
+ [928] x97
+ [916] Unary !
+ [920] Binary = 
+ [924] x87
+ [924] x98
+ [912] Unary !
+ [916] Binary = 
+ [920] x87
+ [920] x99
+ [908] Unary !
+ [912] Binary = 
+ [916] x88
+ [916] x89
+ [904] Unary !
+ [908] Binary = 
+ [912] x88
+ [912] x97
+ [900] Unary !
+ [904] Binary = 
+ [908] x88
+ [908] x98
+ [896] Unary !
+ [900] Binary = 
+ [904] x88
+ [904] x99
+ [892] Unary !
+ [896] Binary = 
+ [900] x89
+ [900] x97
+ [888] Unary !
+ [892] Binary = 
+ [896] x89
+ [896] x98
+ [884] Unary !
+ [888] Binary = 
+ [892] x89
+ [892] x99
+ [880] Unary !
+ [884] Binary = 
+ [888] x91
+ [888] x92
+ [876] Unary !
+ [880] Binary = 
+ [884] x91
+ [884] x93
+ [872] Unary !
+ [876] Binary = 
+ [880] x91
+ [880] x94
+ [868] Unary !
+ [872] Binary = 
+ [876] x91
+ [876] x95
+ [864] Unary !
+ [868] Binary = 
+ [872] x91
+ [872] x96
+ [860] Unary !
+ [864] Binary = 
+ [868] x91
+ [868] x97
+ [856] Unary !
+ [860] Binary = 
+ [864] x91
+ [864] x98
+ [852] Unary !
+ [856] Binary = 
+ [860] x91
+ [860] x99
+ [848] Unary !
+ [852] Binary = 
+ [856] x92
+ [856] x93
+ [844] Unary !
+ [848] Binary = 
+ [852] x92
+ [852] x94
+ [840] Unary !
+ [844] Binary = 
+ [848] x92
+ [848] x95
+ [836] Unary !
+ [840] Binary = 
+ [844] x92
+ [844] x96
+ [832] Unary !
+ [836] Binary = 
+ [840] x92
+ [840] x97
+ [828] Unary !
+ [832] Binary = 
+ [836] x92
+ [836] x98
+ [824] Unary !
+ [828] Binary = 
+ [832] x92
+ [832] x99
+ [820] Unary !
+ [824] Binary = 
+ [828] x93
+ [828] x94
+ [816] Unary !
+ [820] Binary = 
+ [824] x93
+ [824] x95
+ [812] Unary !
+ [816] Binary = 
+ [820] x93
+ [820] x96
+ [808] Unary !
+ [812] Binary = 
+ [816] x93
+ [816] x97
+ [804] Unary !
+ [808] Binary = 
+ [812] x93
+ [812] x98
+ [800] Unary !
+ [804] Binary = 
+ [808] x93
+ [808] x99
+ [796] Unary !
+ [800] Binary = 
+ [804] x94
+ [804] x95
+ [792] Unary !
+ [796] Binary = 
+ [800] x94
+ [800] x96
+ [788] Unary !
+ [792] Binary = 
+ [796] x94
+ [796] x97
+ [784] Unary !
+ [788] Binary = 
+ [792] x94
+ [792] x98
+ [780] Unary !
+ [784] Binary = 
+ [788] x94
+ [788] x99
+ [776] Unary !
+ [780] Binary = 
+ [784] x95
+ [784] x96
+ [772] Unary !
+ [776] Binary = 
+ [780] x95
+ [780] x97
+ [768] Unary !
+ [772] Binary = 
+ [776] x95
+ [776] x98
+ [764] Unary !
+ [768] Binary = 
+ [772] x95
+ [772] x99
+ [760] Unary !
+ [764] Binary = 
+ [768] x96
+ [768] x97
+ [756] Unary !
+ [760] Binary = 
+ [764] x96
+ [764] x98
+ [752] Unary !
+ [756] Binary = 
+ [760] x96
+ [760] x99
+ [748] Unary !
+ [752] Binary = 
+ [756] x97
+ [756] x98
+ [744] Unary !
+ [748] Binary = 
+ [752] x97
+ [752] x99
+ [740] Unary !
+ [744] Binary = 
+ [748] x98
+ [748] x99
+ [736] Binary = 
+ [740] x12
+ [740] Integer(6)
+ [732] Binary = 
+ [736] x13
+ [736] Integer(4)
+ [728] Binary = 
+ [732] x17
+ [732] Integer(7)
+ [724] Binary = 
+ [728] x25
+ [728] Integer(2)
+ [720] Binary = 
+ [724] x28
+ [724] Integer(3)
+ [716] Binary = 
+ [720] x29
+ [720] Integer(6)
+ [712] Binary = 
+ [716] x33
+ [716] Integer(1)
+ [708] Binary = 
+ [712] x41
+ [712] Integer(2)
+ [704] Binary = 
+ [708] x42
+ [708] Integer(3)
+ [700] Binary = 
+ [704] x45
+ [704] Integer(8)
+ [696] Binary = 
+ [700] x54
+ [700] Integer(7)
+ [692] Binary = 
+ [696] x57
+ [696] Integer(1)
+ [688] Binary = 
+ [692] x59
+ [692] Integer(4)
+ [684] Binary = 
+ [688] x71
+ [688] Integer(9)
+ [680] Binary = 
+ [684] x81
+ [684] Integer(8)
+ [676] Binary = 
+ [680] x88
+ [680] Integer(2)
+ [672] Binary = 
+ [676] x94
+ [676] Integer(4)
+ [668] x1
+ [668] Binary $ 
+ [672] x2
+ [672] Binary + 
+ [676] x1
+ [676] Integer(1)
+ [660] Binary + 
+ [664] Integer(1)
+ [664] Binary % 
+ [668] Binary / 
+ [672] x1
+ [672] Integer(1)
+ [668] Integer(9)
+ [652] Binary + 
+ [656] Integer(1)
+ [656] Binary % 
+ [660] Binary / 
+ [664] x1
+ [664] Integer(9)
+ [660] Integer(9)
+ [644] Binary + 
+ [648] Integer(1)
+ [648] Binary % 
+ [652] Binary / 
+ [656] x1
+ [656] Integer(81)
+ [652] Integer(9)
+ [636] Binary + 
+ [640] Integer(1)
+ [640] Binary % 
+ [644] Binary / 
+ [648] x1
+ [648] Integer(729)
+ [644] Integer(9)
+ [628] Binary + 
+ [632] Integer(1)
+ [632] Binary % 
+ [636] Binary / 
+ [640] x1
+ [640] Integer(6561)
+ [636] Integer(9)
+ [620] Binary + 
+ [624] Integer(1)
+ [624] Binary % 
+ [628] Binary / 
+ [632] x1
+ [632] Integer(59049)
+ [628] Integer(9)
+ [612] Binary + 
+ [616] Integer(1)
+ [616] Binary % 
+ [620] Binary / 
+ [624] x1
+ [624] Integer(531441)
+ [620] Integer(9)
+ [604] Binary + 
+ [608] Integer(1)
+ [608] Binary % 
+ [612] Binary / 
+ [616] x1
+ [616] Integer(4782969)
+ [612] Integer(9)
+ [596] Binary + 
+ [600] Integer(1)
+ [600] Binary % 
+ [604] Binary / 
+ [608] x1
+ [608] Integer(43046721)
+ [604] Integer(9)
+ [588] Binary + 
+ [592] Integer(1)
+ [592] Binary % 
+ [596] Binary / 
+ [600] x1
+ [600] Integer(387420489)
+ [596] Integer(9)
+ [580] Binary + 
+ [584] Integer(1)
+ [584] Binary % 
+ [588] Binary / 
+ [592] x1
+ [592] Integer(3486784401)
+ [588] Integer(9)
+ [572] Binary + 
+ [576] Integer(1)
+ [576] Binary % 
+ [580] Binary / 
+ [584] x1
+ [584] Integer(31381059609)
+ [580] Integer(9)
+ [564] Binary + 
+ [568] Integer(1)
+ [568] Binary % 
+ [572] Binary / 
+ [576] x1
+ [576] Integer(282429536481)
+ [572] Integer(9)
+ [556] Binary + 
+ [560] Integer(1)
+ [560] Binary % 
+ [564] Binary / 
+ [568] x1
+ [568] Integer(2541865828329)
+ [564] Integer(9)
+ [548] Binary + 
+ [552] Integer(1)
+ [552] Binary % 
+ [556] Binary / 
+ [560] x1
+ [560] Integer(22876792454961)
+ [556] Integer(9)
+ [540] Binary + 
+ [544] Integer(1)
+ [544] Binary % 
+ [548] Binary / 
+ [552] x1
+ [552] Integer(205891132094649)
+ [548] Integer(9)
+ [532] Binary + 
+ [536] Integer(1)
+ [536] Binary % 
+ [540] Binary / 
+ [544] x1
+ [544] Integer(1853020188851841)
+ [540] Integer(9)
+ [524] Binary + 
+ [528] Integer(1)
+ [528] Binary % 
+ [532] Binary / 
+ [536] x1
+ [536] Integer(16677181699666569)
+ [532] Integer(9)
+ [516] Binary + 
+ [520] Integer(1)
+ [520] Binary % 
+ [524] Binary / 
+ [528] x1
+ [528] Integer(150094635296999121)
+ [524] Integer(9)
+ [508] Binary + 
+ [512] Integer(1)
+ [512] Binary % 
+ [516] Binary / 
+ [520] x1
+ [520] Integer(1350851717672992089)
+ [516] Integer(9)
+ [500] Binary + 
+ [504] Integer(1)
+ [504] Binary % 
+ [508] Binary / 
+ [512] x1
+ [512] Integer(-6289078614652622815)
+ [508] Integer(9)
+ [492] Binary + 
+ [496] Integer(1)
+ [496] Binary % 
+ [500] Binary / 
+ [504] x1
+ [504] Integer(-1261475310744950487)
+ [500] Integer(9)
+ [484] Binary + 
+ [488] Integer(1)
+ [488] Binary % 
+ [492] Binary / 
+ [496] x1
+ [496] Integer(7093466277004997233)
+ [492] Integer(9)
+ [476] Binary + 
+ [480] Integer(1)
+ [480] Binary % 
+ [484] Binary / 
+ [488] x1
+ [488] Integer(8500964271916320249)
+ [484] Integer(9)
+ [468] Binary + 
+ [472] Integer(1)
+ [472] Binary % 
+ [476] Binary / 
+ [480] x1
+ [480] Integer(2721702152408675777)
+ [476] Integer(9)
+ [460] Binary + 
+ [464] Integer(1)
+ [464] Binary % 
+ [468] Binary / 
+ [472] x1
+ [472] Integer(6048575297968530377)
+ [468] Integer(9)
+ [452] Binary + 
+ [456] Integer(1)
+ [456] Binary % 
+ [460] Binary / 
+ [464] x1
+ [464] Integer(-903054539411881455)
+ [460] Integer(9)
+ [444] Binary + 
+ [448] Integer(1)
+ [448] Binary % 
+ [452] Binary / 
+ [456] x1
+ [456] Integer(-8127490854706933095)
+ [452] Integer(9)
+ [436] Binary + 
+ [440] Integer(1)
+ [440] Binary % 
+ [444] Binary / 
+ [448] x1
+ [448] Integer(639558602475808609)
+ [444] Integer(9)
+ [428] Binary + 
+ [432] Integer(1)
+ [432] Binary % 
+ [436] Binary / 
+ [440] x1
+ [440] Integer(5756027422282277481)
+ [436] Integer(9)
+ [420] Binary + 
+ [424] Integer(1)
+ [424] Binary % 
+ [428] Binary / 
+ [432] x1
+ [432] Integer(-3535985420588157519)
+ [428] Integer(9)
+ [412] Binary + 
+ [416] Integer(1)
+ [416] Binary % 
+ [420] Binary / 
+ [424] x1
+ [424] Integer(5069619362125685561)
+ [420] Integer(9)
+ [404] Binary + 
+ [408] Integer(1)
+ [408] Binary % 
+ [412] Binary / 
+ [416] x1
+ [416] Integer(8733086111712066817)
+ [412] Integer(9)
+ [396] Binary + 
+ [400] Integer(1)
+ [400] Binary % 
+ [404] Binary / 
+ [408] x1
+ [408] Integer(4810798710570394889)
+ [404] Integer(9)
+ [388] Binary + 
+ [392] Integer(1)
+ [392] Binary % 
+ [396] Binary / 
+ [400] x1
+ [400] Integer(6403700247714450769)
+ [396] Integer(9)
+ [380] Binary + 
+ [384] Integer(1)
+ [384] Binary % 
+ [388] Binary / 
+ [392] x1
+ [392] Integer(2293070008301402073)
+ [388] Integer(9)
+ [372] Binary + 
+ [376] Integer(1)
+ [376] Binary % 
+ [380] Binary / 
+ [384] x1
+ [384] Integer(2190886001003067041)
+ [380] Integer(9)
+ [364] Binary + 
+ [368] Integer(1)
+ [368] Binary % 
+ [372] Binary / 
+ [376] x1
+ [376] Integer(1271229935318051753)
+ [372] Integer(9)
+ [356] Binary + 
+ [360] Integer(1)
+ [360] Binary % 
+ [364] Binary / 
+ [368] x1
+ [368] Integer(-7005674655847085839)
+ [364] Integer(9)
+ [348] Binary + 
+ [352] Integer(1)
+ [352] Binary % 
+ [356] Binary / 
+ [360] x1
+ [360] Integer(-7710839681495117703)
+ [356] Integer(9)
+ [340] Binary + 
+ [344] Integer(1)
+ [344] Binary % 
+ [348] Binary / 
+ [352] x1
+ [352] Integer(4389419161382147137)
+ [348] Integer(9)
+ [332] Binary + 
+ [336] Integer(1)
+ [336] Binary % 
+ [340] Binary / 
+ [344] x1
+ [344] Integer(2611284305020221001)
+ [340] Integer(9)
+ [324] Binary + 
+ [328] Integer(1)
+ [328] Binary % 
+ [332] Binary / 
+ [336] x1
+ [336] Integer(5054814671472437393)
+ [332] Integer(9)
+ [316] Binary + 
+ [320] Integer(1)
+ [320] Binary % 
+ [324] Binary / 
+ [328] x1
+ [328] Integer(8599843895832833305)
+ [324] Integer(9)
+ [308] Binary + 
+ [312] Integer(1)
+ [312] Binary % 
+ [316] Binary / 
+ [320] x1
+ [320] Integer(3611618767657293281)
+ [316] Integer(9)
+ [300] Binary + 
+ [304] Integer(1)
+ [304] Binary % 
+ [308] Binary / 
+ [312] x1
+ [312] Integer(-4388919238503463703)
+ [308] Integer(9)
+ [292] Binary + 
+ [296] Integer(1)
+ [296] Binary % 
+ [300] Binary / 
+ [304] x1
+ [304] Integer(-2606784999112070095)
+ [300] Integer(9)
+ [284] Binary + 
+ [288] Integer(1)
+ [288] Binary % 
+ [292] Binary / 
+ [296] x1
+ [296] Integer(-5014320918299079239)
+ [292] Integer(9)
+ [276] Binary + 
+ [280] Integer(1)
+ [280] Binary % 
+ [284] Binary / 
+ [288] x1
+ [288] Integer(-8235400117272609919)
+ [284] Integer(9)
+ [268] Binary + 
+ [272] Integer(1)
+ [272] Binary % 
+ [276] Binary / 
+ [280] x1
+ [280] Integer(-331624760615282807)
+ [276] Integer(9)
+ [260] Binary + 
+ [264] Integer(1)
+ [264] Binary % 
+ [268] Binary / 
+ [272] x1
+ [272] Integer(-2984622845537545263)
+ [268] Integer(9)
+ [252] Binary + 
+ [256] Integer(1)
+ [256] Binary % 
+ [260] Binary / 
+ [264] x1
+ [264] Integer(-8414861536128355751)
+ [260] Integer(9)
+ [244] Binary + 
+ [248] Integer(1)
+ [248] Binary % 
+ [252] Binary / 
+ [256] x1
+ [256] Integer(-1946777530316995295)
+ [252] Integer(9)
+ [236] Binary + 
+ [240] Integer(1)
+ [240] Binary % 
+ [244] Binary / 
+ [248] x1
+ [248] Integer(925746300856593961)
+ [244] Integer(9)
+ [228] Binary + 
+ [232] Integer(1)
+ [232] Binary % 
+ [236] Binary / 
+ [240] x1
+ [240] Integer(8331716707709345649)
+ [236] Integer(9)
+ [220] Binary + 
+ [224] Integer(1)
+ [224] Binary % 
+ [228] Binary / 
+ [232] x1
+ [232] Integer(1198474074545904377)
+ [228] Integer(9)
+ [212] Binary + 
+ [216] Integer(1)
+ [216] Binary % 
+ [220] Binary / 
+ [224] x1
+ [224] Integer(-7660477402796412223)
+ [220] Integer(9)
+ [204] Binary + 
+ [208] Integer(1)
+ [208] Binary % 
+ [212] Binary / 
+ [216] x1
+ [216] Integer(4842679669670496457)
+ [212] Integer(9)
+ [196] Binary + 
+ [200] Integer(1)
+ [200] Binary % 
+ [204] Binary / 
+ [208] x1
+ [208] Integer(6690628879615364881)
+ [204] Integer(9)
+ [188] Binary + 
+ [192] Integer(1)
+ [192] Binary % 
+ [196] Binary / 
+ [200] x1
+ [200] Integer(4875427695409629081)
+ [196] Integer(9)
+ [180] Binary + 
+ [184] Integer(1)
+ [184] Binary % 
+ [188] Binary / 
+ [192] x1
+ [192] Integer(6985361111267558497)
+ [188] Integer(9)
+ [172] Binary + 
+ [176] Integer(1)
+ [176] Binary % 
+ [180] Binary / 
+ [184] x1
+ [184] Integer(7528017780279371625)
+ [180] Integer(9)
+ [164] Binary + 
+ [168] Integer(1)
+ [168] Binary % 
+ [172] Binary / 
+ [176] x1
+ [176] Integer(-6034816272323861839)
+ [172] Integer(9)
+ [156] Binary + 
+ [160] Integer(1)
+ [160] Binary % 
+ [164] Binary / 
+ [168] x1
+ [168] Integer(1026885770213898297)
+ [164] Integer(9)
+ [148] Binary + 
+ [152] Integer(1)
+ [152] Binary % 
+ [156] Binary / 
+ [160] x1
+ [160] Integer(-9204772141784466943)
+ [156] Integer(9)
+ [140] Binary + 
+ [144] Integer(1)
+ [144] Binary % 
+ [148] Binary / 
+ [152] x1
+ [152] Integer(-9055972981221996023)
+ [148] Integer(9)
+ [132] Binary + 
+ [136] Integer(1)
+ [136] Binary % 
+ [140] Binary / 
+ [144] x1
+ [144] Integer(-7716780536159757743)
+ [140] Integer(9)
+ [124] Binary + 
+ [128] Integer(1)
+ [128] Binary % 
+ [132] Binary / 
+ [136] x1
+ [136] Integer(4335951469400386777)
+ [132] Integer(9)
+ [116] Binary + 
+ [120] Integer(1)
+ [120] Binary % 
+ [124] Binary / 
+ [128] x1
+ [128] Integer(2130075077184377761)
+ [124] Integer(9)
+ [108] Binary + 
+ [112] Integer(1)
+ [112] Binary % 
+ [116] Binary / 
+ [120] x1
+ [120] Integer(723931620949848233)
+ [116] Integer(9)
+ [100] Binary + 
+ [104] Integer(1)
+ [104] Binary % 
+ [108] Binary / 
+ [112] x1
+ [112] Integer(6515384588548634097)
+ [108] Integer(9)
+ [92] Binary + 
+ [96] Integer(1)
+ [96] Binary % 
+ [100] Binary / 
+ [104] x1
+ [104] Integer(3298229075809052025)
+ [100] Integer(9)
+ [84] Binary + 
+ [88] Integer(1)
+ [88] Binary % 
+ [92] Binary / 
+ [96] x1
+ [96] Integer(-7209426465137635007)
+ [92] Integer(9)
+ [76] Binary + 
+ [80] Integer(1)
+ [80] Binary % 
+ [84] Binary / 
+ [88] x1
+ [88] Integer(8902138108599491401)
+ [84] Integer(9)
+ [68] Binary + 
+ [72] Integer(1)
+ [72] Binary % 
+ [76] Binary / 
+ [80] x1
+ [80] Integer(6332266682557216145)
+ [76] Integer(9)
+ [60] Binary + 
+ [64] Integer(1)
+ [64] Binary % 
+ [68] Binary / 
+ [72] x1
+ [72] Integer(1650167921886290457)
+ [68] Integer(9)
+ [52] Binary + 
+ [56] Integer(1)
+ [56] Binary % 
+ [60] Binary / 
+ [64] x1
+ [64] Integer(-3595232776732937503)
+ [60] Integer(9)
+ [44] Binary + 
+ [48] Integer(1)
+ [48] Binary % 
+ [52] Binary / 
+ [56] x1
+ [56] Integer(4536393156822665705)
+ [52] Integer(9)
+ [36] Binary + 
+ [40] Integer(1)
+ [40] Binary % 
+ [44] Binary / 
+ [48] x1
+ [48] Integer(3934050263984888113)
+ [44] Integer(9)
+ [28] Binary + 
+ [32] Integer(1)
+ [32] Binary % 
+ [36] Binary / 
+ [40] x1
+ [40] Integer(-1487035771555110215)
+ [36] Integer(9)
+ [20] Binary + 
+ [24] Integer(1)
+ [24] Binary % 
+ [28] Binary / 
+ [32] x1
+ [32] Integer(5063422129713559681)
+ [28] Integer(9)
+ [4] Integer(1)
