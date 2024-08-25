@@ -1,10 +1,13 @@
 use icfpc_2024::*;
+use sudoku::extract_initial_state;
 
 use std::{collections::HashMap, fs};
 
 use std::fs::File;
 use std::io::Write;
 use std::io::Result;
+use num_bigint::BigInt;
+
 
 fn is_lambda(expr_ptr: ExprPtr) -> bool {
     let ref e = *expr_ptr.borrow();
@@ -606,6 +609,53 @@ fn solve_eff8() {
     // }
 
 }
+
+
+fn convert_to_number(state: Vec<Vec<u8>>) -> BigInt {
+    let mut res = BigInt::from(0);
+    for x in 0..81 {
+        let row = x / 9;
+        let col = x % 9;
+        let num = state[row][col];
+        println!("x = {}, row = {}, col = {}, num = {}", x, row, col, num);
+        res *= 9;
+        res += num - 1;
+    }
+    res
+}
+
+// == Eff 9 ==
+fn solve_eff9() {
+    let state = sudoku::solve_empty_sudoku();
+    let res = convert_to_number(state);
+    println!("{:?}", res);
+}
+
+
+// == Eff 10 ==
+fn solve_eff10() {
+    let example = fs::read_to_string("problems/10.txt").unwrap();
+    let expr_ptr = parse_into_ast(example);
+    let mut state = sudoku::extract_initial_state(expr_ptr);
+
+    let ok = sudoku::solve_from_state(&mut state);
+    assert!(ok);
+    let res = convert_to_number(state);
+    println!("{:?}", res);
+}
+
+fn solve_generic_sudoku(name: String) {
+    let example = fs::read_to_string(format!("problems/{}.txt", name)).unwrap();
+    let expr_ptr = parse_into_ast(example);
+    let mut state = sudoku::extract_initial_state(expr_ptr);
+
+    let ok = sudoku::solve_from_state(&mut state);
+    assert!(ok);
+    let res = convert_to_number(state);
+    println!("{:?}", res);
+}
+
+
 // == Eff 13 ==
 // Solution: Integer(536870919)
 
@@ -677,7 +727,8 @@ fn adhoc_replace(expr_ptr: ExprPtr) -> ExprPtr {
 fn main() {
     let args = std::env::args().collect::<Vec<String>>();
     if args.len() > 1 {
-        solve_eff_generic(args[1].clone());
+        let n = args[1].clone();
+        solve_eff_generic(n);
         return;
     }
 
@@ -688,8 +739,10 @@ fn main() {
     // solve_eff5();
     // solve_eff6();
     // solve_eff7();
-    solve_eff8();
-
+    // solve_eff8();
+    // solve_eff9();
+    // solve_eff10();
+    solve_generic_sudoku("11".to_string());
 
     // solve_eff13();
 }

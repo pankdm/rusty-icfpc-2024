@@ -7,6 +7,9 @@ use std::fs;
 use std::io::{self, Write};
 use std::{fmt, rc::Rc};
 
+
+pub mod sudoku;
+
 #[derive(Clone, PartialEq, Eq, Debug)]
 pub enum Token {
     Boolean(bool),
